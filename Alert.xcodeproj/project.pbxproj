@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */; };
 		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
 		E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA5E1E3521110058943E /* AppDelegate.swift */; };
 		E7F5DA641E3521110058943E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F5DA621E3521110058943E /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		8F2D9B08AC40CD066C64E08B /* Pods-Alert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.debug.xcconfig"; sourceTree = "<group>"; };
 		9A749492F218098CAB844A21 /* Pods_Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61C91CB1C398ED4BC96DA93 /* Pods-Alert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.release.xcconfig"; sourceTree = "<group>"; };
+		E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableRepository.swift; sourceTree = "<group>"; };
 		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E7F5DA5B1E3521110058943E /* Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F5DA5E1E3521110058943E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E7E451501E3692DD00417A95 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
 		E7E451531E36937D00417A95 /* Record */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 				E7F5DA5E1E3521110058943E /* AppDelegate.swift */,
 				E7F5DA761E3521DB0058943E /* Extension */,
 				E7F5DA701E35211B0058943E /* Controller */,
+				E7E451501E3692DD00417A95 /* Repository */,
 				E7F5DA721E35212B0058943E /* View */,
 				E7F5DA731E35215A0058943E /* Worker */,
 				E7F5DA711E3521240058943E /* Model */,
@@ -277,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */,
+				E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */,
 				E7E451551E36938800417A95 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
