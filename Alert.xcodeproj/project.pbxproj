@@ -20,6 +20,7 @@
 		E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D45F1E3931AD0025823C /* AlertWorker.swift */; };
 		E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */; };
 		E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4631E3934F90025823C /* WorkerFactory.swift */; };
+		E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4661E3936100025823C /* BaseViewController.swift */; };
 		E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */; };
 		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
 		E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA5E1E3521110058943E /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		E7C9D45F1E3931AD0025823C /* AlertWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorker.swift; sourceTree = "<group>"; };
 		E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorkerImplementation.swift; sourceTree = "<group>"; };
 		E7C9D4631E3934F90025823C /* WorkerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerFactory.swift; sourceTree = "<group>"; };
+		E7C9D4661E3936100025823C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E7F5DA5B1E3521110058943E /* Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,14 @@
 			name = Firebase;
 			sourceTree = "<group>";
 		};
+		E7C9D4651E3936050025823C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9D4661E3936100025823C /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		E7E451501E3692DD00417A95 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +206,7 @@
 		E7F5DA701E35211B0058943E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9D4651E3936050025823C /* Base */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -381,6 +392,7 @@
 				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
 				E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */,
 				E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */,
+				E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */,
 				E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */,
 				E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */,
 				E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */,
