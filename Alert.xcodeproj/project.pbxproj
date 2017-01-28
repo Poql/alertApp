@@ -7,10 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */; };
+		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
+		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
+		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
+		E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */; };
+		E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4501E392A200025823C /* DataEventType + Firebase.swift */; };
+		E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4551E392BA70025823C /* AlertMapper.swift */; };
+		E7C9D4591E392E040025823C /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4581E392E040025823C /* Snapshot.swift */; };
+		E7C9D45B1E392E4A0025823C /* Snapshot + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D45A1E392E4A0025823C /* Snapshot + Firebase.swift */; };
+		E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D45D1E392F300025823C /* MutableSnapshot.swift */; };
+		E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D45F1E3931AD0025823C /* AlertWorker.swift */; };
+		E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */; };
+		E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4631E3934F90025823C /* WorkerFactory.swift */; };
+		E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4661E3936100025823C /* BaseViewController.swift */; };
+		E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */; };
+		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
 		E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA5E1E3521110058943E /* AppDelegate.swift */; };
 		E7F5DA641E3521110058943E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F5DA621E3521110058943E /* Main.storyboard */; };
 		E7F5DA661E3521110058943E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F5DA651E3521110058943E /* Assets.xcassets */; };
 		E7F5DA691E3521110058943E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F5DA671E3521110058943E /* LaunchScreen.storyboard */; };
+		E7F5DA781E3525AC0058943E /* CacheRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA771E3525AC0058943E /* CacheRepository.swift */; };
+		E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */; };
 		EC9CC4103248AD0E3C1A9949 /* Pods_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A749492F218098CAB844A21 /* Pods_Alert.framework */; };
 /* End PBXBuildFile section */
 
@@ -18,12 +36,30 @@
 		8F2D9B08AC40CD066C64E08B /* Pods-Alert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.debug.xcconfig"; sourceTree = "<group>"; };
 		9A749492F218098CAB844A21 /* Pods_Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61C91CB1C398ED4BC96DA93 /* Pods-Alert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.release.xcconfig"; sourceTree = "<group>"; };
+		E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
+		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
+		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
+		E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableRepository.swift; sourceTree = "<group>"; };
+		E7C9D4501E392A200025823C /* DataEventType + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataEventType + Firebase.swift"; sourceTree = "<group>"; };
+		E7C9D4551E392BA70025823C /* AlertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMapper.swift; sourceTree = "<group>"; };
+		E7C9D4581E392E040025823C /* Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
+		E7C9D45A1E392E4A0025823C /* Snapshot + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Snapshot + Firebase.swift"; sourceTree = "<group>"; };
+		E7C9D45D1E392F300025823C /* MutableSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableSnapshot.swift; sourceTree = "<group>"; };
+		E7C9D45F1E3931AD0025823C /* AlertWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorker.swift; sourceTree = "<group>"; };
+		E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorkerImplementation.swift; sourceTree = "<group>"; };
+		E7C9D4631E3934F90025823C /* WorkerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerFactory.swift; sourceTree = "<group>"; };
+		E7C9D4661E3936100025823C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepositoryImplementation.swift; sourceTree = "<group>"; };
+		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E7F5DA5B1E3521110058943E /* Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F5DA5E1E3521110058943E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7F5DA631E3521110058943E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7F5DA651E3521110058943E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7F5DA681E3521110058943E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7F5DA6A1E3521110058943E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F5DA771E3525AC0058943E /* CacheRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepository.swift; sourceTree = "<group>"; };
+		E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +91,89 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E70399741E3CAAFB0089AF2C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9D45F1E3931AD0025823C /* AlertWorker.swift */,
+				E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */,
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
+		E7C9D44F1E3929E70025823C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */,
+				E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */,
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
+		E7C9D4531E392B770025823C /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				E7F5DA771E3525AC0058943E /* CacheRepository.swift */,
+				E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
+		E7C9D4541E392B820025823C /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9D4551E392BA70025823C /* AlertMapper.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		E7C9D4571E392DC50025823C /* Snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9D4581E392E040025823C /* Snapshot.swift */,
+				E7C9D45D1E392F300025823C /* MutableSnapshot.swift */,
+			);
+			name = Snapshot;
+			sourceTree = "<group>";
+		};
+		E7C9D45C1E392EFD0025823C /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9D4501E392A200025823C /* DataEventType + Firebase.swift */,
+				E7C9D45A1E392E4A0025823C /* Snapshot + Firebase.swift */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		E7C9D4651E3936050025823C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E7C9D4661E3936100025823C /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		E7E451501E3692DD00417A95 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */,
+				E7C9D44F1E3929E70025823C /* Alert */,
+				E7C9D4531E392B770025823C /* Cache */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		E7E451531E36937D00417A95 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				E7E451541E36938800417A95 /* Alert.swift */,
+			);
+			name = Record;
+			sourceTree = "<group>";
+		};
 		E7F5DA521E3521110058943E = {
 			isa = PBXGroup;
 			children = (
+				E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */,
 				E7F5DA5D1E3521110058943E /* Alert */,
 				E7F5DA5C1E3521110058943E /* Products */,
 				55D5DAF08374C66F9956907B /* Pods */,
@@ -79,6 +195,7 @@
 				E7F5DA5E1E3521110058943E /* AppDelegate.swift */,
 				E7F5DA761E3521DB0058943E /* Extension */,
 				E7F5DA701E35211B0058943E /* Controller */,
+				E7E451501E3692DD00417A95 /* Repository */,
 				E7F5DA721E35212B0058943E /* View */,
 				E7F5DA731E35215A0058943E /* Worker */,
 				E7F5DA711E3521240058943E /* Model */,
@@ -91,6 +208,8 @@
 		E7F5DA701E35211B0058943E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9D4651E3936050025823C /* Base */,
+				E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -98,6 +217,10 @@
 		E7F5DA711E3521240058943E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */,
+				E7C9D4541E392B820025823C /* Mapper */,
+				E7C9D4571E392DC50025823C /* Snapshot */,
+				E7E451531E36937D00417A95 /* Record */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -112,6 +235,8 @@
 		E7F5DA731E35215A0058943E /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9D4631E3934F90025823C /* WorkerFactory.swift */,
+				E70399741E3CAAFB0089AF2C /* Alert */,
 			);
 			name = Worker;
 			sourceTree = "<group>";
@@ -137,6 +262,7 @@
 		E7F5DA761E3521DB0058943E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E7C9D45C1E392EFD0025823C /* Firebase */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -205,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F5DA691E3521110058943E /* LaunchScreen.storyboard in Resources */,
+				E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */,
 				E7F5DA661E3521110058943E /* Assets.xcassets in Resources */,
 				E7F5DA641E3521110058943E /* Main.storyboard in Resources */,
 			);
@@ -265,7 +392,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
+				E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */,
+				E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */,
+				E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */,
+				E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */,
+				E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */,
+				E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */,
+				E7F5DA781E3525AC0058943E /* CacheRepository.swift in Sources */,
 				E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */,
+				E7C9D4591E392E040025823C /* Snapshot.swift in Sources */,
+				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
+				E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */,
+				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
+				E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */,
+				E7C9D45B1E392E4A0025823C /* Snapshot + Firebase.swift in Sources */,
+				E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */,
+				E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */,
+				E7E451551E36938800417A95 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
