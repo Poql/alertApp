@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */; };
 		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
@@ -21,6 +22,7 @@
 		8F2D9B08AC40CD066C64E08B /* Pods-Alert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.debug.xcconfig"; sourceTree = "<group>"; };
 		9A749492F218098CAB844A21 /* Pods_Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61C91CB1C398ED4BC96DA93 /* Pods-Alert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.release.xcconfig"; sourceTree = "<group>"; };
+		E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableRepository.swift; sourceTree = "<group>"; };
 		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		E7F5DA521E3521110058943E = {
 			isa = PBXGroup;
 			children = (
+				E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */,
 				E7F5DA5D1E3521110058943E /* Alert */,
 				E7F5DA5C1E3521110058943E /* Products */,
 				55D5DAF08374C66F9956907B /* Pods */,
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F5DA691E3521110058943E /* LaunchScreen.storyboard in Resources */,
+				E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */,
 				E7F5DA661E3521110058943E /* Assets.xcassets in Resources */,
 				E7F5DA641E3521110058943E /* Main.storyboard in Resources */,
 			);
