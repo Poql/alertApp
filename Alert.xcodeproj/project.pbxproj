@@ -10,6 +10,7 @@
 		E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
+		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
 		E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */; };
 		E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4501E392A200025823C /* DataEventType + Firebase.swift */; };
 		E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4551E392BA70025823C /* AlertMapper.swift */; };
@@ -31,6 +32,7 @@
 		E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
+		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableRepository.swift; sourceTree = "<group>"; };
 		E7C9D4501E392A200025823C /* DataEventType + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataEventType + Firebase.swift"; sourceTree = "<group>"; };
 		E7C9D4551E392BA70025823C /* AlertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMapper.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */,
+				E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */,
 			);
 			name = Alert;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
 				E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */,
 				E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */,
+				E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */,
 				E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */,
 				E7C9D4591E392E040025823C /* Snapshot.swift in Sources */,
 				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
