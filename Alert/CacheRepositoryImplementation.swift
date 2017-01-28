@@ -11,25 +11,61 @@ import CoreData
 
 class CacheRepositoryImplementation: ObservableRepository<Alert> {
 
-    // a dummy cache
-    private var cache: Set<Alert> = []
+    fileprivate lazy var backgroundContext: NSManagedObjectContext = {
+        return CoreDataStack.shared.newBackgroundContext()
+    }()
+
+    fileprivate var viewContext: NSManagedObjectContext {
+        return CoreDataStack.shared.viewContext
+    }
 
     // MARK: - Private methods
 
-    fileprivate func updateInBackground(_ alert: Alert) {
-        cache.remove(alert)
-        cache.insert(alert)
-        notifyObservers(.updated, for: alert)
+    fileprivate func update(alert: Alert, in backgroundContext: NSManagedObjectContext) {
+        let request: NSFetchRequest<PersistentAlert> = PersistentAlert.fetchRequest()
+        request.predicate = NSPredicate.entity(with: alert.id)
+        do {
+            let alerts = try request.execute()
+            let persistentAlert: PersistentAlert
+            if let currentAlert = alerts.first {
+                PersistentAlertMapper.update(currentAlert, with: alert)
+                persistentAlert = currentAlert
+            } else {
+                persistentAlert = PersistentAlertMapper.mapPersistentAlert(from: alert, in: backgroundContext)
+            }
+            self.notifyObserver(.updated, persistentAlert: persistentAlert)
+            try backgroundContext.save()
+        }
+        catch {}
     }
 
-    fileprivate func removeInBackground(_ alert: Alert) {
-        cache.remove(alert)
-        notifyObservers(.removed, for: alert)
+    fileprivate func remove(alert: Alert, in backgroundContext: NSManagedObjectContext) {
+        let request: NSFetchRequest<PersistentAlert> = PersistentAlert.fetchRequest()
+        request.predicate = NSPredicate.entity(with: alert.id)
+        do {
+            guard let alert = try request.execute().first else { return }
+            backgroundContext.delete(alert)
+            self.notifyObserver(.removed, persistentAlert: alert)
+            try backgroundContext.save()
+        }
+        catch {}
     }
 
-    fileprivate func fetchCurrentAlerts() {
-        for alert in cache {
-            notifyObservers(.updated, for: alert)
+    fileprivate func fetchCurrentAlerts(in context: NSManagedObjectContext) {
+        let request: NSFetchRequest<PersistentAlert> = PersistentAlert.fetchRequest()
+        do {
+            let alerts = try request.execute() 
+            for alert in alerts {
+                self.notifyObserver(.added, persistentAlert: alert)
+            }
+        }
+        catch {}
+    }
+
+    fileprivate func notifyObserver(_ type: DataEventType, persistentAlert: PersistentAlert) {
+        guard let alert = PersistentAlertMapper.mapAlert(from: persistentAlert) else { return }
+        DispatchQueue.main.async {
+            self.notifyObservers(type, for: alert)
         }
     }
 }
@@ -39,7 +75,11 @@ class CacheRepositoryImplementation: ObservableRepository<Alert> {
 extension CacheRepositoryImplementation: CacheRepository {
 
     func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int {
-        return attachObserver(type, with: block)
+        let handle = attachObserver(type, with: block)
+        viewContext.perform {
+            self.fetchCurrentAlerts(in: self.viewContext)
+        }
+        return handle
     }
 
     func removeObserver(withHandle handle: Int) {
@@ -47,10 +87,14 @@ extension CacheRepositoryImplementation: CacheRepository {
     }
 
     func update(alert: Alert) {
-        updateInBackground(alert)
+        backgroundContext.perform {
+            self.update(alert: alert, in: self.backgroundContext)
+        }
     }
 
     func remove(alert: Alert) {
-        removeInBackground(alert)
+        backgroundContext.perform {
+            self.remove(alert: alert, in: self.backgroundContext)
+        }
     }
 }
