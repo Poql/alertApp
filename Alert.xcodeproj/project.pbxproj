@@ -21,6 +21,7 @@
 		E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */; };
 		E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4631E3934F90025823C /* WorkerFactory.swift */; };
 		E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4661E3936100025823C /* BaseViewController.swift */; };
+		E7E4514E1E368F0C00417A95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */; };
 		E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */; };
 		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
 		E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA5E1E3521110058943E /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorkerImplementation.swift; sourceTree = "<group>"; };
 		E7C9D4631E3934F90025823C /* WorkerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerFactory.swift; sourceTree = "<group>"; };
 		E7C9D4661E3936100025823C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E7F5DA5B1E3521110058943E /* Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,14 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		E7E4514F1E3692C200417A95 /* Persistency */ = {
+			isa = PBXGroup;
+			children = (
+				E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */,
+			);
+			name = Persistency;
+			sourceTree = "<group>";
+		};
 		E7E451501E3692DD00417A95 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +231,7 @@
 				E7C9D4541E392B820025823C /* Mapper */,
 				E7C9D4571E392DC50025823C /* Snapshot */,
 				E7E451531E36937D00417A95 /* Record */,
+				E7E4514F1E3692C200417A95 /* Persistency */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -399,6 +410,7 @@
 				E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */,
 				E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */,
 				E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */,
+				E7E4514E1E368F0C00417A95 /* CoreDataStack.swift in Sources */,
 				E7F5DA781E3525AC0058943E /* CacheRepository.swift in Sources */,
 				E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */,
 				E7C9D4591E392E040025823C /* Snapshot.swift in Sources */,
