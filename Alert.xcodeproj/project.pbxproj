@@ -28,6 +28,7 @@
 		E7F5DA661E3521110058943E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F5DA651E3521110058943E /* Assets.xcassets */; };
 		E7F5DA691E3521110058943E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F5DA671E3521110058943E /* LaunchScreen.storyboard */; };
 		E7F5DA781E3525AC0058943E /* CacheRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA771E3525AC0058943E /* CacheRepository.swift */; };
+		E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */; };
 		EC9CC4103248AD0E3C1A9949 /* Pods_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A749492F218098CAB844A21 /* Pods_Alert.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		E7F5DA681E3521110058943E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7F5DA6A1E3521110058943E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7F5DA771E3525AC0058943E /* CacheRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepository.swift; sourceTree = "<group>"; };
+		E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				E7C9D4651E3936050025823C /* Base */,
+				E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */,
 				E7C9D4591E392E040025823C /* Snapshot.swift in Sources */,
 				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
+				E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */,
 				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
 				E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */,
 				E7C9D45B1E392E4A0025823C /* Snapshot + Firebase.swift in Sources */,
