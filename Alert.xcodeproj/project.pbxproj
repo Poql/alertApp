@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */; };
 		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
 		E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA5E1E3521110058943E /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 		8F2D9B08AC40CD066C64E08B /* Pods-Alert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.debug.xcconfig"; sourceTree = "<group>"; };
 		9A749492F218098CAB844A21 /* Pods_Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61C91CB1C398ED4BC96DA93 /* Pods-Alert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.release.xcconfig"; sourceTree = "<group>"; };
+		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableRepository.swift; sourceTree = "<group>"; };
 		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E7F5DA5B1E3521110058943E /* Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,10 +61,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E7C9D44F1E3929E70025823C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */,
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
 		E7E451501E3692DD00417A95 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */,
+				E7C9D44F1E3929E70025823C /* Alert */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -287,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
 				E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */,
 				E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */,
 				E7E451551E36938800417A95 /* Alert.swift in Sources */,
