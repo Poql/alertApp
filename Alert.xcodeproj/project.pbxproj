@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */; };
+		E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70399751E3CB4310089AF2C /* NSPredicate.swift */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
@@ -38,6 +39,7 @@
 		9A749492F218098CAB844A21 /* Pods_Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61C91CB1C398ED4BC96DA93 /* Pods-Alert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.release.xcconfig"; sourceTree = "<group>"; };
 		E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E70399751E3CB4310089AF2C /* NSPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPredicate.swift; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				E7C9D45C1E392EFD0025823C /* Firebase */,
+				E70399751E3CB4310089AF2C /* NSPredicate.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
 				E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */,
 				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
+				E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */,
 				E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */,
 				E7C9D45B1E392E4A0025823C /* Snapshot + Firebase.swift in Sources */,
 				E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */,
