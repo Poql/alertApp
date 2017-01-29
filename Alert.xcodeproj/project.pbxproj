@@ -11,6 +11,7 @@
 		E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70399751E3CB4310089AF2C /* NSPredicate.swift */; };
 		E7064BDC1E3DF13100B6276F /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BDB1E3DF13100B6276F /* AlertViewModel.swift */; };
 		E7064BDE1E3DF1B800B6276F /* AlertViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BDD1E3DF1B800B6276F /* AlertViewModelMapper.swift */; };
+		E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */; };
 		E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE11E3DF72500B6276F /* UIView + loading.swift */; };
 		E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
@@ -56,6 +57,7 @@
 		E70399751E3CB4310089AF2C /* NSPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPredicate.swift; sourceTree = "<group>"; };
 		E7064BDB1E3DF13100B6276F /* AlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		E7064BDD1E3DF1B800B6276F /* AlertViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewModelMapper.swift; sourceTree = "<group>"; };
+		E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		E7064BE11E3DF72500B6276F /* UIView + loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + loading.swift"; sourceTree = "<group>"; };
 		E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView + RegistrableCell.swift"; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				E7F1F8F71E3E004E00713759 /* FacetView.swift */,
+				E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */,
 				E7F1F8F31E3DFDD600713759 /* AlertFaceView.swift */,
 				E7F1F8F51E3DFDE000713759 /* AlertSideView.swift */,
 				E7F1F8FD1E3E050700713759 /* AlertActionView.swift */,
@@ -458,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F1F9091E3E48FA00713759 /* AlertFaceView.swift in Sources */,
+				E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */,
 				E7F1F8F61E3DFDE000713759 /* AlertSideView.swift in Sources */,
 				E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */,
 				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
