@@ -13,6 +13,6 @@ protocol AlertWorker {
 }
 
 protocol AlertViewContract: class {
-    func update(alert: Alert)
-    func remove(alert: Alert)
+    func update(alert: AlertViewModel)
+    func remove(alert: AlertViewModel)
 }

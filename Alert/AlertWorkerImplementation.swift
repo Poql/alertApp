@@ -66,16 +66,20 @@ class AlertWorkerImplementation {
 
     // cache
 
+    private func viewModel(from alert: Alert) -> AlertViewModel {
+        return AlertViewModelMapper.alertViewModel(from: alert)
+    }
+
     private func alertCacheAdded(alert: Alert) {
-        viewContract?.update(alert: alert)
+        viewContract?.update(alert: viewModel(from: alert))
     }
 
     private func alertCacheUpdated(alert: Alert) {
-        viewContract?.update(alert: alert)
+        viewContract?.update(alert: viewModel(from: alert))
     }
 
     private func alertCacheRemoved(alert: Alert) {
-        viewContract?.remove(alert: alert)
+        viewContract?.remove(alert: viewModel(from: alert))
     }
 }
 
