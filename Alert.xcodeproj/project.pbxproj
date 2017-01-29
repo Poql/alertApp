@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */; };
 		E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70399751E3CB4310089AF2C /* NSPredicate.swift */; };
+		E7064BDC1E3DF13100B6276F /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BDB1E3DF13100B6276F /* AlertViewModel.swift */; };
 		E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE11E3DF72500B6276F /* UIView + loading.swift */; };
 		E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
@@ -47,6 +48,7 @@
 		D61C91CB1C398ED4BC96DA93 /* Pods-Alert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alert/Pods-Alert.release.xcconfig"; sourceTree = "<group>"; };
 		E70399721E3CA1B60089AF2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E70399751E3CB4310089AF2C /* NSPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPredicate.swift; sourceTree = "<group>"; };
+		E7064BDB1E3DF13100B6276F /* AlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		E7064BE11E3DF72500B6276F /* UIView + loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + loading.swift"; sourceTree = "<group>"; };
 		E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView + RegistrableCell.swift"; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 				E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */,
 			);
 			name = Alert;
+			sourceTree = "<group>";
+		};
+		E7064BDA1E3DF10200B6276F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7064BDB1E3DF13100B6276F /* AlertViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		E7C9D44F1E3929E70025823C /* Alert */ = {
@@ -226,6 +236,7 @@
 				E7F5DA721E35212B0058943E /* View */,
 				E7F5DA731E35215A0058943E /* Worker */,
 				E7F5DA711E3521240058943E /* Model */,
+				E7064BDA1E3DF10200B6276F /* ViewModel */,
 				E7F5DA741E35217B0058943E /* Resources */,
 				E7F5DA751E3521870058943E /* Configuration */,
 			);
@@ -436,6 +447,7 @@
 				E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */,
 				E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */,
 				E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */,
+				E7064BDC1E3DF13100B6276F /* AlertViewModel.swift in Sources */,
 				E7E4514E1E368F0C00417A95 /* CoreDataStack.swift in Sources */,
 				E7F5DA781E3525AC0058943E /* CacheRepository.swift in Sources */,
 				E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */,
