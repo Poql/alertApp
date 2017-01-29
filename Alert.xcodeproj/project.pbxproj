@@ -30,6 +30,7 @@
 		E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */; };
 		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
 		E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */; };
+		E7F1F8F61E3DFDE000713759 /* AlertSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8F51E3DFDE000713759 /* AlertSideView.swift */; };
 		E7F1F8F81E3E004E00713759 /* FacetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8F71E3E004E00713759 /* FacetView.swift */; };
 		E7F1F8FE1E3E050700713759 /* AlertActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8FD1E3E050700713759 /* AlertActionView.swift */; };
 		E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */; };
@@ -72,6 +73,7 @@
 		E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentAlertMapper.swift; sourceTree = "<group>"; };
+		E7F1F8F51E3DFDE000713759 /* AlertSideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertSideView.swift; sourceTree = "<group>"; };
 		E7F1F8F71E3E004E00713759 /* FacetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacetView.swift; sourceTree = "<group>"; };
 		E7F1F8FD1E3E050700713759 /* AlertActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionView.swift; sourceTree = "<group>"; };
 		E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Constraints.swift"; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				E7F1F8F71E3E004E00713759 /* FacetView.swift */,
+				E7F1F8F51E3DFDE000713759 /* AlertSideView.swift */,
 				E7F1F8FD1E3E050700713759 /* AlertActionView.swift */,
 			);
 			name = View;
@@ -447,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7F1F8F61E3DFDE000713759 /* AlertSideView.swift in Sources */,
 				E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */,
 				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
 				E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */,
