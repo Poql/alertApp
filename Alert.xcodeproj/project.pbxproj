@@ -30,6 +30,7 @@
 		E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */; };
 		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
 		E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */; };
+		E7F1F8FE1E3E050700713759 /* AlertActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8FD1E3E050700713759 /* AlertActionView.swift */; };
 		E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */; };
 		E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F9011E3E088400713759 /* UIStackView.swift */; };
 		E7F1F9061E3E0E5700713759 /* String + Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F9051E3E0E5700713759 /* String + Localizable.swift */; };
@@ -70,6 +71,7 @@
 		E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentAlertMapper.swift; sourceTree = "<group>"; };
+		E7F1F8FD1E3E050700713759 /* AlertActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionView.swift; sourceTree = "<group>"; };
 		E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Constraints.swift"; sourceTree = "<group>"; };
 		E7F1F9011E3E088400713759 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		E7F1F9051E3E0E5700713759 /* String + Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Localizable.swift"; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		E7F5DA721E35212B0058943E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7F1F8FD1E3E050700713759 /* AlertActionView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
 				E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */,
 				E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */,
+				E7F1F8FE1E3E050700713759 /* AlertActionView.swift in Sources */,
 				E7C9D45B1E392E4A0025823C /* Snapshot + Firebase.swift in Sources */,
 				E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */,
 				E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */,
