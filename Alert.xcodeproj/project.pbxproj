@@ -30,6 +30,7 @@
 		E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */; };
 		E7E451551E36938800417A95 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451541E36938800417A95 /* Alert.swift */; };
 		E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */; };
+		E7F1F8F81E3E004E00713759 /* FacetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8F71E3E004E00713759 /* FacetView.swift */; };
 		E7F1F8FE1E3E050700713759 /* AlertActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8FD1E3E050700713759 /* AlertActionView.swift */; };
 		E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */; };
 		E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F9011E3E088400713759 /* UIStackView.swift */; };
@@ -71,6 +72,7 @@
 		E7E451511E36930000417A95 /* CacheRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7E451541E36938800417A95 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentAlertMapper.swift; sourceTree = "<group>"; };
+		E7F1F8F71E3E004E00713759 /* FacetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacetView.swift; sourceTree = "<group>"; };
 		E7F1F8FD1E3E050700713759 /* AlertActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionView.swift; sourceTree = "<group>"; };
 		E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Constraints.swift"; sourceTree = "<group>"; };
 		E7F1F9011E3E088400713759 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 		E7F5DA721E35212B0058943E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7F1F8F71E3E004E00713759 /* FacetView.swift */,
 				E7F1F8FD1E3E050700713759 /* AlertActionView.swift */,
 			);
 			name = View;
@@ -450,6 +453,7 @@
 				E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */,
 				E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */,
 				E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */,
+				E7F1F8F81E3E004E00713759 /* FacetView.swift in Sources */,
 				E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */,
 				E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */,
 				E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */,
