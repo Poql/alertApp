@@ -19,6 +19,7 @@
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
 		E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */; };
 		E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4D1E42678900B7F170 /* ServerValue.swift */; };
+		E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */; };
 		E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC511E426C6F00B7F170 /* ServerValue + FIRServerValue.swift */; };
 		E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4501E392A200025823C /* DataEventType + Firebase.swift */; };
 		E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4551E392BA70025823C /* AlertMapper.swift */; };
@@ -67,6 +68,7 @@
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableRepository.swift; sourceTree = "<group>"; };
 		E7C7DC4D1E42678900B7F170 /* ServerValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerValue.swift; sourceTree = "<group>"; };
+		E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDate.swift; sourceTree = "<group>"; };
 		E7C7DC511E426C6F00B7F170 /* ServerValue + FIRServerValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServerValue + FIRServerValue.swift"; sourceTree = "<group>"; };
 		E7C9D4501E392A200025823C /* DataEventType + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataEventType + Firebase.swift"; sourceTree = "<group>"; };
 		E7C9D4551E392BA70025823C /* AlertMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMapper.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 		E7E451531E36937D00417A95 /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */,
 				E7E451541E36938800417A95 /* Alert.swift */,
 			);
 			name = Record;
@@ -501,6 +504,7 @@
 				E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */,
 				E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */,
 				E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */,
+				E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */,
 				E7E451551E36938800417A95 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
