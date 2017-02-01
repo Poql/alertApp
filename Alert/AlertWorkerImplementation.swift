@@ -21,6 +21,8 @@ class AlertWorkerImplementation {
         return !(remoteHandles.isEmpty && cacheHandles.isEmpty)
     }
 
+    private let mapper = AlertViewModelMapper()
+
     weak var viewContract: AlertViewContract?
 
     init(repository: AlertRepository, cache: CacheRepository) {
@@ -50,6 +52,10 @@ class AlertWorkerImplementation {
         cacheHandles.removeAll()
     }
 
+    private func viewModel(from alert: Alert) -> AlertViewModel {
+        return mapper.alertViewModel(from: alert)
+    }
+
     // remote
 
     private func alertAdded(alert: Alert) {
@@ -65,10 +71,6 @@ class AlertWorkerImplementation {
     }
 
     // cache
-
-    private func viewModel(from alert: Alert) -> AlertViewModel {
-        return AlertViewModelMapper.alertViewModel(from: alert)
-    }
 
     private func alertCacheAdded(alert: Alert) {
         viewContract?.update(alert: viewModel(from: alert))

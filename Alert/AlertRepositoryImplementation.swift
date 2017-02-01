@@ -11,6 +11,7 @@ import FirebaseDatabase
 
 class AlertRepositoryImplementation {
     fileprivate lazy var databaseReference = FIRDatabase.database().reference()
+    fileprivate lazy var  alertMapper = AlertMapper(serverValue: FIRServerValue.self)
     fileprivate var alertReference: FIRDatabaseReference {
         return databaseReference.child("alerts")
     }
@@ -21,7 +22,7 @@ class AlertRepositoryImplementation {
 extension AlertRepositoryImplementation: AlertRepository {
     func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int {
         let handle = alertReference.observe(type.firebaseType, with: { snapshot in
-            guard let alert = AlertMapper.mapAlert(from: snapshot) else { return }
+            guard let alert = self.alertMapper.mapAlert(from: snapshot) else { return }
             block(alert)
         })
         return Int(handle)
@@ -30,12 +31,6 @@ extension AlertRepositoryImplementation: AlertRepository {
     func removeObserver(withHandle handle: Int) {
         guard handle >= 0 else { return }
         alertReference.removeObserver(withHandle: UInt(handle))
-    }
-
-    func create(newAlert alert: Alert) {
-        let child = alertReference.childByAutoId()
-        let snapshot = AlertMapper.snapshot(forNewAlert: alert, with: child.key)
-        child.setValue(snapshot)
     }
 }
 

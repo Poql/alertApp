@@ -9,8 +9,11 @@
 import Foundation
 
 struct AlertViewModel {
-    var id: String
-    var description: String
+    let id: String
+    let description: String
+    let matterName: String
+    let creationDate: String
+    let triggerDate: String
 }
 
 // MARK: - Hashable

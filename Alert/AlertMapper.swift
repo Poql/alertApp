@@ -10,18 +10,56 @@ import Foundation
 import FirebaseDatabase
 
 struct AlertMapper {
-    static func mapAlert(from snapshot: Snapshot) -> Alert? {
-        guard let dictionary = snapshot.dictionary as? [String : String] else { return nil }
-        return Alert(id: snapshot.id, description: dictionary["description"] ?? "")
+
+    let serverValue: ServerValue.Type
+
+    func mapAlert(from snapshot: Snapshot) -> Alert? {
+        guard
+            let creationInterval = snapshot.dictionary["creation_date"] as? TimeInterval,
+            let triggerInterval = snapshot.dictionary["trigger_date"] as? TimeInterval,
+            let matterName = snapshot.dictionary["matter_name"] as? String
+        else {
+            return nil
+        }
+        let description = (snapshot.dictionary["description"] as? String) ?? ""
+        return Alert(
+            id: snapshot.id,
+            description: description,
+            matterName: matterName,
+            creationDate: Date(timeIntervalSince1970: creationInterval),
+            triggerDate: Date(timeIntervalSince1970: triggerInterval)
+        )
     }
 
-    static func snapshot(forNewAlert alert: Alert, with id: String) -> Snapshot {
+    func snapshot(forNewAlert alert: MutableAlert, with id: String) -> Snapshot {
+        var dictionary: [String : Any] = [:]
+        if let description = alert.description {
+            dictionary["description"] = description
+        }
+        if let triggerDate = alert.triggerDate {
+            dictionary["trigger_date"] = dateValue(from: triggerDate)
+        }
+        if alert.creationDate == nil {
+            dictionary["creation_date"] = serverValue.currentTime
+        }
+        if let matterName = alert.matterName {
+            dictionary["matter_name"] = matterName
+        }
         return MutableSnapshot(
-            id: alert.id,
-            dictionary: [
-                "description": alert.description
-            ]
+            id: id,
+            dictionary: dictionary
         )
+    }
+
+    // MARK: - Private
+
+    private func dateValue(from recordDate:RecordDate) -> Any {
+        switch recordDate {
+        case let .localDate(date):
+            return date.timeIntervalSince1970
+        case .server:
+            return serverValue.currentTime
+        }
     }
 }
 

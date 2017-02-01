@@ -2,9 +2,12 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="PersistentAlert" representedClassName="PersistentAlert" syncable="YES" codeGenerationType="class">
         <attribute name="alertDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="triggerDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PersistentAlert" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="PersistentAlert" positionX="-63" positionY="-18" width="128" height="120"/>
     </elements>
 </model>
