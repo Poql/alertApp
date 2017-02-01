@@ -55,7 +55,12 @@ class AlertTableViewCell: UITableViewCell {
 
     // MARK: - Public
 
-    func configure(with model: AlertViewModel) {
+    func configure(with viewModel: AlertViewModel) {
+        faceView.configure(
+            matter: viewModel.matterName,
+            date: viewModel.triggerDate,
+            description: viewModel.description
+        )
     }
 
     func rotate() {
@@ -66,7 +71,8 @@ class AlertTableViewCell: UITableViewCell {
 
     private func setupView() {
         selectionStyle = .none
-        contentView.gz_pinSubview(facetView)
+        contentView.backgroundColor = UIColor.black
+        contentView.gz_pinSubview(facetView, insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
     }
 }
 
