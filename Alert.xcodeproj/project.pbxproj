@@ -18,6 +18,7 @@
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
 		E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */; };
+		E7C7DC4C1E42673900B7F170 /* MutableAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4B1E42673900B7F170 /* MutableAlert.swift */; };
 		E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4D1E42678900B7F170 /* ServerValue.swift */; };
 		E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */; };
 		E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC511E426C6F00B7F170 /* ServerValue + FIRServerValue.swift */; };
@@ -67,6 +68,7 @@
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableRepository.swift; sourceTree = "<group>"; };
+		E7C7DC4B1E42673900B7F170 /* MutableAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableAlert.swift; sourceTree = "<group>"; };
 		E7C7DC4D1E42678900B7F170 /* ServerValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerValue.swift; sourceTree = "<group>"; };
 		E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDate.swift; sourceTree = "<group>"; };
 		E7C7DC511E426C6F00B7F170 /* ServerValue + FIRServerValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServerValue + FIRServerValue.swift"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			children = (
 				E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */,
 				E7E451541E36938800417A95 /* Alert.swift */,
+				E7C7DC4B1E42673900B7F170 /* MutableAlert.swift */,
 			);
 			name = Record;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */,
 				E7F1F8F81E3E004E00713759 /* FacetView.swift in Sources */,
 				E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */,
+				E7C7DC4C1E42673900B7F170 /* MutableAlert.swift in Sources */,
 				E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */,
 				E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */,
 				E7064BDC1E3DF13100B6276F /* AlertViewModel.swift in Sources */,
