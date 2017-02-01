@@ -8,6 +8,10 @@
 
 import UIKit
 
+private struct Constant {
+    static let estimatedRow: CGFloat = 200
+}
+
 class AlertListViewController: BaseViewController {
     @IBOutlet fileprivate var tableView: UITableView!
 
@@ -32,6 +36,8 @@ class AlertListViewController: BaseViewController {
     private func setupTableView() {
         tableView.dataSource = self
         tableView.register(cell: .fromClass(AlertTableViewCell.self))
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = Constant.estimatedRow
     }
 }
 
