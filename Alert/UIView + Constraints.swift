@@ -9,12 +9,12 @@
 import UIKit
 
 extension UIView {
-    func gz_pinSubview(_ subview: UIView) {
+    func gz_pinSubview(_ subview: UIView, insets: UIEdgeInsets = UIEdgeInsets.zero) {
         addSubview(subview)
         subview.translatesAutoresizingMaskIntoConstraints = false
-        subview.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        subview.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        subview.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        subview.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        subview.topAnchor.constraint(equalTo: topAnchor, constant: insets.top).isActive = true
+        subview.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom).isActive = true
+        subview.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left).isActive = true
+        subview.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right).isActive = true
     }
 }
