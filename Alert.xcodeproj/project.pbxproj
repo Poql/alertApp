@@ -41,6 +41,7 @@
 		E7F1F8FE1E3E050700713759 /* AlertActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8FD1E3E050700713759 /* AlertActionView.swift */; };
 		E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */; };
 		E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F9011E3E088400713759 /* UIStackView.swift */; };
+		E7F1F9041E3E0E3900713759 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7F1F9031E3E0E3900713759 /* Localizable.strings */; };
 		E7F1F9061E3E0E5700713759 /* String + Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F9051E3E0E5700713759 /* String + Localizable.swift */; };
 		E7F1F9091E3E48FA00713759 /* AlertFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1F8F31E3DFDD600713759 /* AlertFaceView.swift */; };
 		E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA5E1E3521110058943E /* AppDelegate.swift */; };
@@ -92,6 +93,7 @@
 		E7F1F8FD1E3E050700713759 /* AlertActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionView.swift; sourceTree = "<group>"; };
 		E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Constraints.swift"; sourceTree = "<group>"; };
 		E7F1F9011E3E088400713759 /* UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		E7F1F9031E3E0E3900713759 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E7F1F9051E3E0E5700713759 /* String + Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Localizable.swift"; sourceTree = "<group>"; };
 		E7F5DA5B1E3521110058943E /* Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F5DA5E1E3521110058943E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				E7F5DA621E3521110058943E /* Main.storyboard */,
 				E7F5DA651E3521110058943E /* Assets.xcassets */,
 				E7F5DA791E3528450058943E /* Model.xcdatamodeld */,
+				E7F1F9031E3E0E3900713759 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				E7F1F8FA1E3E012700713759 /* AlertFaceView.xib in Resources */,
 				E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */,
 				E7F5DA661E3521110058943E /* Assets.xcassets in Resources */,
+				E7F1F9041E3E0E3900713759 /* Localizable.strings in Resources */,
 				E7F5DA641E3521110058943E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
