@@ -39,8 +39,8 @@ struct AlertMapper {
         if let triggerDate = alert.triggerDate {
             dictionary["trigger_date"] = dateValue(from: triggerDate)
         }
-        if alert.creationDate == nil {
-            dictionary["creation_date"] = serverValue.currentTime
+        if let creationDate = alert.creationDate {
+            dictionary["creation_date"] = dateValue(from: creationDate)
         }
         if let matterName = alert.matterName {
             dictionary["matter_name"] = matterName
