@@ -20,6 +20,13 @@ class AlertRepositoryImplementation {
 // MARK: - AlertRepository
 
 extension AlertRepositoryImplementation: AlertRepository {
+
+    func insert(alert: MutableAlert) {
+        let reference = alertReference.childByAutoId()
+        let snapshot = alertMapper.snapshot(forNewAlert: alert, with: reference.key)
+        reference.setValue(snapshot.dictionary)
+    }
+
     func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int {
         let handle = alertReference.observe(type.firebaseType, with: { snapshot in
             guard let alert = self.alertMapper.mapAlert(from: snapshot) else { return }

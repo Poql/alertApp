@@ -96,4 +96,8 @@ extension AlertWorkerImplementation: AlertWorker {
             beginObservation()
         }
     }
+
+    func insert(alert: MutableAlert) {
+        remoteRepository.insert(alert: alert)
+    }
 }

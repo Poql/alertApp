@@ -11,4 +11,5 @@ import Foundation
 protocol AlertRepository {
     func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int
     func removeObserver(withHandle handle: Int)
+    func insert(alert: MutableAlert)
 }
