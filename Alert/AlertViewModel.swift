@@ -1,29 +1,29 @@
 //
-//  Alert.swift
+//  AlertViewModel.swift
 //  Alert
 //
-//  Created by Gaétan Zanella on 23/01/2017.
+//  Created by Gaétan Zanella on 29/01/2017.
 //  Copyright © 2017 Gaétan Zanella. All rights reserved.
 //
 
 import Foundation
 
-struct Alert {
+struct AlertViewModel {
     let id: String
     let description: String
     let matterName: String
-    let creationDate: Date
-    let triggerDate: Date
+    let creationDate: String
+    let triggerDate: String
 }
 
 // MARK: - Hashable
 
-extension Alert: Hashable {
+extension AlertViewModel: Hashable {
     var hashValue: Int {
         return id.hashValue
     }
 }
 
-func ==(lhs: Alert, rhs: Alert) -> Bool {
+func ==(lhs: AlertViewModel, rhs: AlertViewModel) -> Bool {
     return lhs.id == rhs.id
 }

@@ -8,6 +8,10 @@
 
 import UIKit
 
+private struct Constant {
+    static let estimatedRow: CGFloat = 200
+}
+
 class AlertListViewController: BaseViewController {
     @IBOutlet fileprivate var tableView: UITableView!
 
@@ -15,10 +19,10 @@ class AlertListViewController: BaseViewController {
         return self.workerFactory.newAlertWorker(with: self)
     }()
 
-    fileprivate var alerts: Set<Alert> = []
+    fileprivate var viewModels: Set<AlertViewModel> = []
 
-    fileprivate var sortedAlerts: [Alert] {
-        return Array(alerts)
+    fileprivate var sortedViewModels: [AlertViewModel] {
+        return Array(viewModels)
     }
 
     override func viewDidLoad() {
@@ -31,21 +35,23 @@ class AlertListViewController: BaseViewController {
 
     private func setupTableView() {
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(cell: .fromClass(AlertTableViewCell.self))
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = Constant.estimatedRow
     }
 }
 
 // MARK: - AlertViewContract
 
 extension AlertListViewController: AlertViewContract {
-    func update(alert: Alert) {
-        alerts.remove(alert)
-        alerts.insert(alert)
+    func update(alert: AlertViewModel) {
+        viewModels.remove(alert)
+        viewModels.insert(alert)
         tableView.reloadData()
     }
 
-    func remove(alert: Alert) {
-        alerts.remove(alert)
+    func remove(alert: AlertViewModel) {
+        viewModels.remove(alert)
         tableView.reloadData()
     }
 }
@@ -54,13 +60,13 @@ extension AlertListViewController: AlertViewContract {
 
 extension AlertListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        let alert = sortedAlerts[indexPath.row]
-        cell.textLabel?.text = alert.description
+        let cell: AlertTableViewCell = tableView.dequeueCell()
+        let alert = sortedViewModels[indexPath.row]
+        cell.configure(with: alert)
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sortedAlerts.count
+        return sortedViewModels.count
     }
 }
