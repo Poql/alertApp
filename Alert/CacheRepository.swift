@@ -12,6 +12,7 @@ import CoreData
 protocol CacheRepository {
     func update(alert: Alert)
     func remove(alert: Alert)
+    func fetchCurrentCache(completion: @escaping ([Alert]) -> Void)
     func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int
     func removeObserver(withHandle handle: Int)
 }

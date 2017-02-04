@@ -19,6 +19,10 @@ class CacheRepositoryImplementation: ObservableRepository<Alert> {
         return CoreDataStack.shared.viewContext
     }
 
+    fileprivate var multipleUpdatesBlocks: [Int : ([Alert]) -> Void] = [:]
+
+    fileprivate var multipleUpdatesHandles: Set<Int> = []
+
     // MARK: - Private methods
 
     fileprivate func update(alert: Alert, in backgroundContext: NSManagedObjectContext) {
@@ -51,13 +55,11 @@ class CacheRepositoryImplementation: ObservableRepository<Alert> {
         catch {}
     }
 
-    fileprivate func fetchCurrentAlerts(in context: NSManagedObjectContext) {
+    fileprivate func fetchCurrentAlerts(in context: NSManagedObjectContext, completion: ([Alert]) -> Void) {
         let request: NSFetchRequest<PersistentAlert> = PersistentAlert.fetchRequest()
         do {
-            let alerts = try request.execute() 
-            for alert in alerts {
-                self.notifyObserver(.added, persistentAlert: alert)
-            }
+            let alerts = try request.execute()
+            completion(alerts.flatMap { PersistentAlertMapper.mapAlert(from: $0) })
         }
         catch {}
     }
@@ -74,12 +76,14 @@ class CacheRepositoryImplementation: ObservableRepository<Alert> {
 
 extension CacheRepositoryImplementation: CacheRepository {
 
-    func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int {
-        let handle = attachObserver(type, with: block)
+    func fetchCurrentCache(completion: @escaping ([Alert]) -> Void) {
         viewContext.perform {
-            self.fetchCurrentAlerts(in: self.viewContext)
+            self.fetchCurrentAlerts(in: self.viewContext, completion: completion)
         }
-        return handle
+    }
+
+    func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int {
+        return attachObserver(type, with: block)
     }
 
     func removeObserver(withHandle handle: Int) {

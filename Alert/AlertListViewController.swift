@@ -13,6 +13,7 @@ private struct Constant {
 }
 
 class AlertListViewController: BaseViewController {
+
     @IBOutlet fileprivate var tableView: UITableView!
 
     private lazy var worker: AlertWorker = {
@@ -25,9 +26,15 @@ class AlertListViewController: BaseViewController {
         return Array(viewModels)
     }
 
+    // MARK: - UIViewController
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         worker.fetchAlerts()
     }
 
@@ -39,20 +46,47 @@ class AlertListViewController: BaseViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = Constant.estimatedRow
     }
+
+    fileprivate func updateRow(at index: Int, with viewModel: AlertViewModel) {
+        let indexPath = IndexPath(row: index, section: 0)
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
+
+    fileprivate func insertRow(at index: Int, with viewModel: AlertViewModel) {
+        let indexPath = IndexPath(row: index, section: 0)
+        tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+
+    fileprivate func removeRow(at index: Int) {
+        let indexPath = IndexPath(row: index, section: 0)
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
 }
 
 // MARK: - AlertViewContract
 
 extension AlertListViewController: AlertViewContract {
-    func update(alert: AlertViewModel) {
-        viewModels.remove(alert)
-        viewModels.insert(alert)
+    func process(currentAlerts: [AlertViewModel]) {
+        viewModels = Set(currentAlerts)
         tableView.reloadData()
     }
 
-    func remove(alert: AlertViewModel) {
+    func update(alert: AlertViewModel) {
+        let isUpdated = viewModels.contains(alert)
         viewModels.remove(alert)
-        tableView.reloadData()
+        viewModels.insert(alert)
+        guard let index = sortedViewModels.index(of: alert) else { return }
+        if isUpdated {
+            updateRow(at: index, with: alert)
+            return
+        }
+        insertRow(at: index, with: alert)
+    }
+
+    func remove(alert: AlertViewModel) {
+        guard let index = sortedViewModels.index(of: alert) else { return }
+        viewModels.remove(alert)
+        removeRow(at: index)
     }
 }
 

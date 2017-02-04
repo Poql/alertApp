@@ -52,7 +52,7 @@ class AlertWorkerImplementation {
         cacheHandles.removeAll()
     }
 
-    private func viewModel(from alert: Alert) -> AlertViewModel {
+    fileprivate func viewModel(from alert: Alert) -> AlertViewModel {
         return mapper.alertViewModel(from: alert)
     }
 
@@ -89,6 +89,9 @@ class AlertWorkerImplementation {
 
 extension AlertWorkerImplementation: AlertWorker {
     func fetchAlerts() {
+        cacheRepository.fetchCurrentCache { alerts in
+            self.viewContract?.process(currentAlerts: alerts.map { self.viewModel(from: $0) })
+        }
         if !isObserving {
             beginObservation()
         }
