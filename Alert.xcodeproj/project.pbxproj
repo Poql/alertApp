@@ -14,6 +14,7 @@
 		E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */; };
 		E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE11E3DF72500B6276F /* UIView + loading.swift */; };
 		E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */; };
+		E73239AB1E4F624600805421 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73239AA1E4F624600805421 /* UIColor.swift */; };
 		E7323A061E4F6E7000805421 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7323A051E4F6E7000805421 /* UIFont.swift */; };
 		E7323A1D1E4F71B400805421 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239D91E4F6D5A00805421 /* Rubik-Black.ttf */; };
 		E7323A1E1E4F71B400805421 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239DA1E4F6D5A00805421 /* Rubik-BlackItalic.ttf */; };
@@ -88,6 +89,7 @@
 		E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		E7064BE11E3DF72500B6276F /* UIView + loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + loading.swift"; sourceTree = "<group>"; };
 		E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView + RegistrableCell.swift"; sourceTree = "<group>"; };
+		E73239AA1E4F624600805421 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E73239D91E4F6D5A00805421 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Black.ttf"; path = "Font/Rubik-Black.ttf"; sourceTree = "<group>"; };
 		E73239DA1E4F6D5A00805421 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-BlackItalic.ttf"; path = "Font/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
 		E73239DB1E4F6D5A00805421 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Bold.ttf"; path = "Font/Rubik-Bold.ttf"; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 				E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */,
 				E7F1F9011E3E088400713759 /* UIStackView.swift */,
 				E7F1F9051E3E0E5700713759 /* String + Localizable.swift */,
+				E73239AA1E4F624600805421 /* UIColor.swift */,
 				E7323A051E4F6E7000805421 /* UIFont.swift */,
 			);
 			name = Extension;
@@ -603,6 +606,7 @@
 				E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */,
 				E7323A061E4F6E7000805421 /* UIFont.swift in Sources */,
 				E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */,
+				E73239AB1E4F624600805421 /* UIColor.swift in Sources */,
 				E7F1F8FE1E3E050700713759 /* AlertActionView.swift in Sources */,
 				E7C9D45B1E392E4A0025823C /* Snapshot + Firebase.swift in Sources */,
 				E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */,
