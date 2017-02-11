@@ -59,7 +59,9 @@ class AlertTableViewCell: UITableViewCell {
         faceView.configure(
             matter: viewModel.matterName,
             date: viewModel.triggerDate,
-            description: viewModel.description
+            description: viewModel.description,
+            disclaimsCount: viewModel.disclaimsCount,
+            approvalsCount: viewModel.approvalsCount
         )
     }
 
