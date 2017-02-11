@@ -14,6 +14,7 @@
 		E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */; };
 		E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE11E3DF72500B6276F /* UIView + loading.swift */; };
 		E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */; };
+		E72C78241E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C78231E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift */; };
 		E73239AB1E4F624600805421 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73239AA1E4F624600805421 /* UIColor.swift */; };
 		E7323A061E4F6E7000805421 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7323A051E4F6E7000805421 /* UIFont.swift */; };
 		E7323A1D1E4F71B400805421 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239D91E4F6D5A00805421 /* Rubik-Black.ttf */; };
@@ -90,6 +91,7 @@
 		E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		E7064BE11E3DF72500B6276F /* UIView + loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + loading.swift"; sourceTree = "<group>"; };
 		E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView + RegistrableCell.swift"; sourceTree = "<group>"; };
+		E72C78231E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertFeedbacksViewContainer.swift; sourceTree = "<group>"; };
 		E73239AA1E4F624600805421 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E73239D91E4F6D5A00805421 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Black.ttf"; path = "Font/Rubik-Black.ttf"; sourceTree = "<group>"; };
 		E73239DA1E4F6D5A00805421 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-BlackItalic.ttf"; path = "Font/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 				E7F1F8F51E3DFDE000713759 /* AlertSideView.swift */,
 				E7F1F8FD1E3E050700713759 /* AlertActionView.swift */,
 				E7C7DC531E4607AA00B7F170 /* AlertFeedbackView.swift */,
+				E72C78231E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				E7F5DA781E3525AC0058943E /* CacheRepository.swift in Sources */,
 				E7F5DA5F1E3521110058943E /* AppDelegate.swift in Sources */,
 				E7C9D4591E392E040025823C /* Snapshot.swift in Sources */,
+				E72C78241E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift in Sources */,
 				E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */,
 				E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */,
 				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
