@@ -16,7 +16,9 @@ struct PersistentAlertMapper {
             let description = persistentAlert.alertDescription,
             let creationDate = persistentAlert.creationDate,
             let triggerDate = persistentAlert.triggerDate,
-            let matterName = persistentAlert.matterName
+            let matterName = persistentAlert.matterName,
+            let approvers = persistentAlert.approvers as? [String],
+            let disclaimers = persistentAlert.disclaimers as? [String]
         else {
             return nil
         }
@@ -25,7 +27,9 @@ struct PersistentAlertMapper {
             description: description,
             matterName: matterName,
             creationDate: creationDate as Date,
-            triggerDate: triggerDate as Date
+            triggerDate: triggerDate as Date,
+            approvers: approvers,
+            disclaimers: disclaimers
         )
     }
 
@@ -41,5 +45,7 @@ struct PersistentAlertMapper {
         persistentAlert.creationDate = alert.creationDate as NSDate?
         persistentAlert.triggerDate = alert.triggerDate as NSDate?
         persistentAlert.matterName = alert.matterName
+        persistentAlert.approvers = alert.approvers as NSObject?
+        persistentAlert.disclaimers = alert.disclaimers as NSObject?
     }
 }

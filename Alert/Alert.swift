@@ -14,6 +14,8 @@ struct Alert {
     let matterName: String
     let creationDate: Date
     let triggerDate: Date
+    let approvers: [String]
+    let disclaimers: [String]
 }
 
 // MARK: - Hashable
