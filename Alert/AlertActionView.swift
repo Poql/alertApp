@@ -9,7 +9,7 @@
 import UIKit
 
 private struct Constant {
-    static let textSpacing: CGFloat = 3
+    static let textSpacing: CGFloat = 4
 }
 
 class AlertActionView: UIView {
@@ -21,11 +21,17 @@ class AlertActionView: UIView {
     }()
 
     private let decorationLabel: UILabel = {
-        return UILabel()
+        let label = UILabel()
+        label.font = UIFont.mediumSFMono(ofSize: 30)
+        label.textAlignment = .center
+        return label
     }()
 
     private let actionNameLabel: UILabel = {
-        return UILabel()
+        let label = UILabel()
+        label.font = UIFont.mediumSFMono(ofSize: 15)
+        label.textAlignment = .center
+        return label
     }()
 
     override init(frame: CGRect) {
@@ -48,6 +54,9 @@ class AlertActionView: UIView {
     // MARK: - Private
 
     private func setupView() {
+        decorationLabel.textColor = UIColor.white
+        actionNameLabel.textColor = UIColor.white
+        backgroundColor = UIColor.black
         addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
