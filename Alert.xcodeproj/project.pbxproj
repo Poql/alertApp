@@ -14,6 +14,29 @@
 		E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */; };
 		E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE11E3DF72500B6276F /* UIView + loading.swift */; };
 		E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */; };
+		E7323A061E4F6E7000805421 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7323A051E4F6E7000805421 /* UIFont.swift */; };
+		E7323A1D1E4F71B400805421 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239D91E4F6D5A00805421 /* Rubik-Black.ttf */; };
+		E7323A1E1E4F71B400805421 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239DA1E4F6D5A00805421 /* Rubik-BlackItalic.ttf */; };
+		E7323A1F1E4F71B400805421 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239DB1E4F6D5A00805421 /* Rubik-Bold.ttf */; };
+		E7323A201E4F71B400805421 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239DC1E4F6D5A00805421 /* Rubik-BoldItalic.ttf */; };
+		E7323A211E4F71B400805421 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239DD1E4F6D5A00805421 /* Rubik-Italic.ttf */; };
+		E7323A221E4F71B400805421 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239DE1E4F6D5A00805421 /* Rubik-Light.ttf */; };
+		E7323A231E4F71B400805421 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239DF1E4F6D5A00805421 /* Rubik-LightItalic.ttf */; };
+		E7323A241E4F71B400805421 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E01E4F6D5A00805421 /* Rubik-Medium.ttf */; };
+		E7323A251E4F71B400805421 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E11E4F6D5A00805421 /* Rubik-MediumItalic.ttf */; };
+		E7323A261E4F71B400805421 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E21E4F6D5A00805421 /* Rubik-Regular.ttf */; };
+		E7323A271E4F71B400805421 /* SFMono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E31E4F6D5A00805421 /* SFMono-Bold.otf */; };
+		E7323A281E4F71B400805421 /* SFMono-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E41E4F6D5A00805421 /* SFMono-BoldItalic.otf */; };
+		E7323A291E4F71B400805421 /* SFMono-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E51E4F6D5A00805421 /* SFMono-Heavy.otf */; };
+		E7323A2A1E4F71B400805421 /* SFMono-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E61E4F6D5A00805421 /* SFMono-HeavyItalic.otf */; };
+		E7323A2B1E4F71B400805421 /* SFMono-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E71E4F6D5A00805421 /* SFMono-Light.otf */; };
+		E7323A2C1E4F71B400805421 /* SFMono-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E81E4F6D5A00805421 /* SFMono-LightItalic.otf */; };
+		E7323A2D1E4F71B400805421 /* SFMono-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239E91E4F6D5A00805421 /* SFMono-Medium.otf */; };
+		E7323A2E1E4F71B400805421 /* SFMono-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239EA1E4F6D5A00805421 /* SFMono-MediumItalic.otf */; };
+		E7323A2F1E4F71B400805421 /* SFMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239EB1E4F6D5A00805421 /* SFMono-Regular.otf */; };
+		E7323A301E4F71B400805421 /* SFMono-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239EC1E4F6D5A00805421 /* SFMono-RegularItalic.otf */; };
+		E7323A311E4F71B400805421 /* SFMono-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239ED1E4F6D5A00805421 /* SFMono-Semibold.otf */; };
+		E7323A321E4F71B400805421 /* SFMono-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239EE1E4F6D5A00805421 /* SFMono-SemiboldItalic.otf */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
@@ -65,6 +88,29 @@
 		E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		E7064BE11E3DF72500B6276F /* UIView + loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + loading.swift"; sourceTree = "<group>"; };
 		E7064BE31E3DF84800B6276F /* CollectionView + RegistrableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView + RegistrableCell.swift"; sourceTree = "<group>"; };
+		E73239D91E4F6D5A00805421 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Black.ttf"; path = "Font/Rubik-Black.ttf"; sourceTree = "<group>"; };
+		E73239DA1E4F6D5A00805421 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-BlackItalic.ttf"; path = "Font/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E73239DB1E4F6D5A00805421 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Bold.ttf"; path = "Font/Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		E73239DC1E4F6D5A00805421 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-BoldItalic.ttf"; path = "Font/Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E73239DD1E4F6D5A00805421 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Italic.ttf"; path = "Font/Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		E73239DE1E4F6D5A00805421 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Light.ttf"; path = "Font/Rubik-Light.ttf"; sourceTree = "<group>"; };
+		E73239DF1E4F6D5A00805421 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-LightItalic.ttf"; path = "Font/Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		E73239E01E4F6D5A00805421 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Medium.ttf"; path = "Font/Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		E73239E11E4F6D5A00805421 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-MediumItalic.ttf"; path = "Font/Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E73239E21E4F6D5A00805421 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Regular.ttf"; path = "Font/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		E73239E31E4F6D5A00805421 /* SFMono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-Bold.otf"; path = "Font/SFMono-Bold.otf"; sourceTree = "<group>"; };
+		E73239E41E4F6D5A00805421 /* SFMono-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-BoldItalic.otf"; path = "Font/SFMono-BoldItalic.otf"; sourceTree = "<group>"; };
+		E73239E51E4F6D5A00805421 /* SFMono-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-Heavy.otf"; path = "Font/SFMono-Heavy.otf"; sourceTree = "<group>"; };
+		E73239E61E4F6D5A00805421 /* SFMono-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-HeavyItalic.otf"; path = "Font/SFMono-HeavyItalic.otf"; sourceTree = "<group>"; };
+		E73239E71E4F6D5A00805421 /* SFMono-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-Light.otf"; path = "Font/SFMono-Light.otf"; sourceTree = "<group>"; };
+		E73239E81E4F6D5A00805421 /* SFMono-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-LightItalic.otf"; path = "Font/SFMono-LightItalic.otf"; sourceTree = "<group>"; };
+		E73239E91E4F6D5A00805421 /* SFMono-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-Medium.otf"; path = "Font/SFMono-Medium.otf"; sourceTree = "<group>"; };
+		E73239EA1E4F6D5A00805421 /* SFMono-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-MediumItalic.otf"; path = "Font/SFMono-MediumItalic.otf"; sourceTree = "<group>"; };
+		E73239EB1E4F6D5A00805421 /* SFMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-Regular.otf"; path = "Font/SFMono-Regular.otf"; sourceTree = "<group>"; };
+		E73239EC1E4F6D5A00805421 /* SFMono-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-RegularItalic.otf"; path = "Font/SFMono-RegularItalic.otf"; sourceTree = "<group>"; };
+		E73239ED1E4F6D5A00805421 /* SFMono-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-Semibold.otf"; path = "Font/SFMono-Semibold.otf"; sourceTree = "<group>"; };
+		E73239EE1E4F6D5A00805421 /* SFMono-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-SemiboldItalic.otf"; path = "Font/SFMono-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		E7323A051E4F6E7000805421 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
@@ -151,6 +197,35 @@
 				E7064BDD1E3DF1B800B6276F /* AlertViewModelMapper.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		E73239D81E4F6D2100805421 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E73239D91E4F6D5A00805421 /* Rubik-Black.ttf */,
+				E73239DA1E4F6D5A00805421 /* Rubik-BlackItalic.ttf */,
+				E73239DB1E4F6D5A00805421 /* Rubik-Bold.ttf */,
+				E73239DC1E4F6D5A00805421 /* Rubik-BoldItalic.ttf */,
+				E73239DD1E4F6D5A00805421 /* Rubik-Italic.ttf */,
+				E73239DE1E4F6D5A00805421 /* Rubik-Light.ttf */,
+				E73239DF1E4F6D5A00805421 /* Rubik-LightItalic.ttf */,
+				E73239E01E4F6D5A00805421 /* Rubik-Medium.ttf */,
+				E73239E11E4F6D5A00805421 /* Rubik-MediumItalic.ttf */,
+				E73239E21E4F6D5A00805421 /* Rubik-Regular.ttf */,
+				E73239E31E4F6D5A00805421 /* SFMono-Bold.otf */,
+				E73239E41E4F6D5A00805421 /* SFMono-BoldItalic.otf */,
+				E73239E51E4F6D5A00805421 /* SFMono-Heavy.otf */,
+				E73239E61E4F6D5A00805421 /* SFMono-HeavyItalic.otf */,
+				E73239E71E4F6D5A00805421 /* SFMono-Light.otf */,
+				E73239E81E4F6D5A00805421 /* SFMono-LightItalic.otf */,
+				E73239E91E4F6D5A00805421 /* SFMono-Medium.otf */,
+				E73239EA1E4F6D5A00805421 /* SFMono-MediumItalic.otf */,
+				E73239EB1E4F6D5A00805421 /* SFMono-Regular.otf */,
+				E73239EC1E4F6D5A00805421 /* SFMono-RegularItalic.otf */,
+				E73239ED1E4F6D5A00805421 /* SFMono-Semibold.otf */,
+				E73239EE1E4F6D5A00805421 /* SFMono-SemiboldItalic.otf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		E7C9D44F1E3929E70025823C /* Alert */ = {
@@ -323,6 +398,7 @@
 				E7F5DA651E3521110058943E /* Assets.xcassets */,
 				E7F5DA791E3528450058943E /* Model.xcdatamodeld */,
 				E7F1F9031E3E0E3900713759 /* Localizable.strings */,
+				E73239D81E4F6D2100805421 /* Font */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -345,6 +421,7 @@
 				E7F1F8FF1E3E052400713759 /* UIView + Constraints.swift */,
 				E7F1F9011E3E088400713759 /* UIStackView.swift */,
 				E7F1F9051E3E0E5700713759 /* String + Localizable.swift */,
+				E7323A051E4F6E7000805421 /* UIFont.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -412,6 +489,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7323A1D1E4F71B400805421 /* Rubik-Black.ttf in Resources */,
+				E7323A1E1E4F71B400805421 /* Rubik-BlackItalic.ttf in Resources */,
+				E7323A1F1E4F71B400805421 /* Rubik-Bold.ttf in Resources */,
+				E7323A201E4F71B400805421 /* Rubik-BoldItalic.ttf in Resources */,
+				E7323A211E4F71B400805421 /* Rubik-Italic.ttf in Resources */,
+				E7323A221E4F71B400805421 /* Rubik-Light.ttf in Resources */,
+				E7323A231E4F71B400805421 /* Rubik-LightItalic.ttf in Resources */,
+				E7323A241E4F71B400805421 /* Rubik-Medium.ttf in Resources */,
+				E7323A251E4F71B400805421 /* Rubik-MediumItalic.ttf in Resources */,
+				E7323A261E4F71B400805421 /* Rubik-Regular.ttf in Resources */,
+				E7323A271E4F71B400805421 /* SFMono-Bold.otf in Resources */,
+				E7323A281E4F71B400805421 /* SFMono-BoldItalic.otf in Resources */,
+				E7323A291E4F71B400805421 /* SFMono-Heavy.otf in Resources */,
+				E7323A2A1E4F71B400805421 /* SFMono-HeavyItalic.otf in Resources */,
+				E7323A2B1E4F71B400805421 /* SFMono-Light.otf in Resources */,
+				E7323A2C1E4F71B400805421 /* SFMono-LightItalic.otf in Resources */,
+				E7323A2D1E4F71B400805421 /* SFMono-Medium.otf in Resources */,
+				E7323A2E1E4F71B400805421 /* SFMono-MediumItalic.otf in Resources */,
+				E7323A2F1E4F71B400805421 /* SFMono-Regular.otf in Resources */,
+				E7323A301E4F71B400805421 /* SFMono-RegularItalic.otf in Resources */,
+				E7323A311E4F71B400805421 /* SFMono-Semibold.otf in Resources */,
+				E7323A321E4F71B400805421 /* SFMono-SemiboldItalic.otf in Resources */,
 				E7F5DA691E3521110058943E /* LaunchScreen.storyboard in Resources */,
 				E7F1F8FA1E3E012700713759 /* AlertFaceView.xib in Resources */,
 				E70399731E3CA1B60089AF2C /* GoogleService-Info.plist in Resources */,
@@ -502,6 +601,7 @@
 				E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */,
 				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
 				E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */,
+				E7323A061E4F6E7000805421 /* UIFont.swift in Sources */,
 				E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */,
 				E7F1F8FE1E3E050700713759 /* AlertActionView.swift in Sources */,
 				E7C9D45B1E392E4A0025823C /* Snapshot + Firebase.swift in Sources */,
