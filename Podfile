@@ -7,4 +7,5 @@ target 'Alert' do
 
   pod 'Firebase/Core', '~> 3.10'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 end
