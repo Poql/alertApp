@@ -17,17 +17,19 @@ class AlertTableViewCell: UITableViewCell {
 
     fileprivate let approveActionView: AlertActionView = {
         let action = AlertActionView(frame: CGRect.zero)
-        let decoration = "approve_action_decoration_text".localized
-        let name = "approve_action_name_text".localized
+        let decoration = "approval_feedback_decoration".localized
+        let name = "approval_feedback_title".localized
         action.configure(decorationText: decoration, actionName: name)
+        action.backgroundColor = UIColor.black
         return action
     }()
 
     fileprivate let complainActionView: AlertActionView = {
         let action = AlertActionView(frame: CGRect.zero)
-        let decoration = "complain_action_decoration_text".localized
-        let name = "complain_action_name_text".localized
+        let decoration = "disclaim_feedback_decoration".localized
+        let name = "disclaim_feedback_title".localized
         action.configure(decorationText: decoration, actionName: name)
+        action.backgroundColor = UIColor.gz_darkRed
         return action
     }()
 
@@ -59,7 +61,9 @@ class AlertTableViewCell: UITableViewCell {
         faceView.configure(
             matter: viewModel.matterName,
             date: viewModel.triggerDate,
-            description: viewModel.description
+            description: viewModel.description,
+            disclaimsCount: viewModel.disclaimsCount,
+            approvalsCount: viewModel.approvalsCount
         )
     }
 
@@ -71,7 +75,7 @@ class AlertTableViewCell: UITableViewCell {
 
     private func setupView() {
         selectionStyle = .none
-        contentView.backgroundColor = UIColor.black
+        contentView.backgroundColor = UIColor.gz_gray
         contentView.gz_pinSubview(facetView, insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
     }
 }

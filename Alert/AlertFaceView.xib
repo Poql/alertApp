@@ -15,33 +15,37 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mvm-mY-fme">
-                    <rect key="frame" x="8" y="8" width="359" height="112"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mvm-mY-fme">
+                    <rect key="frame" x="10" y="8" width="355" height="112"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-mS-9qP">
-                            <rect key="frame" x="0.0" y="0.0" width="359" height="84.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="102"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5km-Ey-epd">
-                                    <rect key="frame" x="0.0" y="0.0" width="359" height="84.5"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5km-Ey-epd">
+                                    <rect key="frame" x="0.0" y="0.0" width="39" height="102"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-hZ-zrx">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="39" height="79.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7j-KJ-0Me">
-                                            <rect key="frame" x="0.0" y="64" width="359" height="20.5"/>
+                                            <rect key="frame" x="0.0" y="81.5" width="39" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhr-GK-1Nc" customClass="AlertFeedbacksViewContainer" customModule="Alert" customModuleProvider="target">
+                                    <rect key="frame" x="39" y="0.0" width="316" height="102"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
                             </subviews>
                         </stackView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3n-94-OVk">
-                            <rect key="frame" x="0.0" y="91.5" width="359" height="20.5"/>
+                            <rect key="frame" x="0.0" y="104" width="355" height="8"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
@@ -53,7 +57,7 @@
             <constraints>
                 <constraint firstItem="mvm-mY-fme" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8RD-hi-021"/>
                 <constraint firstItem="mvm-mY-fme" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BW1-lW-f6c"/>
-                <constraint firstItem="mvm-mY-fme" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="HiI-GM-l8p"/>
+                <constraint firstItem="mvm-mY-fme" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="HiI-GM-l8p"/>
                 <constraint firstItem="mvm-mY-fme" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="vOa-Vp-Ieo"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -61,6 +65,7 @@
             <connections>
                 <outlet property="dateLabel" destination="T7j-KJ-0Me" id="4NG-Ko-0gN"/>
                 <outlet property="descriptionLabel" destination="H3n-94-OVk" id="caZ-fT-vx7"/>
+                <outlet property="feebacksViewContainer" destination="dhr-GK-1Nc" id="n9t-xa-vTX"/>
                 <outlet property="matterLabel" destination="fQf-hZ-zrx" id="44P-rY-jFh"/>
             </connections>
             <point key="canvasLocation" x="19.5" y="4"/>

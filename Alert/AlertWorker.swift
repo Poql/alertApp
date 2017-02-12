@@ -10,9 +10,11 @@ import Foundation
 
 protocol AlertWorker {
     func fetchAlerts()
+    func insert(alert: MutableAlert)
 }
 
 protocol AlertViewContract: class {
+    func process(currentAlerts: [AlertViewModel])
     func update(alert: AlertViewModel)
     func remove(alert: AlertViewModel)
 }

@@ -22,7 +22,9 @@ struct AlertViewModelMapper {
             description: alert.description,
             matterName: alert.matterName,
             creationDate: dateFormatter.string(from: alert.creationDate),
-            triggerDate: dateFormatter.string(from: alert.triggerDate)
+            triggerDate: dateFormatter.string(from: alert.triggerDate),
+            disclaimsCount: 10,
+            approvalsCount: 1
         )
     }
 }

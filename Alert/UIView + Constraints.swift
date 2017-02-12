@@ -9,12 +9,20 @@
 import UIKit
 
 extension UIView {
-    func gz_pinSubview(_ subview: UIView, insets: UIEdgeInsets = UIEdgeInsets.zero) {
+    func gz_pinSubview(_ subview: UIView, insets: UIEdgeInsets = UIEdgeInsets.zero, edges: UIRectEdge = .all) {
         addSubview(subview)
         subview.translatesAutoresizingMaskIntoConstraints = false
-        subview.topAnchor.constraint(equalTo: topAnchor, constant: insets.top).isActive = true
-        subview.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom).isActive = true
-        subview.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left).isActive = true
-        subview.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right).isActive = true
+        if edges.contains(.top) {
+            subview.topAnchor.constraint(equalTo: topAnchor, constant: insets.top).isActive = true
+        }
+        if edges.contains(.bottom) {
+            subview.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom).isActive = true
+        }
+        if edges.contains(.left) {
+            subview.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left).isActive = true
+        }
+        if edges.contains(.right) {
+            subview.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right).isActive = true
+        }
     }
 }
