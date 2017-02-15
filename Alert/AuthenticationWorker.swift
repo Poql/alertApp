@@ -9,7 +9,7 @@
 import Foundation
 
 protocol AuthenticationWorker {
-    func prepareToHandleGoogleSignIn()
+    func preparesGoogleSignIn()
 }
 
 protocol AuthenticationViewContract: class {

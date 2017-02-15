@@ -11,6 +11,7 @@ import GoogleSignIn
 
 
 class AuthenticationWorkerImplementation: NSObject {
+
     fileprivate let repository: AuthenticationRepository
 
     weak var viewContract: AuthenticationViewContract?
@@ -37,7 +38,7 @@ class AuthenticationWorkerImplementation: NSObject {
 // MARK: - AuthenticationWorker
 
 extension AuthenticationWorkerImplementation: AuthenticationWorker {
-    func prepareToHandleGoogleSignIn() {
+    func preparesGoogleSignIn() {
         GIDSignIn.sharedInstance().delegate = self
     }
 }
