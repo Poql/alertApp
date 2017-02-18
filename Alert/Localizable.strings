@@ -6,8 +6,13 @@
   Copyright © 2017 Gaétan Zanella. All rights reserved.
 */
 
-
 "disclaim_feedback_title" = "Dénoncer";
 "disclaim_feedback_decoration" = "👎🏻";
 "approval_feedback_title" = "Approuver";
 "approval_feedback_decoration" = "🔥";
+"ok_alert_action" = "Ok";
+
+// Errors
+
+"error_generic_title" = "Erreur";
+"error_generic_message" = "Une erreur est survenue";
