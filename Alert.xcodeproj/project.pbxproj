@@ -41,6 +41,8 @@
 		E7323A321E4F71B400805421 /* SFMono-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239EE1E4F6D5A00805421 /* SFMono-SemiboldItalic.otf */; };
 		E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51B1E50B6E500E866FC /* ErrorMapper.swift */; };
 		E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51B1E50B6E500E866FC /* ErrorMapper.swift */; };
+		E772E5181E50B4FB00E866FC /* AuthenticationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E5171E50B4FB00E866FC /* AuthenticationWorker.swift */; };
+		E772E51A1E50B5F400E866FC /* AuthenticationWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E5191E50B5F400E866FC /* AuthenticationWorkerImplementation.swift */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
@@ -126,6 +128,8 @@
 		E73239ED1E4F6D5A00805421 /* SFMono-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-Semibold.otf"; path = "Font/SFMono-Semibold.otf"; sourceTree = "<group>"; };
 		E73239EE1E4F6D5A00805421 /* SFMono-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFMono-SemiboldItalic.otf"; path = "Font/SFMono-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		E7323A051E4F6E7000805421 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		E772E5171E50B4FB00E866FC /* AuthenticationWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenti ationWorker.swift; sourceTree = "<group>"; };
+		E772E5191E50B5F400E866FC /* AuthenticationWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationWorkerImplementation.swift; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
@@ -250,6 +254,15 @@
 				E73239EE1E4F6D5A00805421 /* SFMono-SemiboldItalic.otf */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		E772E5161E50B4DF00E866FC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E772E5171E50B4FB00E866FC /* AuthenticationWorker.swift */,
+				E772E5191E50B5F400E866FC /* AuthenticationWorkerImplementation.swift */,
+			);
+			name = Authentication;
 			sourceTree = "<group>";
 		};
 		E7C9D44F1E3929E70025823C /* Alert */ = {
@@ -417,6 +430,7 @@
 			children = (
 				E7C9D4631E3934F90025823C /* WorkerFactory.swift */,
 				E70399741E3CAAFB0089AF2C /* Alert */,
+				E772E5161E50B4DF00E866FC /* Authentication */,
 			);
 			name = Worker;
 			sourceTree = "<group>";
@@ -656,6 +670,7 @@
 				E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */,
 				E7F754D21E509B5800FF8D14 /* User.swift in Sources */,
 				E7F754DD1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift in Sources */,
+				E772E5181E50B4FB00E866FC /* AuthenticationWorker.swift in Sources */,
 				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
 				E7F1F9061E3E0E5700713759 /* String + Localizable.swift in Sources */,
 				E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */,
@@ -678,6 +693,7 @@
 				E7F754D01E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift in Sources */,
 				E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */,
 				E7E451551E36938800417A95 /* Alert.swift in Sources */,
+				E772E51A1E50B5F400E866FC /* AuthenticationWorkerImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
