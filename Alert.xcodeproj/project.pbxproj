@@ -79,6 +79,8 @@
 		E7F5DA781E3525AC0058943E /* CacheRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA771E3525AC0058943E /* CacheRepository.swift */; };
 		E7F5DA7B1E3528450058943E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA791E3528450058943E /* Model.xcdatamodeld */; };
 		E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */; };
+		E7F754CD1E507B0500FF8D14 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754CC1E507B0500FF8D14 /* AuthenticationRepository.swift */; };
+		E7F754D01E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754CF1E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift */; };
 		E7F754D21E509B5800FF8D14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754D11E509B5800FF8D14 /* User.swift */; };
 		E7F754D51E509CE200FF8D14 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754D41E509CE200FF8D14 /* Error.swift */; };
 		E7F754D71E509CEC00FF8D14 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754D61E509CEC00FF8D14 /* Result.swift */; };
@@ -164,6 +166,8 @@
 		E7F5DA771E3525AC0058943E /* CacheRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepository.swift; sourceTree = "<group>"; };
 		E7F5DA7A1E3528450058943E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
+		E7F754CC1E507B0500FF8D14 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		E7F754CF1E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7F754D11E509B5800FF8D14 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E7F754D41E509CE200FF8D14 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		E7F754D61E509CEC00FF8D14 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -318,6 +322,7 @@
 			children = (
 				E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */,
 				E7C9D44F1E3929E70025823C /* Alert */,
+				E7F754CE1E509ABD00FF8D14 /* Authentication */,
 				E7C9D4531E392B770025823C /* Cache */,
 			);
 			name = Repository;
@@ -452,6 +457,15 @@
 				E7323A051E4F6E7000805421 /* UIFont.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		E7F754CE1E509ABD00FF8D14 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E7F754CC1E507B0500FF8D14 /* AuthenticationRepository.swift */,
+				E7F754CF1E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift */,
+			);
+			name = Authentication;
 			sourceTree = "<group>";
 		};
 		E7F754D31E509CCA00FF8D14 /* Error */ = {
@@ -651,6 +665,7 @@
 				E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */,
 				E73239AB1E4F624600805421 /* UIColor.swift in Sources */,
 				E7F1F8FE1E3E050700713759 /* AlertActionView.swift in Sources */,
+				E7F754CD1E507B0500FF8D14 /* AuthenticationRepository.swift in Sources */,
 				E7C9D45B1E392E4A0025823C /* Snapshot + Firebase.swift in Sources */,
 				E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */,
 				E7F754D71E509CEC00FF8D14 /* Result.swift in Sources */,
@@ -660,6 +675,7 @@
 				E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */,
 				E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */,
 				E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */,
+				E7F754D01E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift in Sources */,
 				E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */,
 				E7E451551E36938800417A95 /* Alert.swift in Sources */,
 			);
