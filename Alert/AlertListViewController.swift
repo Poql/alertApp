@@ -88,6 +88,10 @@ extension AlertListViewController: AlertViewContract {
         viewModels.remove(alert)
         removeRow(at: index)
     }
+
+    func handleError(_ error: ApplicationError) {
+        showAlertView(title: error.title, message: error.message)
+    }
 }
 
 // MARK: - UITableViewDataSource

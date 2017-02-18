@@ -17,4 +17,5 @@ protocol AlertViewContract: class {
     func process(currentAlerts: [AlertViewModel])
     func update(alert: AlertViewModel)
     func remove(alert: AlertViewModel)
+    func handleError(_ error: ApplicationError)
 }
