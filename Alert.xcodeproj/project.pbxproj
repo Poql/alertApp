@@ -44,6 +44,7 @@
 		E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51B1E50B6E500E866FC /* ErrorMapper.swift */; };
 		E772E51E1E50B8BD00E866FC /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */; };
 		E7786BD71E58881000D4D78E /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BD61E58881000D4D78E /* Form.swift */; };
+		E7786BD91E5888DA00D4D78E /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BD81E5888DA00D4D78E /* FormViewModel.swift */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
@@ -136,6 +137,7 @@
 		E772E51B1E50B6E500E866FC /* ErrorMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMapper.swift; sourceTree = "<group>"; };
 		E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		E7786BD61E58881000D4D78E /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		E7786BD81E5888DA00D4D78E /* FormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			children = (
 				E7064BDB1E3DF13100B6276F /* AlertViewModel.swift */,
 				E7064BDD1E3DF1B800B6276F /* AlertViewModelMapper.swift */,
+				E7786BD81E5888DA00D4D78E /* FormViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -655,6 +658,7 @@
 			files = (
 				E7786BD71E58881000D4D78E /* Form.swift in Sources */,
 				E7F1F9091E3E48FA00713759 /* AlertFaceView.swift in Sources */,
+				E7786BD91E5888DA00D4D78E /* FormViewModel.swift in Sources */,
 				E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */,
 				E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */,
 				E7F1F8F61E3DFDE000713759 /* AlertSideView.swift in Sources */,
