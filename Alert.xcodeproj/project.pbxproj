@@ -43,6 +43,7 @@
 		E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51B1E50B6E500E866FC /* ErrorMapper.swift */; };
 		E772E5181E50B4FB00E866FC /* AuthenticationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E5171E50B4FB00E866FC /* AuthenticationWorker.swift */; };
 		E772E51A1E50B5F400E866FC /* AuthenticationWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E5191E50B5F400E866FC /* AuthenticationWorkerImplementation.swift */; };
+		E772E51E1E50B8BD00E866FC /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
@@ -130,6 +131,7 @@
 		E7323A051E4F6E7000805421 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		E772E5171E50B4FB00E866FC /* AuthenticationWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenti ationWorker.swift; sourceTree = "<group>"; };
 		E772E5191E50B5F400E866FC /* AuthenticationWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationWorkerImplementation.swift; sourceTree = "<group>"; };
+		E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			children = (
 				E7C9D4651E3936050025823C /* Base */,
 				E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */,
+				E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */,
 				E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */,
 				E7F1F8F61E3DFDE000713759 /* AlertSideView.swift in Sources */,
+				E772E51E1E50B8BD00E866FC /* AuthenticationViewController.swift in Sources */,
 				E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */,
 				E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */,
 				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
