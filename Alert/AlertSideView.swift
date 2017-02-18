@@ -47,7 +47,8 @@ class AlertSideView: UIView {
 
     // MARK: - Action
 
-    @objc private func tapRecognizerAction(_ sender: AlertActionView) {
-        delegate?.alertSideView(self, didTrigger: sender)
+    @objc private func tapRecognizerAction(_ sender: UITapGestureRecognizer) {
+        guard let action = sender.view as? AlertActionView else { return }
+        delegate?.alertSideView(self, didTrigger: action)
     }
 }

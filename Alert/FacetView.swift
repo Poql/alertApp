@@ -156,6 +156,10 @@ class FacetView: UIView {
         return facetTransformView.state
     }
 
+    var hasRotated: Bool {
+        return state == .side
+    }
+
     // MARK: - UIView
 
     init(faceView: UIView, sideView: UIView) {

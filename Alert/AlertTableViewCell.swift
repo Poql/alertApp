@@ -57,7 +57,7 @@ class AlertTableViewCell: UITableViewCell {
 
     // MARK: - Public
 
-    func configure(with viewModel: AlertViewModel) {
+    func configure(with viewModel: AlertViewModel, animated: Bool = false) {
         faceView.configure(
             matter: viewModel.matterName,
             date: viewModel.triggerDate,
@@ -65,6 +65,9 @@ class AlertTableViewCell: UITableViewCell {
             disclaimsCount: viewModel.disclaimsCount,
             approvalsCount: viewModel.approvalsCount
         )
+        if facetView.hasRotated {
+            facetView.switchFace(animated: animated)
+        }
     }
 
     func rotate() {
@@ -74,6 +77,7 @@ class AlertTableViewCell: UITableViewCell {
     // MARK: - Private
 
     private func setupView() {
+        sideView.delegate = self
         selectionStyle = .none
         contentView.backgroundColor = UIColor.gz_gray
         contentView.gz_pinSubview(facetView, insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
@@ -87,6 +91,5 @@ extension AlertTableViewCell: AlertSideViewDelegate {
         } else if action == complainActionView {
             delegate?.alertTableViewCellDidSelectComplainAction(self)
         }
-        
     }
 }

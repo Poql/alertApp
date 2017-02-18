@@ -39,5 +39,19 @@ extension AlertRepositoryImplementation: AlertRepository {
         guard handle >= 0 else { return }
         alertReference.removeObserver(withHandle: UInt(handle))
     }
+
+    func deprecateAlert(with alertId: String, user: User){
+        alertReference.child(alertId).runTransactionBlock { snapshot in
+            let newSnaphot = self.alertMapper.snapshot(forDeprecatedAlert: snapshot, by: user)
+            return FIRTransactionResult.success(withValue: newSnaphot)
+        }
+    }
+
+    func approveAlert(with alertId: String, user: User) {
+        alertReference.child(alertId).runTransactionBlock { snapshot in
+            let newSnaphot = self.alertMapper.snapshot(forApprovedAlert: snapshot, by: user)
+            return FIRTransactionResult.success(withValue: newSnaphot)
+        }
+    }
 }
 

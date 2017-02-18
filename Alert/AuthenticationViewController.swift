@@ -27,6 +27,11 @@ class AuthenticationViewController: BaseViewController {
         GIDSignIn.sharedInstance().uiDelegate = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        worker.preparesGoogleSignIn()
+    }
+
     // MARK: - Private
 
     private func setupButton() {
@@ -41,7 +46,7 @@ class AuthenticationViewController: BaseViewController {
 
 extension AuthenticationViewController: AuthenticationViewContract {
     func authenticationDidSucceed() {
-        showAlertView(title: "SUCCESS 🎀", message: "Log In")
+        signInButton.isHidden = true
     }
 
     func authenticationDidFail(with error: ApplicationError) {

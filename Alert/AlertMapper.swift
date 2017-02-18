@@ -49,10 +49,18 @@ struct AlertMapper {
         if let matterName = alert.matterName {
             dictionary["matter_name"] = matterName
         }
-        return MutableSnapshot(
+        return LocalSnapshot(
             id: id,
             dictionary: dictionary
         )
+    }
+
+    func snapshot<T: MutableSnapshot>(forDeprecatedAlert snapshot: T, by user: User) -> T {
+        return insertUser(user, atKey: "disclaimers", in: snapshot)
+    }
+
+    func snapshot<T: MutableSnapshot>(forApprovedAlert snapshot: T, by user: User) -> T {
+        return insertUser(user, atKey: "approvers", in: snapshot)
     }
 
     // MARK: - Private
@@ -64,6 +72,20 @@ struct AlertMapper {
         case .server:
             return serverValue.currentTime
         }
+    }
+
+    func insertUser<T: MutableSnapshot>(_ user: User, atKey key: String, in snapshot: T) -> T {
+        var snapshot = snapshot
+        var disclaimers = Set((snapshot.dictionary[key] as? [String]) ?? [])
+        if disclaimers.contains(user.id) {
+            disclaimers.remove(user.id)
+        } else {
+            disclaimers.insert(user.id)
+        }
+        var dictionary = snapshot.dictionary
+        dictionary[key] = Array(disclaimers)
+        snapshot.dictionary = dictionary
+        return snapshot
     }
 }
 
