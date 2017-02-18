@@ -39,6 +39,8 @@
 		E7323A301E4F71B400805421 /* SFMono-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239EC1E4F6D5A00805421 /* SFMono-RegularItalic.otf */; };
 		E7323A311E4F71B400805421 /* SFMono-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239ED1E4F6D5A00805421 /* SFMono-Semibold.otf */; };
 		E7323A321E4F71B400805421 /* SFMono-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E73239EE1E4F6D5A00805421 /* SFMono-SemiboldItalic.otf */; };
+		E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51B1E50B6E500E866FC /* ErrorMapper.swift */; };
+		E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51B1E50B6E500E866FC /* ErrorMapper.swift */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
@@ -457,6 +459,7 @@
 			children = (
 				E7F754D61E509CEC00FF8D14 /* Result.swift */,
 				E7F754D41E509CE200FF8D14 /* Error.swift */,
+				E772E51B1E50B6E500E866FC /* ErrorMapper.swift */,
 			);
 			name = Error;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */,
 				E7F1F8F61E3DFDE000713759 /* AlertSideView.swift in Sources */,
 				E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */,
+				E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */,
 				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
 				E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */,
 				E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */,
