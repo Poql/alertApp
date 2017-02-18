@@ -10,8 +10,6 @@ import UIKit
 
 private struct Constant {
     static let feedbacksSpacing: CGFloat = 8
-    static let feedbackHeight: CGFloat = 24
-    static let feedbackWidth: CGFloat = 46
 }
 
 class AlertFeedbacksViewContainer: UIView {
@@ -55,14 +53,12 @@ class AlertFeedbacksViewContainer: UIView {
         approvalFeedbackView.configure(count: approvalsCount)
         disclaimFeedbackView.configure(count: disclaimsCount)
         approvalFeedbackView.isHidden = approvalsCount == 0
-        approvalFeedbackView.isHidden = disclaimsCount == 0
+        disclaimFeedbackView.isHidden = disclaimsCount == 0
     }
 
     // MARK: - private
 
     private func setupView() {
-        setupFeedbackView(view: disclaimFeedbackView)
-        setupFeedbackView(view: approvalFeedbackView)
         addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
@@ -73,11 +69,5 @@ class AlertFeedbacksViewContainer: UIView {
         stackView.addArrangedSubview(disclaimFeedbackView)
         approvalFeedbackView.configure(count: 0)
         disclaimFeedbackView.configure(count: 0)
-    }
-
-    private func setupFeedbackView(view: UIView) {
-        let width = Constant.feedbackWidth
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.widthAnchor.constraint(equalToConstant: width).isActive = true
     }
 }

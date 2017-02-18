@@ -12,6 +12,8 @@ private struct Constant {
     static let labelsSpacing: CGFloat = 0
     static let cornerRadius: CGFloat = 4
     static let stackViewInsets: UIEdgeInsets = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4)
+    static let height: CGFloat = 24
+    static let width: CGFloat = 46
 }
 
 class AlertFeedbackView: UIView {
@@ -75,6 +77,11 @@ class AlertFeedbackView: UIView {
         setupView()
     }
 
+    override var intrinsicContentSize: CGSize {
+        let size = super.intrinsicContentSize
+        return CGSize(width: Constant.width, height: size.height)
+    }
+
     // MARK: - Public
 
     func configure(count: Int) {
@@ -85,8 +92,22 @@ class AlertFeedbackView: UIView {
 
     private func setupView() {
         layer.cornerRadius = Constant.cornerRadius
-        gz_pinSubview(stackView, insets: Constant.stackViewInsets)
+        pinSubview(stackView, insets: Constant.stackViewInsets)
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(countLabel)
+    }
+
+    private func pinSubview(_ subview: UIView, insets: UIEdgeInsets) {
+        addSubview(subview)
+        subview.translatesAutoresizingMaskIntoConstraints = false
+        subview.topAnchor.constraint(equalTo: topAnchor, constant: insets.top).isActive = true
+        subview.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom).isActive = true
+        subview.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right).isActive = true
+        let leadingConstraint = subview.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left)
+        leadingConstraint.priority = UILayoutPriorityDefaultHigh
+        leadingConstraint.isActive = true
+        let topConstraint = subview.topAnchor.constraint(equalTo: topAnchor, constant: insets.top)
+        topConstraint.priority = UILayoutPriorityDefaultHigh
+        topConstraint.isActive = true
     }
 }
