@@ -79,6 +79,7 @@
 		E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */; };
 		E7F754D21E509B5800FF8D14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754D11E509B5800FF8D14 /* User.swift */; };
 		E7F754D51E509CE200FF8D14 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754D41E509CE200FF8D14 /* Error.swift */; };
+		E7F754D91E50AE7E00FF8D14 /* UserMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754D81E50AE7E00FF8D14 /* UserMapper.swift */; };
 		E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */; };
 		E7F754DD1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */; };
 		EC9CC4103248AD0E3C1A9949 /* Pods_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A749492F218098CAB844A21 /* Pods_Alert.framework */; };
@@ -162,6 +163,7 @@
 		E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 		E7F754D11E509B5800FF8D14 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E7F754D41E509CE200FF8D14 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		E7F754D81E50AE7E00FF8D14 /* UserMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapper.swift; sourceTree = "<group>"; };
 		E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSnapshot.swift; sourceTree = "<group>"; };
 		E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserSnapshot + Firebase.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +267,7 @@
 			children = (
 				E7C9D4551E392BA70025823C /* AlertMapper.swift */,
 				E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */,
+				E7F754D81E50AE7E00FF8D14 /* UserMapper.swift */,
 			);
 			name = Mapper;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				E7C7DC4C1E42673900B7F170 /* MutableAlert.swift in Sources */,
 				E7F754D51E509CE200FF8D14 /* Error.swift in Sources */,
 				E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */,
+				E7F754D91E50AE7E00FF8D14 /* UserMapper.swift in Sources */,
 				E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */,
 				E7064BDC1E3DF13100B6276F /* AlertViewModel.swift in Sources */,
 				E7E4514E1E368F0C00417A95 /* CoreDataStack.swift in Sources */,
