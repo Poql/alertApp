@@ -10,9 +10,11 @@ import Foundation
 
 protocol WorkerFactory {
     func newAlertWorker(with viewContract: AlertViewContract) -> AlertWorker
+    func newAuthenticationWorker(with viewContract: AuthenticationViewContract) -> AuthenticationWorker
 }
 
 class WorkerFactoryImplementation {
+    let authenticationRepository = AuthenticationRepositoryImplementation()
     let repository = AlertRepositoryImplementation()
     let cache = CacheRepositoryImplementation()
 }
@@ -22,6 +24,12 @@ class WorkerFactoryImplementation {
 extension WorkerFactoryImplementation: WorkerFactory {
     func newAlertWorker(with viewContract: AlertViewContract) -> AlertWorker {
         let worker = AlertWorkerImplementation(repository: repository, cache: cache)
+        worker.viewContract = viewContract
+        return worker
+    }
+
+    func newAuthenticationWorker(with viewContract: AuthenticationViewContract) -> AuthenticationWorker {
+        let worker = AuthenticationWorkerImplementation(repository: authenticationRepository)
         worker.viewContract = viewContract
         return worker
     }

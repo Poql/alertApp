@@ -22,12 +22,16 @@ struct AlertMapper {
             return nil
         }
         let description = (snapshot.dictionary["description"] as? String) ?? ""
+        let approvers = (snapshot.dictionary["approvers"] as? [String]) ?? []
+        let disclaimers = (snapshot.dictionary["disclaimers"] as? [String]) ?? []
         return Alert(
             id: snapshot.id,
             description: description,
             matterName: matterName,
             creationDate: Date(timeIntervalSince1970: creationInterval),
-            triggerDate: Date(timeIntervalSince1970: triggerInterval)
+            triggerDate: Date(timeIntervalSince1970: triggerInterval),
+            approvers: approvers,
+            disclaimers: disclaimers
         )
     }
 

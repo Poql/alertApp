@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 import FirebaseCore
 
 @UIApplicationMain
@@ -16,7 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        FIRApp.configure()
+        configureFirebase()
         return true
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let sourceApp = options[.sourceApplication] as? String
+        return GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApp, annotation: [:])
+    }
+
+    // MARK: - Private
+
+    private func configureFirebase() {
+        FIRApp.configure()
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
     }
 }

@@ -7,3 +7,7 @@
 */
 
 
+"disclaim_feedback_title" = "Dénoncer";
+"disclaim_feedback_decoration" = "👎🏻";
+"approval_feedback_title" = "Approuver";
+"approval_feedback_decoration" = "🔥";
