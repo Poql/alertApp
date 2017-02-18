@@ -49,7 +49,7 @@ struct AlertMapper {
         if let matterName = alert.matterName {
             dictionary["matter_name"] = matterName
         }
-        return MutableSnapshot(
+        return LocalSnapshot(
             id: id,
             dictionary: dictionary
         )

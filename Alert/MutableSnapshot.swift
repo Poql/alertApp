@@ -8,11 +8,7 @@
 
 import Foundation
 
-struct MutableSnapshot {
-    var id: String
-    var dictionary: [String : Any]
+protocol MutableSnapshot {
+    var id: String? { get }
+    var dictionary: [String : Any] { get set }
 }
-
-// MARK: - Snapshot
-
-extension MutableSnapshot: Snapshot {}
