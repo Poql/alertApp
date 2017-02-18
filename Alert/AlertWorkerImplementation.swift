@@ -94,7 +94,7 @@ extension AlertWorkerImplementation: AlertWorker {
 
     func approveAlert(with alertId: String) {
         guard let user = authenticationRepository.currentUser else {
-            viewContract?.handle(error: .userNotLoggedIn)
+            viewContract?.handleError(.userNotLoggedIn)
             return
         }
         remoteRepository.approveAlert(with: alertId, user: user)
@@ -102,7 +102,7 @@ extension AlertWorkerImplementation: AlertWorker {
 
     func deprecateAlert(with alertId: String) {
         guard let user = authenticationRepository.currentUser else {
-            viewContract?.handle(error: .userNotLoggedIn)
+            viewContract?.handleError(.userNotLoggedIn)
             return
         }
         remoteRepository.deprecateAlert(with: alertId, user: user)
