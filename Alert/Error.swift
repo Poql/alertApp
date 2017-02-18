@@ -11,11 +11,14 @@ import Foundation
 
 enum ApplicationError: Error {
     case generic
+    case userNotLoggedIn
 
     var title: String {
         switch self {
         case .generic:
             return "generic_error_title".localized
+        case .userNotLoggedIn:
+            return "user_not_logged_in_error_title".localized
         }
     }
 
@@ -23,6 +26,8 @@ enum ApplicationError: Error {
         switch self {
         case .generic:
             return "generic_error_message".localized
+        case .userNotLoggedIn:
+            return "user_not_logged_in_error_message".localized
         }
     }
 }
