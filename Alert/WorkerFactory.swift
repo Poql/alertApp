@@ -14,7 +14,8 @@ protocol WorkerFactory {
 }
 
 class WorkerFactoryImplementation {
-    let authenticationRepository = AuthenticationRepositoryImplementation()
+    // TODO (gz) 2017-02-17 rename the repositories
+    let authentication = AuthenticationRepositoryImplementation()
     let repository = AlertRepositoryImplementation()
     let cache = CacheRepositoryImplementation()
 }
@@ -23,13 +24,13 @@ class WorkerFactoryImplementation {
 
 extension WorkerFactoryImplementation: WorkerFactory {
     func newAlertWorker(with viewContract: AlertViewContract) -> AlertWorker {
-        let worker = AlertWorkerImplementation(repository: repository, cache: cache)
+        let worker = AlertWorkerImplementation(repository: repository, cache: cache, authentication: authentication)
         worker.viewContract = viewContract
         return worker
     }
 
     func newAuthenticationWorker(with viewContract: AuthenticationViewContract) -> AuthenticationWorker {
-        let worker = AuthenticationWorkerImplementation(repository: authenticationRepository)
+        let worker = AuthenticationWorkerImplementation(repository: authentication)
         worker.viewContract = viewContract
         return worker
     }

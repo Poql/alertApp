@@ -13,6 +13,8 @@ class AlertWorkerImplementation {
 
     fileprivate let cacheRepository: CacheRepository
 
+    fileprivate let authenticationRepository: AuthenticationRepository
+
     fileprivate var remoteHandles: Set<Int> = []
 
     fileprivate var cacheHandles: Set<Int> = []
@@ -25,9 +27,10 @@ class AlertWorkerImplementation {
 
     weak var viewContract: AlertViewContract?
 
-    init(repository: AlertRepository, cache: CacheRepository) {
+    init(repository: AlertRepository, cache: CacheRepository, authentication: AuthenticationRepository) {
         self.remoteRepository = repository
         self.cacheRepository = cache
+        self.authenticationRepository = authentication
     }
 
     deinit {
@@ -88,6 +91,23 @@ class AlertWorkerImplementation {
 // MARK: - AlertWorker
 
 extension AlertWorkerImplementation: AlertWorker {
+
+    func approveAlert(with alertId: String) {
+        guard let user = authenticationRepository.currentUser else {
+            viewContract?.handle(error: .userNotLoggedIn)
+            return
+        }
+        remoteRepository.approveAlert(with: alertId, user: user)
+    }
+
+    func deprecateAlert(with alertId: String) {
+        guard let user = authenticationRepository.currentUser else {
+            viewContract?.handle(error: .userNotLoggedIn)
+            return
+        }
+        remoteRepository.deprecateAlert(with: alertId, user: user)
+    }
+
     func fetchAlerts() {
         cacheRepository.fetchCurrentCache { alerts in
             self.viewContract?.process(currentAlerts: alerts.map { self.viewModel(from: $0) })
