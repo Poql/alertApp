@@ -77,6 +77,7 @@
 		E7F5DA781E3525AC0058943E /* CacheRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA771E3525AC0058943E /* CacheRepository.swift */; };
 		E7F5DA7B1E3528450058943E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA791E3528450058943E /* Model.xcdatamodeld */; };
 		E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */; };
+		E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */; };
 		EC9CC4103248AD0E3C1A9949 /* Pods_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A749492F218098CAB844A21 /* Pods_Alert.framework */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +157,7 @@
 		E7F5DA771E3525AC0058943E /* CacheRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheRepository.swift; sourceTree = "<group>"; };
 		E7F5DA7A1E3528450058943E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
+		E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSnapshot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 		E7C9D4571E392DC50025823C /* Snapshot */ = {
 			isa = PBXGroup;
 			children = (
+				E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */,
 				E7C9D4581E392E040025823C /* Snapshot.swift */,
 				E7C9D45D1E392F300025823C /* MutableSnapshot.swift */,
 			);
@@ -586,6 +589,7 @@
 			files = (
 				E7F1F9091E3E48FA00713759 /* AlertFaceView.swift in Sources */,
 				E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */,
+				E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */,
 				E7F1F8F61E3DFDE000713759 /* AlertSideView.swift in Sources */,
 				E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */,
 				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
