@@ -79,6 +79,7 @@
 		E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */; };
 		E7F754D21E509B5800FF8D14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754D11E509B5800FF8D14 /* User.swift */; };
 		E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */; };
+		E7F754DD1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */; };
 		EC9CC4103248AD0E3C1A9949 /* Pods_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A749492F218098CAB844A21 /* Pods_Alert.framework */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +161,7 @@
 		E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
 		E7F754D11E509B5800FF8D14 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSnapshot.swift; sourceTree = "<group>"; };
+		E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserSnapshot + Firebase.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 			children = (
 				E7C9D4501E392A200025823C /* DataEventType + Firebase.swift */,
 				E7C9D45A1E392E4A0025823C /* Snapshot + Firebase.swift */,
+				E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */,
 				E7C7DC511E426C6F00B7F170 /* ServerValue + FIRServerValue.swift */,
 			);
 			name = Firebase;
@@ -615,6 +618,7 @@
 				E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */,
 				E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */,
 				E7F754D21E509B5800FF8D14 /* User.swift in Sources */,
+				E7F754DD1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift in Sources */,
 				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
 				E7F1F9061E3E0E5700713759 /* String + Localizable.swift in Sources */,
 				E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */,
