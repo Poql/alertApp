@@ -16,7 +16,7 @@ class AlertListViewController: BaseViewController {
 
     @IBOutlet fileprivate var tableView: UITableView!
 
-    private lazy var worker: AlertWorker = {
+    fileprivate lazy var worker: AlertWorker = {
         return self.workerFactory.newAlertWorker(with: self)
     }()
 
@@ -49,7 +49,9 @@ class AlertListViewController: BaseViewController {
 
     fileprivate func updateRow(at index: Int, with viewModel: AlertViewModel) {
         let indexPath = IndexPath(row: index, section: 0)
-        tableView.reloadRows(at: [indexPath], with: .automatic)
+        let viewModel = sortedViewModels[indexPath.row]
+        guard let cell = tableView.cellForRow(at: indexPath) as? AlertTableViewCell else { return }
+        cell.configure(with: viewModel, animated: true)
     }
 
     fileprivate func insertRow(at index: Int, with viewModel: AlertViewModel) {
@@ -101,10 +103,30 @@ extension AlertListViewController: UITableViewDataSource {
         let cell: AlertTableViewCell = tableView.dequeueCell()
         let alert = sortedViewModels[indexPath.row]
         cell.configure(with: alert)
+        cell.delegate = self
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sortedViewModels.count
+    }
+}
+
+// MARK: - AlertTableViewCellDelegate
+
+extension AlertListViewController: AlertTableViewCellDelegate {
+    func alertTableViewCellDidSelectApproveAction(_ cell: AlertTableViewCell) {
+        guard let alertId = alertId(for: cell) else { return }
+        worker.approveAlert(with: alertId)
+    }
+
+    func alertTableViewCellDidSelectComplainAction(_ cell: AlertTableViewCell) {
+        guard let alertId = alertId(for: cell) else { return }
+        worker.deprecateAlert(with: alertId)
+    }
+
+    private func alertId(for cell: AlertTableViewCell) -> String? {
+        guard let index = tableView.indexPath(for: cell)?.row else { return nil }
+        return sortedViewModels[index].id
     }
 }
