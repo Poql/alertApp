@@ -9,7 +9,7 @@
 import Foundation
 
 struct FormMapper {
-    static func form(from snapshot: Snapshot) -> Form? {
+    func form(from snapshot: Snapshot) -> Form? {
         guard let name = snapshot.dictionary["name"] as? String else { return nil }
         return Form(id: snapshot.id, name: name)
     }
