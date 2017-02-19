@@ -11,6 +11,7 @@ import Foundation
 protocol WorkerFactory {
     func newAlertWorker(with viewContract: AlertViewContract) -> AlertWorker
     func newAuthenticationWorker(with viewContract: AuthenticationViewContract) -> AuthenticationWorker
+    func newFormWorker(with viewContract: FormViewContract) -> FormWorker
 }
 
 class WorkerFactoryImplementation {
@@ -18,6 +19,7 @@ class WorkerFactoryImplementation {
     let authentication = AuthenticationRepositoryImplementation()
     let repository = AlertRepositoryImplementation()
     let cache = CacheRepositoryImplementation()
+    let formRepository = FormRepositoryImplementation()
 }
 
 // MARK: - WorkerFactory
@@ -31,6 +33,12 @@ extension WorkerFactoryImplementation: WorkerFactory {
 
     func newAuthenticationWorker(with viewContract: AuthenticationViewContract) -> AuthenticationWorker {
         let worker = AuthenticationWorkerImplementation(repository: authentication)
+        worker.viewContract = viewContract
+        return worker
+    }
+
+    func newFormWorker(with viewContract: FormViewContract) -> FormWorker {
+        let worker = FormWorkerImplementation(formRepository: formRepository)
         worker.viewContract = viewContract
         return worker
     }
