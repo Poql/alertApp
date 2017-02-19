@@ -43,6 +43,7 @@
 		E772E51A1E50B5F400E866FC /* AuthenticationWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E5191E50B5F400E866FC /* AuthenticationWorkerImplementation.swift */; };
 		E772E51C1E50B6E500E866FC /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51B1E50B6E500E866FC /* ErrorMapper.swift */; };
 		E772E51E1E50B8BD00E866FC /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */; };
+		E7786BD51E5865E700D4D78E /* FormPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BD41E5865E700D4D78E /* FormPickerViewController.swift */; };
 		E7786BD71E58881000D4D78E /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BD61E58881000D4D78E /* Form.swift */; };
 		E7786BD91E5888DA00D4D78E /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BD81E5888DA00D4D78E /* FormViewModel.swift */; };
 		E7786BDB1E5888E400D4D78E /* FormViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BDA1E5888E400D4D78E /* FormViewModelMapper.swift */; };
@@ -142,6 +143,7 @@
 		E772E5191E50B5F400E866FC /* AuthenticationWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationWorkerImplementation.swift; sourceTree = "<group>"; };
 		E772E51B1E50B6E500E866FC /* ErrorMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMapper.swift; sourceTree = "<group>"; };
 		E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		E7786BD41E5865E700D4D78E /* FormPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPickerViewController.swift; sourceTree = "<group>"; };
 		E7786BD61E58881000D4D78E /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		E7786BD81E5888DA00D4D78E /* FormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		E7786BDA1E5888E400D4D78E /* FormViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewModelMapper.swift; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 				E7C9D4651E3936050025823C /* Base */,
 				E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */,
 				E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */,
+				E7786BD41E5865E700D4D78E /* FormPickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -691,6 +694,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7786BD71E58881000D4D78E /* Form.swift in Sources */,
+				E7786BD51E5865E700D4D78E /* FormPickerViewController.swift in Sources */,
 				E7F1F9091E3E48FA00713759 /* AlertFaceView.swift in Sources */,
 				E7786BD91E5888DA00D4D78E /* FormViewModel.swift in Sources */,
 				E7786BDB1E5888E400D4D78E /* FormViewModelMapper.swift in Sources */,
