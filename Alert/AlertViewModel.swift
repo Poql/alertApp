@@ -10,6 +10,7 @@ import Foundation
 
 struct AlertViewModel {
     let id: String
+    let formId: String
     let description: String
     let matterName: String
     let creationDate: String

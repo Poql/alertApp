@@ -10,6 +10,7 @@ import Foundation
 
 struct Alert {
     let id: String
+    let formId: String
     let description: String
     let matterName: String
     let creationDate: Date

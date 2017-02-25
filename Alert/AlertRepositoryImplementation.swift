@@ -20,15 +20,14 @@ class AlertRepositoryImplementation {
 // MARK: - AlertRepository
 
 extension AlertRepositoryImplementation: AlertRepository {
-
-    func insert(alert: MutableAlert) {
-        let reference = alertReference.childByAutoId()
-        let snapshot = alertMapper.snapshot(forNewAlert: alert, with: reference.key)
+    func insert(alert: MutableAlert, formId: String) {
+        let reference = alertReference.child(formId).childByAutoId()
+        let snapshot = alertMapper.snapshot(forNewAlert: alert, identifier: reference.key, formId: formId)
         reference.setValue(snapshot.dictionary)
     }
 
-    func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int {
-        let handle = alertReference.observe(type.firebaseType, with: { snapshot in
+    func observe(_ type: DataEventType, formId: String, with block: @escaping (Alert) -> Void) -> Int {
+        let handle = alertReference.child(formId).observe(type.firebaseType, with: { snapshot in
             guard let alert = self.alertMapper.mapAlert(from: snapshot) else { return }
             block(alert)
         })
@@ -40,15 +39,15 @@ extension AlertRepositoryImplementation: AlertRepository {
         alertReference.removeObserver(withHandle: UInt(handle))
     }
 
-    func deprecateAlert(with alertId: String, user: User){
-        alertReference.child(alertId).runTransactionBlock { snapshot in
+    func deprecateAlert(alertId: String, formId: String, user: User) {
+        alertReference.child(formId).child(alertId).runTransactionBlock { snapshot in
             let newSnaphot = self.alertMapper.snapshot(forDeprecatedAlert: snapshot, by: user)
             return FIRTransactionResult.success(withValue: newSnaphot)
         }
     }
 
-    func approveAlert(with alertId: String, user: User) {
-        alertReference.child(alertId).runTransactionBlock { snapshot in
+    func approveAlert(alertId: String, formId: String, user: User) {
+        alertReference.child(formId).child(alertId).runTransactionBlock { snapshot in
             let newSnaphot = self.alertMapper.snapshot(forApprovedAlert: snapshot, by: user)
             return FIRTransactionResult.success(withValue: newSnaphot)
         }

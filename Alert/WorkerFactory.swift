@@ -16,10 +16,10 @@ protocol WorkerFactory {
 
 class WorkerFactoryImplementation {
     // TODO (gz) 2017-02-17 rename the repositories
-    let authentication = AuthenticationRepositoryImplementation()
-    let repository = AlertRepositoryImplementation()
-    let cache = CacheRepositoryImplementation()
-    let formRepository = FormRepositoryImplementation()
+    lazy var authentication = AuthenticationRepositoryImplementation()
+    lazy var repository = AlertRepositoryImplementation()
+    lazy var cache = CacheRepositoryImplementation()
+    lazy var formRepository = FormRepositoryImplementation()
 }
 
 // MARK: - WorkerFactory
@@ -38,7 +38,10 @@ extension WorkerFactoryImplementation: WorkerFactory {
     }
 
     func newFormWorker(with viewContract: FormViewContract) -> FormWorker {
-        let worker = FormWorkerImplementation(formRepository: formRepository)
+        let worker = FormWorkerImplementation(
+            formRepository: formRepository,
+            authenticationRepository: authentication
+        )
         worker.viewContract = viewContract
         return worker
     }

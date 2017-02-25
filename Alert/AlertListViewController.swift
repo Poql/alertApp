@@ -116,17 +116,17 @@ extension AlertListViewController: UITableViewDataSource {
 
 extension AlertListViewController: AlertTableViewCellDelegate {
     func alertTableViewCellDidSelectApproveAction(_ cell: AlertTableViewCell) {
-        guard let alertId = alertId(for: cell) else { return }
-        worker.approveAlert(with: alertId)
+        guard let viewModel = viewModel(for: cell) else { return }
+        worker.approveAlert(alertId: viewModel.id, formId: viewModel.formId)
     }
 
     func alertTableViewCellDidSelectComplainAction(_ cell: AlertTableViewCell) {
-        guard let alertId = alertId(for: cell) else { return }
-        worker.deprecateAlert(with: alertId)
+        guard let viewModel = viewModel(for: cell) else { return }
+        worker.deprecateAlert(alertId: viewModel.id, formId: viewModel.formId)
     }
 
-    private func alertId(for cell: AlertTableViewCell) -> String? {
+    private func viewModel(for cell: AlertTableViewCell) -> AlertViewModel? {
         guard let index = tableView.indexPath(for: cell)?.row else { return nil }
-        return sortedViewModels[index].id
+        return sortedViewModels[index]
     }
 }
