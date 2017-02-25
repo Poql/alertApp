@@ -23,7 +23,7 @@ class AlertListViewController: BaseViewController {
     fileprivate var viewModels: Set<AlertViewModel> = []
 
     fileprivate var sortedViewModels: [AlertViewModel] {
-        return Array(viewModels)
+        return Array(viewModels).sorted { $0.orderRank < $1.orderRank }
     }
 
     // MARK: - UIViewController

@@ -17,6 +17,7 @@ struct AlertViewModel {
     let triggerDate: String
     let disclaimsCount: Int
     let approvalsCount: Int
+    let orderRank: Int
 }
 
 // MARK: - Hashable

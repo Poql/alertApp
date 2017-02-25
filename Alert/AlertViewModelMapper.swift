@@ -26,6 +26,7 @@ struct AlertViewModelMapper {
             triggerDate: dateFormatter.string(from: alert.triggerDate),
             disclaimsCount: alert.disclaimers.count,
             approvalsCount: alert.approvers.count,
+            orderRank: Int(alert.creationDate.timeIntervalSince1970)
         )
     }
 }
