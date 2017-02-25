@@ -39,10 +39,10 @@ class AlertWorkerImplementation {
 
     // MARK: - Private
 
-    fileprivate func beginObservation() {
-        remoteHandles.insert(remoteRepository.observe(.added, with: alertAdded))
-        remoteHandles.insert(remoteRepository.observe(.updated, with: alertUpdated))
-        remoteHandles.insert(remoteRepository.observe(.removed, with: alertRemoved))
+    fileprivate func beginObservation(formId: String) {
+        remoteHandles.insert(remoteRepository.observe(.added, formId: formId, with: alertAdded))
+        remoteHandles.insert(remoteRepository.observe(.updated, formId: formId, with: alertUpdated))
+        remoteHandles.insert(remoteRepository.observe(.removed, formId: formId, with: alertRemoved))
         cacheHandles.insert(cacheRepository.observe(.added, with: alertCacheAdded))
         cacheHandles.insert(cacheRepository.observe(.updated, with: alertCacheUpdated))
         cacheHandles.insert(cacheRepository.observe(.removed, with: alertCacheRemoved))
@@ -91,33 +91,40 @@ class AlertWorkerImplementation {
 // MARK: - AlertWorker
 
 extension AlertWorkerImplementation: AlertWorker {
-
-    func approveAlert(with alertId: String) {
+    func approveAlert(alertId: String, formId: String) {
         guard let user = authenticationRepository.currentUser else {
             viewContract?.handleError(.userNotLoggedIn)
             return
         }
-        remoteRepository.approveAlert(with: alertId, user: user)
+        remoteRepository.approveAlert(alertId: alertId, formId: formId, user: user)
     }
 
-    func deprecateAlert(with alertId: String) {
+    func deprecateAlert(alertId: String, formId: String) {
         guard let user = authenticationRepository.currentUser else {
             viewContract?.handleError(.userNotLoggedIn)
             return
         }
-        remoteRepository.deprecateAlert(with: alertId, user: user)
+        remoteRepository.deprecateAlert(alertId: alertId, formId: formId, user: user)
     }
 
     func fetchAlerts() {
+        guard let formId = authenticationRepository.currentUser?.formId else {
+            viewContract?.handleError(.userFormNotFound)
+            return
+        }
         cacheRepository.fetchCurrentCache { alerts in
             self.viewContract?.process(currentAlerts: alerts.map { self.viewModel(from: $0) })
         }
         if !isObserving {
-            beginObservation()
+            beginObservation(formId: formId)
         }
     }
 
-    func insert(alert: MutableAlert) {
-        remoteRepository.insert(alert: alert)
+    func insert(_ alert: MutableAlert) {
+        guard let formId = authenticationRepository.currentUser?.formId else {
+            viewContract?.handleError(.userFormNotFound)
+            return
+        }
+        remoteRepository.insert(alert: alert, formId: formId)
     }
 }

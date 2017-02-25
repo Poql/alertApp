@@ -17,7 +17,8 @@ struct AlertMapper {
         guard
             let creationInterval = snapshot.dictionary["creation_date"] as? TimeInterval,
             let triggerInterval = snapshot.dictionary["trigger_date"] as? TimeInterval,
-            let matterName = snapshot.dictionary["matter_name"] as? String
+            let matterName = snapshot.dictionary["matter_name"] as? String,
+            let formId = snapshot.dictionary["formId"] as? String
         else {
             return nil
         }
@@ -26,6 +27,7 @@ struct AlertMapper {
         let disclaimers = (snapshot.dictionary["disclaimers"] as? [String]) ?? []
         return Alert(
             id: snapshot.id,
+            formId: formId,
             description: description,
             matterName: matterName,
             creationDate: Date(timeIntervalSince1970: creationInterval),
@@ -35,7 +37,7 @@ struct AlertMapper {
         )
     }
 
-    func snapshot(forNewAlert alert: MutableAlert, with id: String) -> Snapshot {
+    func snapshot(forNewAlert alert: MutableAlert, identifier id: String, formId: String) -> Snapshot {
         var dictionary: [String : Any] = [:]
         if let description = alert.description {
             dictionary["description"] = description
@@ -49,6 +51,7 @@ struct AlertMapper {
         if let matterName = alert.matterName {
             dictionary["matter_name"] = matterName
         }
+        dictionary["formId"] = formId
         return LocalSnapshot(
             id: id,
             dictionary: dictionary

@@ -12,6 +12,7 @@ import Foundation
 enum ApplicationError: Error {
     case generic
     case userNotLoggedIn
+    case userFormNotFound
 
     var title: String {
         switch self {
@@ -19,6 +20,8 @@ enum ApplicationError: Error {
             return "generic_error_title".localized
         case .userNotLoggedIn:
             return "user_not_logged_in_error_title".localized
+        case .userFormNotFound:
+            return "user_form_not_found_error_title".localized
         }
     }
 
@@ -28,6 +31,8 @@ enum ApplicationError: Error {
             return "generic_error_message".localized
         case .userNotLoggedIn:
             return "user_not_logged_in_error_message".localized
+        case .userFormNotFound:
+            return "user_form_not_found_error_message".localized
         }
     }
 }

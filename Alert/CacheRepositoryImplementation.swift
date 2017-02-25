@@ -48,11 +48,15 @@ class CacheRepositoryImplementation: ObservableRepository<Alert> {
         request.predicate = NSPredicate.entity(with: alert.id)
         do {
             guard let alert = try request.execute().first else { return }
-            backgroundContext.delete(alert)
-            self.notifyObserver(.removed, persistentAlert: alert)
-            try backgroundContext.save()
+            try removePersistent(alert, in: backgroundContext)
         }
         catch {}
+    }
+
+    fileprivate func removePersistent(_ alert: PersistentAlert, in backgroundContext: NSManagedObjectContext) throws {
+        backgroundContext.delete(alert)
+        self.notifyObserver(.removed, persistentAlert: alert)
+        try backgroundContext.save()
     }
 
     fileprivate func fetchCurrentAlerts(in context: NSManagedObjectContext, completion: ([Alert]) -> Void) {
@@ -75,6 +79,18 @@ class CacheRepositoryImplementation: ObservableRepository<Alert> {
 // MARK: - CacheRepository
 
 extension CacheRepositoryImplementation: CacheRepository {
+    func purgeCache() {
+        backgroundContext.perform {
+            let request: NSFetchRequest<PersistentAlert> = PersistentAlert.fetchRequest()
+            do {
+                let alerts = try request.execute()
+                for alert in alerts {
+                    try self.removePersistent(alert, in: self.backgroundContext)
+                }
+            }
+            catch {}
+        }
+    }
 
     func fetchCurrentCache(completion: @escaping ([Alert]) -> Void) {
         viewContext.perform {

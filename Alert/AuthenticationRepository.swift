@@ -12,4 +12,5 @@ import Foundation
 protocol AuthenticationRepository {
     var currentUser: User? { get }
     func signIn(with tokenId: String, and accessToken: String, completion: @escaping (Result<User, ServerError>) -> Void)
+    func setUserForm(formId id: String)
 }

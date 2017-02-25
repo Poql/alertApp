@@ -10,9 +10,9 @@ import Foundation
 
 protocol AlertWorker {
     func fetchAlerts()
-    func insert(alert: MutableAlert)
-    func approveAlert(with alertId: String)
-    func deprecateAlert(with alertId: String)
+    func insert(_ alert: MutableAlert)
+    func approveAlert(alertId: String, formId: String)
+    func deprecateAlert(alertId: String, formId: String)
 }
 
 protocol AlertViewContract: class {

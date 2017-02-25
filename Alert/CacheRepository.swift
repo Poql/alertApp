@@ -10,6 +10,7 @@ import Foundation
 import CoreData
 
 protocol CacheRepository {
+    func purgeCache()
     func update(alert: Alert)
     func remove(alert: Alert)
     func fetchCurrentCache(completion: @escaping ([Alert]) -> Void)

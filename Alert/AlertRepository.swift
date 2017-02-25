@@ -9,9 +9,9 @@
 import Foundation
 
 protocol AlertRepository {
-    func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int
+    func observe(_ type: DataEventType, formId: String, with block: @escaping (Alert) -> Void) -> Int
     func removeObserver(withHandle handle: Int)
-    func insert(alert: MutableAlert)
-    func approveAlert(with alertId: String, user: User)
-    func deprecateAlert(with alertId: String, user: User)
+    func insert(alert: MutableAlert, formId: String)
+    func approveAlert(alertId: String, formId: String, user: User)
+    func deprecateAlert(alertId: String, formId: String, user: User)
 }

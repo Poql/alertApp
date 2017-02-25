@@ -19,12 +19,14 @@ struct AlertViewModelMapper {
     func alertViewModel(from alert: Alert) -> AlertViewModel {
         return AlertViewModel(
             id: alert.id,
+            formId: alert.formId,
             description: alert.description,
             matterName: alert.matterName,
             creationDate: dateFormatter.string(from: alert.creationDate),
             triggerDate: dateFormatter.string(from: alert.triggerDate),
             disclaimsCount: alert.disclaimers.count,
-            approvalsCount: alert.approvers.count
+            approvalsCount: alert.approvers.count,
+            orderRank: Int(alert.creationDate.timeIntervalSince1970)
         )
     }
 }
