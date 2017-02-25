@@ -31,7 +31,7 @@ extension FormRepositoryImplementation: FormRepository {
         })
     }
 
-    func saveUser(_ user: User, inFormWithIdentifier id: String) {
+    func replaceUser(_ user: User, inFormWithIdentifier id: String) {
         formMembersReference.child(id).child(user.id).setValue(true)
     }
 

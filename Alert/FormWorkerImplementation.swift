@@ -36,7 +36,7 @@ extension FormWorkerImplementation: FormWorker {
         if let id = user.formId {
             formRepository.removeUser(user, fromFormWithIdentifier: id)
         }
-        formRepository.saveUser(user, inFormWithIdentifier: id)
+        formRepository.replaceUser(user, inFormWithIdentifier: id)
         authenticationRepository.setUserForm(formId: id)
     }
 }

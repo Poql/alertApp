@@ -10,6 +10,6 @@ import Foundation
 
 protocol FormRepository {
     func fetchForms(completionBlock block: @escaping ([Form]) -> Void)
-    func saveUser(_ user: User, inFormWithIdentifier id: String)
+    func replaceUser(_ user: User, inFormWithIdentifier id: String)
     func removeUser(_ user: User, fromFormWithIdentifier id: String)
 }
