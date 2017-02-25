@@ -10,11 +10,13 @@ import Foundation
 
 class FormWorkerImplementation {
     fileprivate let formRepository: FormRepository
+    fileprivate let authenticationRepository: AuthenticationRepository
     fileprivate let viewModelMapper = FormViewModelMapper()
     weak var viewContract: FormViewContract?
 
-    init(formRepository: FormRepository) {
+    init(formRepository: FormRepository, authenticationRepository: AuthenticationRepository) {
         self.formRepository = formRepository
+        self.authenticationRepository = authenticationRepository
     }
 }
 
@@ -27,5 +29,14 @@ extension FormWorkerImplementation: FormWorker {
             let viewModels = forms.flatMap { self.viewModelMapper.mapViewModel(from: $0) }
             self.viewContract?.present(viewModels)
         }
+    }
+
+    func saveUserForm(withIdentifier id: String) {
+        guard let user = authenticationRepository.currentUser else { return }
+        if let id = user.formId {
+            formRepository.removeUser(user, fromFormWithIdentifier: id)
+        }
+        formRepository.saveUser(user, inFormWithIdentifier: id)
+        authenticationRepository.setUserForm(formId: id)
     }
 }

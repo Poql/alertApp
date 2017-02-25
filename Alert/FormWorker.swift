@@ -10,6 +10,7 @@ import Foundation
 
 protocol FormWorker {
     func fetchForms()
+    func saveUserForm(withIdentifier id: String)
 }
 
 protocol FormViewContract: class {

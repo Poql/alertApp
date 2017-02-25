@@ -29,7 +29,12 @@ class FormPickerViewController: BaseViewController {
 
     private func setupView() {
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(cell: .fromClass(UITableViewCell.self))
+    }
+
+    fileprivate func didSelectForm(withIdentifier id: String) {
+        worker.saveUserForm(withIdentifier: id)
     }
 }
 
@@ -41,6 +46,15 @@ extension FormPickerViewController: FormViewContract {
     func present(_ forms: [FormViewModel]) {
         viewModels = forms
         tableView.reloadData()
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension FormPickerViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewModel = viewModels[indexPath.row]
+        didSelectForm(withIdentifier: viewModel.id)
     }
 }
 
