@@ -40,7 +40,8 @@ extension WorkerFactoryImplementation: WorkerFactory {
     func newFormWorker(with viewContract: FormViewContract) -> FormWorker {
         let worker = FormWorkerImplementation(
             formRepository: formRepository,
-            authenticationRepository: authentication
+            authenticationRepository: authentication,
+            cacheRepository: cache
         )
         worker.viewContract = viewContract
         return worker

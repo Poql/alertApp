@@ -11,12 +11,17 @@ import Foundation
 class FormWorkerImplementation {
     fileprivate let formRepository: FormRepository
     fileprivate let authenticationRepository: AuthenticationRepository
+    fileprivate let cacheRepository: CacheRepository
     fileprivate let viewModelMapper = FormViewModelMapper()
     weak var viewContract: FormViewContract?
 
-    init(formRepository: FormRepository, authenticationRepository: AuthenticationRepository) {
+    init(
+        formRepository: FormRepository,
+        authenticationRepository: AuthenticationRepository,
+        cacheRepository: CacheRepository) {
         self.formRepository = formRepository
         self.authenticationRepository = authenticationRepository
+        self.cacheRepository = cacheRepository
     }
 }
 
@@ -32,10 +37,11 @@ extension FormWorkerImplementation: FormWorker {
     }
 
     func saveUserForm(withIdentifier id: String) {
-        guard let user = authenticationRepository.currentUser else { return }
+        guard let user = authenticationRepository.currentUser, user.formId != id else { return }
         if let id = user.formId {
             formRepository.removeUser(user, fromFormWithIdentifier: id)
         }
+        cacheRepository.purgeCache()
         formRepository.replaceUser(user, inFormWithIdentifier: id)
         authenticationRepository.setUserForm(formId: id)
     }
