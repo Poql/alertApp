@@ -15,6 +15,9 @@ class FormRepositoryImplementation {
     fileprivate var formReference: FIRDatabaseReference {
         return databaseReference.child("forms")
     }
+    fileprivate var formMembersReference: FIRDatabaseReference {
+        return databaseReference.child("formMembers")
+    }
 }
 
 // MARK: - FormRepository
@@ -26,5 +29,13 @@ extension FormRepositoryImplementation: FormRepository {
             let forms = children.flatMap { self.formMapper.form(from: $0) }
             block(forms)
         })
+    }
+
+    func saveUser(_ user: User, inFormWithIdentifier id: String) {
+        formMembersReference.child(id).child(user.id).setValue(true)
+    }
+
+    func removeUser(_ user: User, fromFormWithIdentifier id: String) {
+        formMembersReference.child(id).child(user.id).removeValue()
     }
 }
