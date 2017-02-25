@@ -52,6 +52,8 @@
 		E7786BE21E588C6A00D4D78E /* FormRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BE11E588C6A00D4D78E /* FormRepositoryImplementation.swift */; };
 		E7786BE41E588FD500D4D78E /* FormWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BE31E588FD500D4D78E /* FormWorker.swift */; };
 		E7786BE71E58914C00D4D78E /* FormWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BE61E58914C00D4D78E /* FormWorkerImplementation.swift */; };
+		E7786BEF1E59FA0600D4D78E /* DictionaryCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BEE1E59FA0600D4D78E /* DictionaryCoding.swift */; };
+		E7786BF11E59FA3E00D4D78E /* DictionaryCoding + UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7786BF01E59FA3E00D4D78E /* DictionaryCoding + UserDefaults.swift */; };
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
@@ -152,6 +154,8 @@
 		E7786BE11E588C6A00D4D78E /* FormRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7786BE31E588FD500D4D78E /* FormWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormWorker.swift; sourceTree = "<group>"; };
 		E7786BE61E58914C00D4D78E /* FormWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormWorkerImplementation.swift; sourceTree = "<group>"; };
+		E7786BEE1E59FA0600D4D78E /* DictionaryCoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryCoding.swift; sourceTree = "<group>"; };
+		E7786BF01E59FA3E00D4D78E /* DictionaryCoding + UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DictionaryCoding + UserDefaults.swift"; sourceTree = "<group>"; };
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
@@ -397,6 +401,7 @@
 				E7C7DC4B1E42673900B7F170 /* MutableAlert.swift */,
 				E7F754D11E509B5800FF8D14 /* User.swift */,
 				E7786BD61E58881000D4D78E /* Form.swift */,
+				E7786BEE1E59FA0600D4D78E /* DictionaryCoding.swift */,
 			);
 			name = Record;
 			sourceTree = "<group>";
@@ -521,6 +526,7 @@
 				E7F1F9051E3E0E5700713759 /* String + Localizable.swift */,
 				E73239AA1E4F624600805421 /* UIColor.swift */,
 				E7323A051E4F6E7000805421 /* UIFont.swift */,
+				E7786BF01E59FA3E00D4D78E /* DictionaryCoding + UserDefaults.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -738,6 +744,7 @@
 				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
 				E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */,
 				E7323A061E4F6E7000805421 /* UIFont.swift in Sources */,
+				E7786BF11E59FA3E00D4D78E /* DictionaryCoding + UserDefaults.swift in Sources */,
 				E7786BDD1E588AB200D4D78E /* FormMapper.swift in Sources */,
 				E7C9D4601E3931AD0025823C /* AlertWorker.swift in Sources */,
 				E73239AB1E4F624600805421 /* UIColor.swift in Sources */,
@@ -758,6 +765,7 @@
 				E7E451551E36938800417A95 /* Alert.swift in Sources */,
 				E772E51A1E50B5F400E866FC /* AuthenticationWorkerImplementation.swift in Sources */,
 				E7786BE01E588BC700D4D78E /* FormRepository.swift in Sources */,
+				E7786BEF1E59FA0600D4D78E /* DictionaryCoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
