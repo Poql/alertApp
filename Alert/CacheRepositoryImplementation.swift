@@ -9,7 +9,9 @@
 import Foundation
 import CoreData
 
-class CacheRepositoryImplementation: ObservableRepository<Alert> {
+class CacheRepositoryImplementation {
+
+    fileprivate let observersDwelling = ObserversDwelling<Alert>()
 
     fileprivate lazy var backgroundContext: NSManagedObjectContext = {
         return CoreDataStack.shared.newBackgroundContext()
@@ -71,7 +73,7 @@ class CacheRepositoryImplementation: ObservableRepository<Alert> {
     fileprivate func notifyObserver(_ type: DataEventType, persistentAlert: PersistentAlert) {
         guard let alert = PersistentAlertMapper.mapAlert(from: persistentAlert) else { return }
         DispatchQueue.main.async {
-            self.notifyObservers(type, for: alert)
+            self.observersDwelling.notifyObservers(type, for: alert)
         }
     }
 }
@@ -99,11 +101,11 @@ extension CacheRepositoryImplementation: CacheRepository {
     }
 
     func observe(_ type: DataEventType, with block: @escaping (Alert) -> Void) -> Int {
-        return attachObserver(type, with: block)
+        return observersDwelling.attachObserver(type, with: block)
     }
 
     func removeObserver(withHandle handle: Int) {
-        removeAttachedObserver(withHandle: handle)
+        observersDwelling.removeAttachedObserver(withHandle: handle)
     }
 
     func update(alert: Alert) {

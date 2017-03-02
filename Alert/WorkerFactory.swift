@@ -12,6 +12,7 @@ protocol WorkerFactory {
     func newAlertWorker(with viewContract: AlertViewContract) -> AlertWorker
     func newAuthenticationWorker(with viewContract: AuthenticationViewContract) -> AuthenticationWorker
     func newFormWorker(with viewContract: FormViewContract) -> FormWorker
+    func newMatterWorker(with viewContract: MatterViewContract) -> MatterWorker
 }
 
 class WorkerFactoryImplementation {
@@ -20,6 +21,7 @@ class WorkerFactoryImplementation {
     lazy var repository = AlertRepositoryImplementation()
     lazy var cache = CacheRepositoryImplementation()
     lazy var formRepository = FormRepositoryImplementation()
+    lazy var matterRepository = MatterRepositoryImplementation()
 }
 
 // MARK: - WorkerFactory
@@ -42,6 +44,15 @@ extension WorkerFactoryImplementation: WorkerFactory {
             formRepository: formRepository,
             authenticationRepository: authentication,
             cacheRepository: cache
+        )
+        worker.viewContract = viewContract
+        return worker
+    }
+
+    func newMatterWorker(with viewContract: MatterViewContract) -> MatterWorker {
+        let worker = MatterWorkerImplementation(
+            matterRepository: matterRepository,
+            authenticationRepository: authentication
         )
         worker.viewContract = viewContract
         return worker

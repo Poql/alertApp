@@ -57,7 +57,7 @@
 		E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */; };
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
-		E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */; };
+		E7A654CB1E37FD2800E0AB4A /* ObserversDwelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObserversDwelling.swift */; };
 		E7C7DC4C1E42673900B7F170 /* MutableAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4B1E42673900B7F170 /* MutableAlert.swift */; };
 		E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4D1E42678900B7F170 /* ServerValue.swift */; };
 		E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */; };
@@ -72,6 +72,19 @@
 		E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */; };
 		E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4631E3934F90025823C /* WorkerFactory.swift */; };
 		E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4661E3936100025823C /* BaseViewController.swift */; };
+		E7CF36681E61A0EF00267E18 /* Matter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36671E61A0EF00267E18 /* Matter.swift */; };
+		E7CF366A1E61A11600267E18 /* MutableMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36691E61A11600267E18 /* MutableMatter.swift */; };
+		E7CF366C1E61A15000267E18 /* MatterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF366B1E61A15000267E18 /* MatterViewModel.swift */; };
+		E7CF368A1E61A1F900267E18 /* MatterViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */; };
+		E7CF368C1E61A3DD00267E18 /* MatterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */; };
+		E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */; };
+		E7CF36911E61B03400267E18 /* MatterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36901E61B03400267E18 /* MatterWorker.swift */; };
+		E7CF36941E61BB4C00267E18 /* MatterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36931E61BB4C00267E18 /* MatterRepository.swift */; };
+		E7CF36961E61BB5900267E18 /* MatterRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36951E61BB5900267E18 /* MatterRepositoryImplementation.swift */; };
+		E7CF36981E61D3D900267E18 /* MatterWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36971E61D3D900267E18 /* MatterWorkerImplementation.swift */; };
+		E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */; };
+		E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */; };
+		E7CF36A21E68AEB400267E18 /* RecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36A11E68AEB400267E18 /* RecordState.swift */; };
 		E7E00C461E54E74800446609 /* LocalSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E00C451E54E74800446609 /* LocalSnapshot.swift */; };
 		E7E00C481E54E80D00446609 /* MutableSnapshot + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E00C471E54E80D00446609 /* MutableSnapshot + Firebase.swift */; };
 		E7E4514E1E368F0C00417A95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */; };
@@ -159,7 +172,7 @@
 		E7A654C41E37CD1C00E0AB4A /* DataEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEventType.swift; sourceTree = "<group>"; };
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
-		E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableRepository.swift; sourceTree = "<group>"; };
+		E7A654CA1E37FD2800E0AB4A /* ObserversDwelling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserversDwelling.swift; sourceTree = "<group>"; };
 		E7C7DC4B1E42673900B7F170 /* MutableAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableAlert.swift; sourceTree = "<group>"; };
 		E7C7DC4D1E42678900B7F170 /* ServerValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerValue.swift; sourceTree = "<group>"; };
 		E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDate.swift; sourceTree = "<group>"; };
@@ -174,6 +187,19 @@
 		E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorkerImplementation.swift; sourceTree = "<group>"; };
 		E7C9D4631E3934F90025823C /* WorkerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerFactory.swift; sourceTree = "<group>"; };
 		E7C9D4661E3936100025823C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E7CF36671E61A0EF00267E18 /* Matter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matter.swift; sourceTree = "<group>"; };
+		E7CF36691E61A11600267E18 /* MutableMatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableMatter.swift; sourceTree = "<group>"; };
+		E7CF366B1E61A15000267E18 /* MatterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModel.swift; sourceTree = "<group>"; };
+		E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModelMapper.swift; sourceTree = "<group>"; };
+		E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterMapper.swift; sourceTree = "<group>"; };
+		E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDataSnapshot.swift; sourceTree = "<group>"; };
+		E7CF36901E61B03400267E18 /* MatterWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterWorker.swift; sourceTree = "<group>"; };
+		E7CF36931E61BB4C00267E18 /* MatterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterRepository.swift; sourceTree = "<group>"; };
+		E7CF36951E61BB5900267E18 /* MatterRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterRepositoryImplementation.swift; sourceTree = "<group>"; };
+		E7CF36971E61D3D900267E18 /* MatterWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterWorkerImplementation.swift; sourceTree = "<group>"; };
+		E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableEntity.swift; sourceTree = "<group>"; };
+		E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReferenceObserverRepository.swift; sourceTree = "<group>"; };
+		E7CF36A11E68AEB400267E18 /* RecordState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordState.swift; sourceTree = "<group>"; };
 		E7E00C451E54E74800446609 /* LocalSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSnapshot.swift; sourceTree = "<group>"; };
 		E7E00C471E54E80D00446609 /* MutableSnapshot + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableSnapshot + Firebase.swift"; sourceTree = "<group>"; };
 		E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -253,6 +279,8 @@
 				E7064BDD1E3DF1B800B6276F /* AlertViewModelMapper.swift */,
 				E7786BD81E5888DA00D4D78E /* FormViewModel.swift */,
 				E7786BDA1E5888E400D4D78E /* FormViewModelMapper.swift */,
+				E7CF366B1E61A15000267E18 /* MatterViewModel.swift */,
+				E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -338,6 +366,7 @@
 				E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */,
 				E7F754D81E50AE7E00FF8D14 /* UserMapper.swift */,
 				E7786BDC1E588AB200D4D78E /* FormMapper.swift */,
+				E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */,
 			);
 			name = Mapper;
 			sourceTree = "<group>";
@@ -361,6 +390,7 @@
 				E7E00C471E54E80D00446609 /* MutableSnapshot + Firebase.swift */,
 				E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */,
 				E7C7DC511E426C6F00B7F170 /* ServerValue + FIRServerValue.swift */,
+				E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */,
 			);
 			name = Firebase;
 			sourceTree = "<group>";
@@ -371,6 +401,24 @@
 				E7C9D4661E3936100025823C /* BaseViewController.swift */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		E7CF368F1E61B01F00267E18 /* Matter */ = {
+			isa = PBXGroup;
+			children = (
+				E7CF36901E61B03400267E18 /* MatterWorker.swift */,
+				E7CF36971E61D3D900267E18 /* MatterWorkerImplementation.swift */,
+			);
+			name = Matter;
+			sourceTree = "<group>";
+		};
+		E7CF36921E61BB3C00267E18 /* Matter */ = {
+			isa = PBXGroup;
+			children = (
+				E7CF36931E61BB4C00267E18 /* MatterRepository.swift */,
+				E7CF36951E61BB5900267E18 /* MatterRepositoryImplementation.swift */,
+			);
+			name = Matter;
 			sourceTree = "<group>";
 		};
 		E7E4514F1E3692C200417A95 /* Persistency */ = {
@@ -384,7 +432,9 @@
 		E7E451501E3692DD00417A95 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				E7A654CA1E37FD2800E0AB4A /* ObservableRepository.swift */,
+				E7A654CA1E37FD2800E0AB4A /* ObserversDwelling.swift */,
+				E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */,
+				E7CF36921E61BB3C00267E18 /* Matter */,
 				E7C9D44F1E3929E70025823C /* Alert */,
 				E7786BDE1E588BA500D4D78E /* Form */,
 				E7F754CE1E509ABD00FF8D14 /* Authentication */,
@@ -402,6 +452,9 @@
 				E7F754D11E509B5800FF8D14 /* User.swift */,
 				E7786BD61E58881000D4D78E /* Form.swift */,
 				E7786BEE1E59FA0600D4D78E /* DictionaryCoding.swift */,
+				E7CF36671E61A0EF00267E18 /* Matter.swift */,
+				E7CF36691E61A11600267E18 /* MutableMatter.swift */,
+				E7CF36A11E68AEB400267E18 /* RecordState.swift */,
 			);
 			name = Record;
 			sourceTree = "<group>";
@@ -463,6 +516,7 @@
 				E7C9D4571E392DC50025823C /* Snapshot */,
 				E7E451531E36937D00417A95 /* Record */,
 				E7E4514F1E3692C200417A95 /* Persistency */,
+				E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -488,6 +542,7 @@
 				E70399741E3CAAFB0089AF2C /* Alert */,
 				E772E5161E50B4DF00E866FC /* Authentication */,
 				E7786BE51E588FD900D4D78E /* Form */,
+				E7CF368F1E61B01F00267E18 /* Matter */,
 			);
 			name = Worker;
 			sourceTree = "<group>";
@@ -703,6 +758,7 @@
 				E7786BD51E5865E700D4D78E /* FormPickerViewController.swift in Sources */,
 				E7F1F9091E3E48FA00713759 /* AlertFaceView.swift in Sources */,
 				E7786BD91E5888DA00D4D78E /* FormViewModel.swift in Sources */,
+				E7CF36961E61BB5900267E18 /* MatterRepositoryImplementation.swift in Sources */,
 				E7786BDB1E5888E400D4D78E /* FormViewModelMapper.swift in Sources */,
 				E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */,
 				E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */,
@@ -713,7 +769,9 @@
 				E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */,
 				E7C9D4511E392A200025823C /* DataEventType + Firebase.swift in Sources */,
 				E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */,
+				E7CF366C1E61A15000267E18 /* MatterViewModel.swift in Sources */,
 				E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */,
+				E7CF36911E61B03400267E18 /* MatterWorker.swift in Sources */,
 				E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */,
 				E7F1F8F81E3E004E00713759 /* FacetView.swift in Sources */,
 				E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */,
@@ -733,15 +791,20 @@
 				E72C78241E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift in Sources */,
 				E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */,
 				E7786BE21E588C6A00D4D78E /* FormRepositoryImplementation.swift in Sources */,
+				E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */,
+				E7CF368A1E61A1F900267E18 /* MatterViewModelMapper.swift in Sources */,
 				E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */,
 				E7F754D21E509B5800FF8D14 /* User.swift in Sources */,
+				E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */,
 				E7F754DD1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift in Sources */,
 				E772E5181E50B4FB00E866FC /* AuthenticationWorker.swift in Sources */,
 				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
 				E7786BE71E58914C00D4D78E /* FormWorkerImplementation.swift in Sources */,
 				E7F1F9061E3E0E5700713759 /* String + Localizable.swift in Sources */,
 				E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */,
+				E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */,
 				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
+				E7CF366A1E61A11600267E18 /* MutableMatter.swift in Sources */,
 				E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */,
 				E7323A061E4F6E7000805421 /* UIFont.swift in Sources */,
 				E7786BF11E59FA3E00D4D78E /* DictionaryCoding + UserDefaults.swift in Sources */,
@@ -754,11 +817,16 @@
 				E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */,
 				E7F754D71E509CEC00FF8D14 /* Result.swift in Sources */,
 				E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */,
+				E7CF36981E61D3D900267E18 /* MatterWorkerImplementation.swift in Sources */,
 				E7064BDE1E3DF1B800B6276F /* AlertViewModelMapper.swift in Sources */,
 				E7F5DA7B1E3528450058943E /* Model.xcdatamodeld in Sources */,
-				E7A654CB1E37FD2800E0AB4A /* ObservableRepository.swift in Sources */,
+				E7CF368C1E61A3DD00267E18 /* MatterMapper.swift in Sources */,
+				E7CF36681E61A0EF00267E18 /* Matter.swift in Sources */,
+				E7A654CB1E37FD2800E0AB4A /* ObserversDwelling.swift in Sources */,
 				E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */,
 				E7786BE41E588FD500D4D78E /* FormWorker.swift in Sources */,
+				E7CF36A21E68AEB400267E18 /* RecordState.swift in Sources */,
+				E7CF36941E61BB4C00267E18 /* MatterRepository.swift in Sources */,
 				E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */,
 				E7F754D01E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift in Sources */,
 				E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */,

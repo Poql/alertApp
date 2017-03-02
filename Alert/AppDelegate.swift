@@ -9,6 +9,7 @@
 import UIKit
 import GoogleSignIn
 import FirebaseCore
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         let sourceApp = options[.sourceApplication] as? String
         return GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApp, annotation: [:])
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        FIRDatabase.database().purgeOutstandingWrites()
     }
 
     // MARK: - Private

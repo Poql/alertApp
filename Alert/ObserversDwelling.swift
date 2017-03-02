@@ -8,16 +8,25 @@
 
 import Foundation
 
-class ObservableRepository<T> {
+class ObserversDwelling<T> {
 
     private var blocks: [Int : (T) -> Void] = [:]
 
     private var handles: [DataEventType : Set<Int>]  = [:]
 
+    var currentHandles: [Int] {
+        return Array(handles.values).flatMap { $0 }
+    }
+
     // MARK: - Public
 
-    final func attachObserver(_ type: DataEventType, with block:  @escaping (T) -> Void) -> Int {
-        let id = UUID().hashValue
+    func removeAllObservers() {
+        blocks = [:]
+        handles = [:]
+    }
+
+    func attachObserver(_ type: DataEventType, handle: Int? = nil, with block:  @escaping (T) -> Void) -> Int {
+        let id = handle ?? UUID().hashValue
         blocks[id] = block
         var types = handles[type] ?? Set()
         types.insert(id)
@@ -25,7 +34,7 @@ class ObservableRepository<T> {
         return id
     }
 
-    final func removeAttachedObserver(withHandle handle: Int) {
+    func removeAttachedObserver(withHandle handle: Int) {
         blocks.removeValue(forKey: handle)
         for (type, ids) in handles {
             var newIds = ids
@@ -34,7 +43,7 @@ class ObservableRepository<T> {
         }
     }
 
-    final func notifyObservers(_ type: DataEventType, for data: T) {
+    func notifyObservers(_ type: DataEventType, for data: T) {
         let ids = handles[type] ?? []
         for id in ids {
             blocks[id]?(data)
