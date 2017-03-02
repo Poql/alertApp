@@ -72,6 +72,9 @@
 		E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */; };
 		E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4631E3934F90025823C /* WorkerFactory.swift */; };
 		E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4661E3936100025823C /* BaseViewController.swift */; };
+		E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */; };
+		E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */; };
+		E7CF36A21E68AEB400267E18 /* RecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36A11E68AEB400267E18 /* RecordState.swift */; };
 		E7E00C461E54E74800446609 /* LocalSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E00C451E54E74800446609 /* LocalSnapshot.swift */; };
 		E7E00C481E54E80D00446609 /* MutableSnapshot + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E00C471E54E80D00446609 /* MutableSnapshot + Firebase.swift */; };
 		E7E4514E1E368F0C00417A95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */; };
@@ -174,6 +177,9 @@
 		E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorkerImplementation.swift; sourceTree = "<group>"; };
 		E7C9D4631E3934F90025823C /* WorkerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerFactory.swift; sourceTree = "<group>"; };
 		E7C9D4661E3936100025823C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDataSnapshot.swift; sourceTree = "<group>"; };
+		E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReferenceObserverRepository.swift; sourceTree = "<group>"; };
+		E7CF36A11E68AEB400267E18 /* RecordState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordState.swift; sourceTree = "<group>"; };
 		E7E00C451E54E74800446609 /* LocalSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSnapshot.swift; sourceTree = "<group>"; };
 		E7E00C471E54E80D00446609 /* MutableSnapshot + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableSnapshot + Firebase.swift"; sourceTree = "<group>"; };
 		E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -361,6 +367,7 @@
 				E7E00C471E54E80D00446609 /* MutableSnapshot + Firebase.swift */,
 				E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */,
 				E7C7DC511E426C6F00B7F170 /* ServerValue + FIRServerValue.swift */,
+				E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */,
 			);
 			name = Firebase;
 			sourceTree = "<group>";
@@ -385,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				E7A654CA1E37FD2800E0AB4A /* ObserversDwelling.swift */,
+				E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */,
 				E7C9D44F1E3929E70025823C /* Alert */,
 				E7786BDE1E588BA500D4D78E /* Form */,
 				E7F754CE1E509ABD00FF8D14 /* Authentication */,
@@ -402,6 +410,7 @@
 				E7F754D11E509B5800FF8D14 /* User.swift */,
 				E7786BD61E58881000D4D78E /* Form.swift */,
 				E7786BEE1E59FA0600D4D78E /* DictionaryCoding.swift */,
+				E7CF36A11E68AEB400267E18 /* RecordState.swift */,
 			);
 			name = Record;
 			sourceTree = "<group>";
@@ -733,8 +742,10 @@
 				E72C78241E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift in Sources */,
 				E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */,
 				E7786BE21E588C6A00D4D78E /* FormRepositoryImplementation.swift in Sources */,
+				E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */,
 				E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */,
 				E7F754D21E509B5800FF8D14 /* User.swift in Sources */,
+				E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */,
 				E7F754DD1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift in Sources */,
 				E772E5181E50B4FB00E866FC /* AuthenticationWorker.swift in Sources */,
 				E7C9D4561E392BA70025823C /* AlertMapper.swift in Sources */,
@@ -759,6 +770,7 @@
 				E7A654CB1E37FD2800E0AB4A /* ObserversDwelling.swift in Sources */,
 				E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */,
 				E7786BE41E588FD500D4D78E /* FormWorker.swift in Sources */,
+				E7CF36A21E68AEB400267E18 /* RecordState.swift in Sources */,
 				E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */,
 				E7F754D01E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift in Sources */,
 				E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */,
