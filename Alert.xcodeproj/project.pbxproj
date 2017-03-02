@@ -78,6 +78,8 @@
 		E7CF368A1E61A1F900267E18 /* MatterViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */; };
 		E7CF368C1E61A3DD00267E18 /* MatterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */; };
 		E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */; };
+		E7CF36941E61BB4C00267E18 /* MatterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36931E61BB4C00267E18 /* MatterRepository.swift */; };
+		E7CF36961E61BB5900267E18 /* MatterRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36951E61BB5900267E18 /* MatterRepositoryImplementation.swift */; };
 		E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */; };
 		E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */; };
 		E7CF36A21E68AEB400267E18 /* RecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36A11E68AEB400267E18 /* RecordState.swift */; };
@@ -189,6 +191,8 @@
 		E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModelMapper.swift; sourceTree = "<group>"; };
 		E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterMapper.swift; sourceTree = "<group>"; };
 		E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDataSnapshot.swift; sourceTree = "<group>"; };
+		E7CF36931E61BB4C00267E18 /* MatterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterRepository.swift; sourceTree = "<group>"; };
+		E7CF36951E61BB5900267E18 /* MatterRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableEntity.swift; sourceTree = "<group>"; };
 		E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReferenceObserverRepository.swift; sourceTree = "<group>"; };
 		E7CF36A11E68AEB400267E18 /* RecordState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordState.swift; sourceTree = "<group>"; };
@@ -395,6 +399,15 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		E7CF36921E61BB3C00267E18 /* Matter */ = {
+			isa = PBXGroup;
+			children = (
+				E7CF36931E61BB4C00267E18 /* MatterRepository.swift */,
+				E7CF36951E61BB5900267E18 /* MatterRepositoryImplementation.swift */,
+			);
+			name = Matter;
+			sourceTree = "<group>";
+		};
 		E7E4514F1E3692C200417A95 /* Persistency */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +421,7 @@
 			children = (
 				E7A654CA1E37FD2800E0AB4A /* ObserversDwelling.swift */,
 				E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */,
+				E7CF36921E61BB3C00267E18 /* Matter */,
 				E7C9D44F1E3929E70025823C /* Alert */,
 				E7786BDE1E588BA500D4D78E /* Form */,
 				E7F754CE1E509ABD00FF8D14 /* Authentication */,
@@ -730,6 +744,7 @@
 				E7786BD51E5865E700D4D78E /* FormPickerViewController.swift in Sources */,
 				E7F1F9091E3E48FA00713759 /* AlertFaceView.swift in Sources */,
 				E7786BD91E5888DA00D4D78E /* FormViewModel.swift in Sources */,
+				E7CF36961E61BB5900267E18 /* MatterRepositoryImplementation.swift in Sources */,
 				E7786BDB1E5888E400D4D78E /* FormViewModelMapper.swift in Sources */,
 				E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */,
 				E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */,
@@ -795,6 +810,7 @@
 				E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */,
 				E7786BE41E588FD500D4D78E /* FormWorker.swift in Sources */,
 				E7CF36A21E68AEB400267E18 /* RecordState.swift in Sources */,
+				E7CF36941E61BB4C00267E18 /* MatterRepository.swift in Sources */,
 				E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */,
 				E7F754D01E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift in Sources */,
 				E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */,
