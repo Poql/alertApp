@@ -75,6 +75,7 @@
 		E7CF36681E61A0EF00267E18 /* Matter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36671E61A0EF00267E18 /* Matter.swift */; };
 		E7CF366A1E61A11600267E18 /* MutableMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36691E61A11600267E18 /* MutableMatter.swift */; };
 		E7CF366C1E61A15000267E18 /* MatterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF366B1E61A15000267E18 /* MatterViewModel.swift */; };
+		E7CF368A1E61A1F900267E18 /* MatterViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */; };
 		E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */; };
 		E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */; };
 		E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */; };
@@ -184,6 +185,7 @@
 		E7CF36671E61A0EF00267E18 /* Matter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matter.swift; sourceTree = "<group>"; };
 		E7CF36691E61A11600267E18 /* MutableMatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableMatter.swift; sourceTree = "<group>"; };
 		E7CF366B1E61A15000267E18 /* MatterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModel.swift; sourceTree = "<group>"; };
+		E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModelMapper.swift; sourceTree = "<group>"; };
 		E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDataSnapshot.swift; sourceTree = "<group>"; };
 		E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableEntity.swift; sourceTree = "<group>"; };
 		E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReferenceObserverRepository.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				E7786BD81E5888DA00D4D78E /* FormViewModel.swift */,
 				E7786BDA1E5888E400D4D78E /* FormViewModelMapper.swift */,
 				E7CF366B1E61A15000267E18 /* MatterViewModel.swift */,
+				E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */,
 				E7786BE21E588C6A00D4D78E /* FormRepositoryImplementation.swift in Sources */,
 				E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */,
+				E7CF368A1E61A1F900267E18 /* MatterViewModelMapper.swift in Sources */,
 				E7E451571E3693AF00417A95 /* PersistentAlertMapper.swift in Sources */,
 				E7F754D21E509B5800FF8D14 /* User.swift in Sources */,
 				E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */,
