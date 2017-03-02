@@ -78,8 +78,10 @@
 		E7CF368A1E61A1F900267E18 /* MatterViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */; };
 		E7CF368C1E61A3DD00267E18 /* MatterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */; };
 		E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */; };
+		E7CF36911E61B03400267E18 /* MatterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36901E61B03400267E18 /* MatterWorker.swift */; };
 		E7CF36941E61BB4C00267E18 /* MatterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36931E61BB4C00267E18 /* MatterRepository.swift */; };
 		E7CF36961E61BB5900267E18 /* MatterRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36951E61BB5900267E18 /* MatterRepositoryImplementation.swift */; };
+		E7CF36981E61D3D900267E18 /* MatterWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36971E61D3D900267E18 /* MatterWorkerImplementation.swift */; };
 		E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */; };
 		E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */; };
 		E7CF36A21E68AEB400267E18 /* RecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36A11E68AEB400267E18 /* RecordState.swift */; };
@@ -191,8 +193,10 @@
 		E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModelMapper.swift; sourceTree = "<group>"; };
 		E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterMapper.swift; sourceTree = "<group>"; };
 		E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDataSnapshot.swift; sourceTree = "<group>"; };
+		E7CF36901E61B03400267E18 /* MatterWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterWorker.swift; sourceTree = "<group>"; };
 		E7CF36931E61BB4C00267E18 /* MatterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterRepository.swift; sourceTree = "<group>"; };
 		E7CF36951E61BB5900267E18 /* MatterRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterRepositoryImplementation.swift; sourceTree = "<group>"; };
+		E7CF36971E61D3D900267E18 /* MatterWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterWorkerImplementation.swift; sourceTree = "<group>"; };
 		E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableEntity.swift; sourceTree = "<group>"; };
 		E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReferenceObserverRepository.swift; sourceTree = "<group>"; };
 		E7CF36A11E68AEB400267E18 /* RecordState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordState.swift; sourceTree = "<group>"; };
@@ -399,6 +403,15 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		E7CF368F1E61B01F00267E18 /* Matter */ = {
+			isa = PBXGroup;
+			children = (
+				E7CF36901E61B03400267E18 /* MatterWorker.swift */,
+				E7CF36971E61D3D900267E18 /* MatterWorkerImplementation.swift */,
+			);
+			name = Matter;
+			sourceTree = "<group>";
+		};
 		E7CF36921E61BB3C00267E18 /* Matter */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +542,7 @@
 				E70399741E3CAAFB0089AF2C /* Alert */,
 				E772E5161E50B4DF00E866FC /* Authentication */,
 				E7786BE51E588FD900D4D78E /* Form */,
+				E7CF368F1E61B01F00267E18 /* Matter */,
 			);
 			name = Worker;
 			sourceTree = "<group>";
@@ -757,6 +771,7 @@
 				E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */,
 				E7CF366C1E61A15000267E18 /* MatterViewModel.swift in Sources */,
 				E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */,
+				E7CF36911E61B03400267E18 /* MatterWorker.swift in Sources */,
 				E7C9D45E1E392F300025823C /* MutableSnapshot.swift in Sources */,
 				E7F1F8F81E3E004E00713759 /* FacetView.swift in Sources */,
 				E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */,
@@ -802,6 +817,7 @@
 				E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */,
 				E7F754D71E509CEC00FF8D14 /* Result.swift in Sources */,
 				E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */,
+				E7CF36981E61D3D900267E18 /* MatterWorkerImplementation.swift in Sources */,
 				E7064BDE1E3DF1B800B6276F /* AlertViewModelMapper.swift in Sources */,
 				E7F5DA7B1E3528450058943E /* Model.xcdatamodeld in Sources */,
 				E7CF368C1E61A3DD00267E18 /* MatterMapper.swift in Sources */,
