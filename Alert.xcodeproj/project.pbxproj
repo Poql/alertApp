@@ -76,6 +76,7 @@
 		E7CF366A1E61A11600267E18 /* MutableMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36691E61A11600267E18 /* MutableMatter.swift */; };
 		E7CF366C1E61A15000267E18 /* MatterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF366B1E61A15000267E18 /* MatterViewModel.swift */; };
 		E7CF368A1E61A1F900267E18 /* MatterViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */; };
+		E7CF368C1E61A3DD00267E18 /* MatterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */; };
 		E7CF368E1E61A61100267E18 /* FIRDataSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */; };
 		E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */; };
 		E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */; };
@@ -186,6 +187,7 @@
 		E7CF36691E61A11600267E18 /* MutableMatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableMatter.swift; sourceTree = "<group>"; };
 		E7CF366B1E61A15000267E18 /* MatterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModel.swift; sourceTree = "<group>"; };
 		E7CF36891E61A1F900267E18 /* MatterViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModelMapper.swift; sourceTree = "<group>"; };
+		E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterMapper.swift; sourceTree = "<group>"; };
 		E7CF368D1E61A61100267E18 /* FIRDataSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRDataSnapshot.swift; sourceTree = "<group>"; };
 		E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableEntity.swift; sourceTree = "<group>"; };
 		E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReferenceObserverRepository.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 				E7E451561E3693AF00417A95 /* PersistentAlertMapper.swift */,
 				E7F754D81E50AE7E00FF8D14 /* UserMapper.swift */,
 				E7786BDC1E588AB200D4D78E /* FormMapper.swift */,
+				E7CF368B1E61A3DD00267E18 /* MatterMapper.swift */,
 			);
 			name = Mapper;
 			sourceTree = "<group>";
@@ -786,6 +789,7 @@
 				E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */,
 				E7064BDE1E3DF1B800B6276F /* AlertViewModelMapper.swift in Sources */,
 				E7F5DA7B1E3528450058943E /* Model.xcdatamodeld in Sources */,
+				E7CF368C1E61A3DD00267E18 /* MatterMapper.swift in Sources */,
 				E7CF36681E61A0EF00267E18 /* Matter.swift in Sources */,
 				E7A654CB1E37FD2800E0AB4A /* ObserversDwelling.swift in Sources */,
 				E7064BE41E3DF84800B6276F /* CollectionView + RegistrableCell.swift in Sources */,
