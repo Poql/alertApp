@@ -85,6 +85,9 @@
 		E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */; };
 		E7CF369E1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */; };
 		E7CF36A21E68AEB400267E18 /* RecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36A11E68AEB400267E18 /* RecordState.swift */; };
+		E7CF36A41E6AFCE100267E18 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36A31E6AFCE100267E18 /* BasicTableViewCell.swift */; };
+		E7CF36A61E6B010600267E18 /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CF36A51E6B010600267E18 /* BasicTableViewCell.xib */; };
+		E7CF36A81E6B01C500267E18 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36A71E6B01C500267E18 /* CircularView.swift */; };
 		E7E00C461E54E74800446609 /* LocalSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E00C451E54E74800446609 /* LocalSnapshot.swift */; };
 		E7E00C481E54E80D00446609 /* MutableSnapshot + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E00C471E54E80D00446609 /* MutableSnapshot + Firebase.swift */; };
 		E7E4514E1E368F0C00417A95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */; };
@@ -200,6 +203,9 @@
 		E7CF36991E64AA7200267E18 /* IdentifiableEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableEntity.swift; sourceTree = "<group>"; };
 		E7CF369D1E674C6F00267E18 /* FirebaseReferenceObserverRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReferenceObserverRepository.swift; sourceTree = "<group>"; };
 		E7CF36A11E68AEB400267E18 /* RecordState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordState.swift; sourceTree = "<group>"; };
+		E7CF36A31E6AFCE100267E18 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
+		E7CF36A51E6B010600267E18 /* BasicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
+		E7CF36A71E6B01C500267E18 /* CircularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 		E7E00C451E54E74800446609 /* LocalSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSnapshot.swift; sourceTree = "<group>"; };
 		E7E00C471E54E80D00446609 /* MutableSnapshot + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableSnapshot + Firebase.swift"; sourceTree = "<group>"; };
 		E7E4514D1E368F0C00417A95 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -531,6 +537,8 @@
 				E7F1F8FD1E3E050700713759 /* AlertActionView.swift */,
 				E7C7DC531E4607AA00B7F170 /* AlertFeedbackView.swift */,
 				E72C78231E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift */,
+				E7CF36A31E6AFCE100267E18 /* BasicTableViewCell.swift */,
+				E7CF36A71E6B01C500267E18 /* CircularView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -550,6 +558,7 @@
 		E7F5DA741E35217B0058943E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E7CF36A51E6B010600267E18 /* BasicTableViewCell.xib */,
 				E7F1F8F91E3E012700713759 /* AlertFaceView.xib */,
 				E7F5DA671E3521110058943E /* LaunchScreen.storyboard */,
 				E7F5DA621E3521110058943E /* Main.storyboard */,
@@ -696,6 +705,7 @@
 				E7F5DA661E3521110058943E /* Assets.xcassets in Resources */,
 				E7F1F9041E3E0E3900713759 /* Localizable.strings in Resources */,
 				E7F5DA641E3521110058943E /* Main.storyboard in Resources */,
+				E7CF36A61E6B010600267E18 /* BasicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +813,7 @@
 				E7F1F9061E3E0E5700713759 /* String + Localizable.swift in Sources */,
 				E7F5DA7D1E352C8B0058943E /* AlertListViewController.swift in Sources */,
 				E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */,
+				E7CF36A41E6AFCE100267E18 /* BasicTableViewCell.swift in Sources */,
 				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
 				E7CF366A1E61A11600267E18 /* MutableMatter.swift in Sources */,
 				E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */,
@@ -830,6 +841,7 @@
 				E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */,
 				E7F754D01E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift in Sources */,
 				E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */,
+				E7CF36A81E6B01C500267E18 /* CircularView.swift in Sources */,
 				E7E451551E36938800417A95 /* Alert.swift in Sources */,
 				E772E51A1E50B5F400E866FC /* AuthenticationWorkerImplementation.swift in Sources */,
 				E7786BE01E588BC700D4D78E /* FormRepository.swift in Sources */,
