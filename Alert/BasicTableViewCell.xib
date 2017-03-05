@@ -20,26 +20,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvx-0e-ToS" customClass="CircularView" customModule="Alert" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="33.5" width="8" height="8"/>
+                        <rect key="frame" x="16" y="32.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="8" id="Gc0-2o-TOo"/>
+                            <constraint firstAttribute="height" constant="10" id="Gc0-2o-TOo"/>
                             <constraint firstAttribute="width" secondItem="yvx-0e-ToS" secondAttribute="height" multiplier="1:1" id="VK4-vX-MhK"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnX-Pj-Q0h">
-                        <rect key="frame" x="20" y="8" width="335" height="59"/>
+                        <rect key="frame" x="42" y="8" width="313" height="59"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="yvx-0e-ToS" firstAttribute="leading" secondItem="AjN-kZ-Apv" secondAttribute="leading" id="7Tt-rl-jrs"/>
+                    <constraint firstItem="yvx-0e-ToS" firstAttribute="leading" secondItem="AjN-kZ-Apv" secondAttribute="leading" constant="16" id="7Tt-rl-jrs"/>
                     <constraint firstItem="GnX-Pj-Q0h" firstAttribute="top" secondItem="AjN-kZ-Apv" secondAttribute="top" constant="8" id="8fc-bY-1ry"/>
                     <constraint firstAttribute="trailing" secondItem="GnX-Pj-Q0h" secondAttribute="trailing" constant="20" id="QUt-eQ-Fwg"/>
                     <constraint firstItem="GnX-Pj-Q0h" firstAttribute="centerY" secondItem="AjN-kZ-Apv" secondAttribute="centerY" id="ei5-yQ-pth"/>
-                    <constraint firstItem="GnX-Pj-Q0h" firstAttribute="leading" secondItem="yvx-0e-ToS" secondAttribute="trailing" constant="12" id="kCq-z0-Cof"/>
+                    <constraint firstItem="GnX-Pj-Q0h" firstAttribute="leading" secondItem="yvx-0e-ToS" secondAttribute="trailing" constant="16" id="kCq-z0-Cof"/>
                     <constraint firstItem="yvx-0e-ToS" firstAttribute="centerY" secondItem="AjN-kZ-Apv" secondAttribute="centerY" id="tQd-oR-G45"/>
                 </constraints>
             </tableViewCellContentView>

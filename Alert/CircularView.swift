@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class CircularView: UIView {
 
-    var lineWidth: CGFloat = 1.5
+    var lineWidth: CGFloat = 2
 
     var fillColor: UIColor = .black {
         didSet {

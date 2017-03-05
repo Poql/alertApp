@@ -8,12 +8,21 @@
 
 import UIKit
 
+private struct Constant {
+    static let cellHeight: CGFloat = 40
+}
+
 class FormPickerViewController: BaseViewController {
+
+    @IBOutlet private var titleLabel: UILabel!
+
     @IBOutlet fileprivate var tableView: UITableView!
 
     fileprivate lazy var worker: FormWorker = self.workerFactory.newFormWorker(with: self)
 
     fileprivate var viewModels: [FormViewModel] = []
+
+    // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +37,11 @@ class FormPickerViewController: BaseViewController {
     // MARK: - Private
 
     private func setupView() {
+        titleLabel.font = UIFont.regularSFMono(ofSize: 20)
+        titleLabel.text = "matter_selection_title".localized
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(cell: .fromClass(UITableViewCell.self))
-    }
-
-    fileprivate func didSelectForm(withIdentifier id: String) {
-        worker.saveUserForm(withIdentifier: id)
+        tableView.register(cell: .fromNib(BasicTableViewCell.self))
     }
 }
 
@@ -49,25 +56,25 @@ extension FormPickerViewController: FormViewContract {
     }
 }
 
-// MARK: - UITableViewDelegate
-
-extension FormPickerViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewModel = viewModels[indexPath.row]
-        didSelectForm(withIdentifier: viewModel.id)
-    }
-}
-
 // MARK: - UITableViewDataSource
 
-extension FormPickerViewController: UITableViewDataSource {
+extension FormPickerViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueCell()
-        cell.textLabel?.text = viewModels[indexPath.row].name
+        let cell: BasicTableViewCell = tableView.dequeueCell()
+        let viewModel = viewModels[indexPath.row]
+        cell.configure(value: viewModel.name)
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModels.count
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension FormPickerViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return Constant.cellHeight
     }
 }

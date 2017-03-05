@@ -26,7 +26,7 @@ class BasicTableViewCell : UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
-        valueLabel.font = UIFont.mediumSFMono(ofSize: 16)
+        valueLabel.font = UIFont.regularRubik(ofSize: 15)
     }
 
     // MARK: - Public
