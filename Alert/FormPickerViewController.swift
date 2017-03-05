@@ -14,6 +14,8 @@ private struct Constant {
 
 class FormPickerViewController: BaseViewController {
 
+    @IBOutlet private var selectionButton: BigButton!
+
     @IBOutlet private var titleLabel: UILabel!
 
     @IBOutlet fileprivate var tableView: UITableView!
@@ -34,11 +36,21 @@ class FormPickerViewController: BaseViewController {
         worker.fetchForms()
     }
 
+    // MARK: - Actions
+
+    @IBAction private func selectionButtonAction(_ sender: Any) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let viewModel = viewModels[indexPath.row]
+        worker.saveUserForm(withIdentifier: viewModel.id)
+    }
+
+
     // MARK: - Private
 
     private func setupView() {
         titleLabel.font = UIFont.mediumSFMono(ofSize: 20)
         titleLabel.text = "matter_selection_title".localized
+        selectionButton.setTitle("matter_selection_button".localized, for: .normal)
         tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
