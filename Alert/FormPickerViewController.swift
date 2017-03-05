@@ -10,6 +10,7 @@ import UIKit
 
 private struct Constant {
     static let cellHeight: CGFloat = 40
+    static let bottomInset: CGFloat = 80
 }
 
 class FormPickerViewController: BaseViewController {
@@ -55,6 +56,7 @@ class FormPickerViewController: BaseViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(cell: .fromNib(BasicTableViewCell.self))
+        tableView.contentInset.bottom += Constant.bottomInset
     }
 }
 
