@@ -58,6 +58,7 @@
 		E7A654C71E37DA5500E0AB4A /* AlertRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */; };
 		E7A654C91E37DAB700E0AB4A /* AlertRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */; };
 		E7A654CB1E37FD2800E0AB4A /* ObserversDwelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A654CA1E37FD2800E0AB4A /* ObserversDwelling.swift */; };
+		E7ACC4241E6B1C98003B1208 /* UIRect + center.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7ACC4231E6B1C98003B1208 /* UIRect + center.swift */; };
 		E7C7DC4C1E42673900B7F170 /* MutableAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4B1E42673900B7F170 /* MutableAlert.swift */; };
 		E7C7DC4E1E42678900B7F170 /* ServerValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4D1E42678900B7F170 /* ServerValue.swift */; };
 		E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */; };
@@ -177,6 +178,7 @@
 		E7A654C61E37DA5500E0AB4A /* AlertRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepository.swift; sourceTree = "<group>"; };
 		E7A654C81E37DAB700E0AB4A /* AlertRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertRepositoryImplementation.swift; sourceTree = "<group>"; };
 		E7A654CA1E37FD2800E0AB4A /* ObserversDwelling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserversDwelling.swift; sourceTree = "<group>"; };
+		E7ACC4231E6B1C98003B1208 /* UIRect + center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIRect + center.swift"; sourceTree = "<group>"; };
 		E7C7DC4B1E42673900B7F170 /* MutableAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableAlert.swift; sourceTree = "<group>"; };
 		E7C7DC4D1E42678900B7F170 /* ServerValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerValue.swift; sourceTree = "<group>"; };
 		E7C7DC4F1E42687C00B7F170 /* RecordDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDate.swift; sourceTree = "<group>"; };
@@ -594,6 +596,7 @@
 				E73239AA1E4F624600805421 /* UIColor.swift */,
 				E7323A051E4F6E7000805421 /* UIFont.swift */,
 				E7786BF01E59FA3E00D4D78E /* DictionaryCoding + UserDefaults.swift */,
+				E7ACC4231E6B1C98003B1208 /* UIRect + center.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -775,6 +778,7 @@
 				E7786BDB1E5888E400D4D78E /* FormViewModelMapper.swift in Sources */,
 				E7064BE01E3DF23600B6276F /* AlertTableViewCell.swift in Sources */,
 				E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */,
+				E7ACC4241E6B1C98003B1208 /* UIRect + center.swift in Sources */,
 				E7F1F8F61E3DFDE000713759 /* AlertSideView.swift in Sources */,
 				E772E51E1E50B8BD00E866FC /* AuthenticationViewController.swift in Sources */,
 				E7F1F9021E3E088400713759 /* UIStackView.swift in Sources */,

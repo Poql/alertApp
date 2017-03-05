@@ -11,6 +11,7 @@
 "approval_feedback_title" = "Approuver";
 "approval_feedback_decoration" = "🔥";
 "ok_alert_action" = "Ok";
+"matter_selection_title" = "Sélectionnez votre matière";
 
 // Errors
 
