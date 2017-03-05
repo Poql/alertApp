@@ -49,8 +49,8 @@ class FormPickerViewController: BaseViewController {
 
     private func setupView() {
         titleLabel.font = UIFont.mediumSFMono(ofSize: 20)
-        titleLabel.text = "matter_selection_title".localized
-        selectionButton.setTitle("matter_selection_button".localized, for: .normal)
+        titleLabel.text = "form_selection_title".localized
+        selectionButton.setTitle("form_selection_button".localized, for: .normal)
         tableView.tableFooterView = UIView()
         tableView.dataSource = self
         tableView.delegate = self
