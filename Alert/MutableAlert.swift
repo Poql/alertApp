@@ -11,6 +11,7 @@ import Foundation
 struct MutableAlert {
     var description: String?
     var matterName: String?
+    var matterId: String?
     var creationDate: RecordDate?
     var triggerDate: RecordDate?
 }

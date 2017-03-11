@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GMF-Zc-qkQ" customClass="TextFieldCell" customModule="Alert" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="515" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GMF-Zc-qkQ" id="E7J-Aw-Rty">
+                <rect key="frame" x="0.0" y="0.0" width="515" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8z6-ix-Sde">
+                        <rect key="frame" x="17" y="8" width="498" height="27"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3P-aq-RBZ">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jjt-He-d1a">
+                                <rect key="frame" x="38" y="0.0" width="460" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textField>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8z6-ix-Sde" secondAttribute="trailing" id="A0A-3E-DUL"/>
+                    <constraint firstAttribute="bottom" secondItem="8z6-ix-Sde" secondAttribute="bottom" constant="8" id="GhG-oF-0MX"/>
+                    <constraint firstItem="8z6-ix-Sde" firstAttribute="top" secondItem="E7J-Aw-Rty" secondAttribute="top" constant="8" id="LfR-9X-fnU"/>
+                    <constraint firstItem="8z6-ix-Sde" firstAttribute="leading" secondItem="E7J-Aw-Rty" secondAttribute="leading" constant="17" id="r8N-RK-0db"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="entitlementLabel" destination="p3P-aq-RBZ" id="7sy-PH-aq1"/>
+                <outlet property="textField" destination="jjt-He-d1a" id="qHC-9m-n0j"/>
+            </connections>
+            <point key="canvasLocation" x="584.5" y="356"/>
+        </tableViewCell>
+    </objects>
+</document>
