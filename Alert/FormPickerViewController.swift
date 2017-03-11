@@ -57,6 +57,7 @@ class FormPickerViewController: BaseViewController {
         tableView.delegate = self
         tableView.register(cell: .fromNib(BasicTableViewCell.self))
         tableView.contentInset.bottom += Constant.bottomInset
+        tableView.separatorInset.left = BasicTableViewCellConstant.separatorInset
     }
 }
 
