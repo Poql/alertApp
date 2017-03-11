@@ -38,7 +38,7 @@ class TextViewCell : UITableViewCell {
     // MARK: - Private
 
     private func setupViews() {
-        textView.contentInset = UIEdgeInsets.zero
+        textView.textContainerInset = UIEdgeInsets.zero
         textView.delegate = self
         textView.font = UIFont.regularRubik(ofSize: 15)
     }

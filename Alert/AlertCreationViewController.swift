@@ -133,6 +133,7 @@ extension AlertCreationViewController: UITableViewDataSource {
                 placeholder: "alert_creation_matter_placeholder".localized,
                 text: mutableAlert.description
             )
+            cell.delegate = self
             return cell
         }
     }

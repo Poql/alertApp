@@ -79,7 +79,8 @@ class AlertTableViewCell: UITableViewCell {
     private func setupView() {
         sideView.delegate = self
         selectionStyle = .none
-        contentView.backgroundColor = UIColor.gz_gray
+        contentView.backgroundColor = .clear
+        backgroundColor = .clear
         contentView.gz_pinSubview(facetView, insets: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
     }
 }

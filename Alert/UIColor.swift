@@ -19,7 +19,7 @@ extension UIColor {
     }
 
     class var gz_gray: UIColor {
-        return UIColor(red: 74, green: 74, blue: 74)
+        return UIColor(red: 45, green: 45, blue: 45)
     }
 }
 

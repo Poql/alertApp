@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8z6-ix-Sde">
-                        <rect key="frame" x="16" y="8" width="491" height="27"/>
+                        <rect key="frame" x="17" y="8" width="498" height="27"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3P-aq-RBZ">
                                 <rect key="frame" x="0.0" y="0.0" width="30" height="27"/>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jjt-He-d1a">
-                                <rect key="frame" x="38" y="0.0" width="453" height="27"/>
+                                <rect key="frame" x="38" y="0.0" width="460" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
@@ -36,10 +36,10 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="8z6-ix-Sde" secondAttribute="trailing" constant="8" id="A0A-3E-DUL"/>
+                    <constraint firstAttribute="trailing" secondItem="8z6-ix-Sde" secondAttribute="trailing" id="A0A-3E-DUL"/>
                     <constraint firstAttribute="bottom" secondItem="8z6-ix-Sde" secondAttribute="bottom" constant="8" id="GhG-oF-0MX"/>
                     <constraint firstItem="8z6-ix-Sde" firstAttribute="top" secondItem="E7J-Aw-Rty" secondAttribute="top" constant="8" id="LfR-9X-fnU"/>
-                    <constraint firstItem="8z6-ix-Sde" firstAttribute="leading" secondItem="E7J-Aw-Rty" secondAttribute="leading" constant="16" id="r8N-RK-0db"/>
+                    <constraint firstItem="8z6-ix-Sde" firstAttribute="leading" secondItem="E7J-Aw-Rty" secondAttribute="leading" constant="17" id="r8N-RK-0db"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
