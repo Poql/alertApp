@@ -13,6 +13,10 @@
 "ok_alert_action" = "Ok";
 "form_selection_title" = "Sélectionnez votre classe";
 "form_selection_button" = "Suivant";
+"alert_creation_description_entitlement" = "Matière";
+"alert_creation_description_placeholder" = "Sélectionnez votre classe";
+"alert_creation_matter_placeholder" = "Ajoutez une description";
+"send_alert_button_title" = "Envoyer";
 
 // Errors
 
