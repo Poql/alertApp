@@ -120,6 +120,7 @@
 		E7F754DB1E50AE8B00FF8D14 /* UserSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */; };
 		E7F754DD1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */; };
 		E7FDBF031E6B309B000D706F /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDBF021E6B309B000D706F /* BigButton.swift */; };
+		E7FDBF071E6C3933000D706F /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDBF061E6C3933000D706F /* SegueHandler.swift */; };
 		EC9CC4103248AD0E3C1A9949 /* Pods_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A749492F218098CAB844A21 /* Pods_Alert.framework */; };
 /* End PBXBuildFile section */
 
@@ -242,6 +243,7 @@
 		E7F754DA1E50AE8B00FF8D14 /* UserSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSnapshot.swift; sourceTree = "<group>"; };
 		E7F754DC1E50AEE700FF8D14 /* UserSnapshot + Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserSnapshot + Firebase.swift"; sourceTree = "<group>"; };
 		E7FDBF021E6B309B000D706F /* BigButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
+		E7FDBF061E6C3933000D706F /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -597,6 +599,7 @@
 				E7323A051E4F6E7000805421 /* UIFont.swift */,
 				E7786BF01E59FA3E00D4D78E /* DictionaryCoding + UserDefaults.swift */,
 				E7ACC4231E6B1C98003B1208 /* UIRect + center.swift */,
+				E7FDBF061E6C3933000D706F /* SegueHandler.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -849,6 +852,7 @@
 				E7C7DC521E426C6F00B7F170 /* ServerValue + FIRServerValue.swift in Sources */,
 				E7F754D01E509AD800FF8D14 /* AuthenticationRepositoryImplementation.swift in Sources */,
 				E7C7DC501E42687C00B7F170 /* RecordDate.swift in Sources */,
+				E7FDBF071E6C3933000D706F /* SegueHandler.swift in Sources */,
 				E7CF36A81E6B01C500267E18 /* CircularView.swift in Sources */,
 				E7E451551E36938800417A95 /* Alert.swift in Sources */,
 				E772E51A1E50B5F400E866FC /* AuthenticationWorkerImplementation.swift in Sources */,
