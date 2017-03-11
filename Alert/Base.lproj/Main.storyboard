@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1lO-qP-500">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VDi-Sl-3v6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="exL-cU-wKR">
                                 <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,9 +34,16 @@
                             <constraint firstItem="exL-cU-wKR" firstAttribute="leading" secondItem="LW3-R7-M2e" secondAttribute="leading" id="yCN-3m-zsc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Alertes" id="KXW-Di-i6Z"/>
+                    <navigationItem key="navigationItem" title="Alertes" id="KXW-Di-i6Z">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0jG-2J-c9d">
+                            <connections>
+                                <action selector="addAlertAction:" destination="7Uk-Ra-xbl" id="gWy-Ya-SvV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="exL-cU-wKR" id="eWG-hQ-ugy"/>
+                        <segue destination="1lO-qP-500" kind="presentation" identifier="AlertCreationViewController" id="V8B-oK-mgZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4U-MT-6r9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,6 +153,9 @@
                                     <constraint firstAttribute="width" constant="200" id="v78-zD-PhZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sendButtonAction:" destination="3Yh-QG-NfU" eventType="touchUpInside" id="Vac-P5-jMk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,7 +168,13 @@
                             <constraint firstItem="0dH-up-RYa" firstAttribute="centerX" secondItem="U23-ul-fgm" secondAttribute="centerX" id="rMk-97-44L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Nouv. alerte" id="N1H-p7-yIH"/>
+                    <navigationItem key="navigationItem" title="Nouv. alerte" id="N1H-p7-yIH">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aMT-VA-2DK">
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="3Yh-QG-NfU" id="FQy-Iy-B7D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="sendButton" destination="0dH-up-RYa" id="QR1-Nc-3lq"/>
                         <outlet property="tableView" destination="0KM-yS-6Ds" id="ccs-YX-E5i"/>

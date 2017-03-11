@@ -13,13 +13,25 @@ private struct Constant {
     static let matterCellHeight: CGFloat = 44
 }
 
+protocol AlertCreationViewControllerDelegate: class {
+    func alertCreationViewController(_ controller: AlertCreationViewController, wantsToSend alert: MutableAlert)
+    func alertCreationViewControllerWantsToDismiss(_ controller: AlertCreationViewController)
+}
+
 class AlertCreationViewController: BaseViewController {
 
     @IBOutlet fileprivate var sendButton: BigButton!
 
     @IBOutlet fileprivate var tableView: UITableView!
 
-    fileprivate var mutableAlert = MutableAlert()
+    fileprivate var mutableAlert: MutableAlert = {
+        var alert = MutableAlert()
+        alert.creationDate = .server
+        alert.triggerDate = .server
+        return alert
+    }()
+
+    weak var delegate: AlertCreationViewControllerDelegate?
 
     enum Row: Int {
         case matter, description
@@ -53,6 +65,11 @@ class AlertCreationViewController: BaseViewController {
     // MARK: - Action
 
     @IBAction private func sendButtonAction(_ sender: UIButton) {
+        delegate?.alertCreationViewController(self, wantsToSend: mutableAlert)
+    }
+
+    @IBAction private func cancelButtonAction(_ sender: UIBarButtonItem) {
+        delegate?.alertCreationViewControllerWantsToDismiss(self)
     }
 
     // MARK: - Private

@@ -9,6 +9,7 @@
 import UIKit
 
 private struct Constant {
+    static let topContentInset: CGFloat =  12
     static let estimatedRow: CGFloat = 200
 }
 
@@ -38,10 +39,30 @@ class AlertListViewController: BaseViewController {
         worker.fetchAlerts()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let identifier = segueIdentifier(from: segue), identifier == .alertCreation,
+            let navController = segue.destination as? UINavigationController,
+            let controller = navController.viewControllers.first as? AlertCreationViewController
+        else {
+            return
+        }
+        controller.delegate = self
+    }
+
+    // MARK: - Actions
+
+    @IBAction private func addAlertAction(_ sender: UIBarButtonItem) {
+        performSegue(with: .alertCreation, sender: self)
+    }
+
     // MARK: - Private
 
     private func setupTableView() {
+        view.backgroundColor = .gz_gray
+        tableView.separatorStyle = .none
         tableView.dataSource = self
+        tableView.contentInset.top += Constant.topContentInset
         tableView.register(cell: .fromClass(AlertTableViewCell.self))
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = Constant.estimatedRow
@@ -128,5 +149,27 @@ extension AlertListViewController: AlertTableViewCellDelegate {
     private func viewModel(for cell: AlertTableViewCell) -> AlertViewModel? {
         guard let index = tableView.indexPath(for: cell)?.row else { return nil }
         return sortedViewModels[index]
+    }
+}
+
+// MARK: - AlertCreationViewControllerDelegate
+
+extension AlertListViewController : AlertCreationViewControllerDelegate {
+    func alertCreationViewControllerWantsToDismiss(_ controller: AlertCreationViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+
+    func alertCreationViewController(_ controller: AlertCreationViewController, wantsToSend alert: MutableAlert) {
+        dismiss(animated: true) {
+            self.worker.insert(alert)
+        }
+    }
+}
+
+// MARK: - SegueHandler
+
+extension AlertListViewController : SegueHandler {
+    enum SegueIdentifier: String {
+        case alertCreation = "AlertCreationViewController"
     }
 }
