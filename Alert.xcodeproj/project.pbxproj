@@ -415,6 +415,20 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		E7CF36601E61986F00267E18 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				E7F1F8F71E3E004E00713759 /* FacetView.swift */,
+				E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */,
+				E7F1F8F31E3DFDD600713759 /* AlertFaceView.swift */,
+				E7F1F8F51E3DFDE000713759 /* AlertSideView.swift */,
+				E7F1F8FD1E3E050700713759 /* AlertActionView.swift */,
+				E7C7DC531E4607AA00B7F170 /* AlertFeedbackView.swift */,
+				E72C78231E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift */,
+			);
+			name = Alert;
+			sourceTree = "<group>";
+		};
 		E7CF368F1E61B01F00267E18 /* Matter */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,16 +550,10 @@
 		E7F5DA721E35212B0058943E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E7F1F8F71E3E004E00713759 /* FacetView.swift */,
-				E7064BDF1E3DF23600B6276F /* AlertTableViewCell.swift */,
-				E7F1F8F31E3DFDD600713759 /* AlertFaceView.swift */,
-				E7F1F8F51E3DFDE000713759 /* AlertSideView.swift */,
-				E7F1F8FD1E3E050700713759 /* AlertActionView.swift */,
-				E7C7DC531E4607AA00B7F170 /* AlertFeedbackView.swift */,
-				E72C78231E460FDC00E7BD34 /* AlertFeedbacksViewContainer.swift */,
 				E7CF36A31E6AFCE100267E18 /* BasicTableViewCell.swift */,
 				E7CF36A71E6B01C500267E18 /* CircularView.swift */,
 				E7FDBF021E6B309B000D706F /* BigButton.swift */,
+				E7CF36601E61986F00267E18 /* Alert */,
 			);
 			name = View;
 			sourceTree = "<group>";
