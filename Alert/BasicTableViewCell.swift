@@ -8,11 +8,22 @@
 
 import UIKit
 
+struct BasicTableViewCellConstant {
+    static let separatorInset: CGFloat = 44
+}
+
 class BasicTableViewCell : UITableViewCell {
 
     @IBOutlet private var valueLabel: UILabel!
 
     @IBOutlet private var circularView: CircularView!
+
+    var isInteractive: Bool = true {
+        didSet {
+            circularView.isHidden = !isInteractive
+            valueLabel.textColor = isInteractive ? .black : .lightGray
+        }
+    }
 
     // MARK: - UITableViewCell
 
