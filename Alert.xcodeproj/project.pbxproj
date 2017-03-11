@@ -73,6 +73,7 @@
 		E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */; };
 		E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4631E3934F90025823C /* WorkerFactory.swift */; };
 		E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4661E3936100025823C /* BaseViewController.swift */; };
+		E7CF365E1E61955B00267E18 /* AlertCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF365D1E61955B00267E18 /* AlertCreationViewController.swift */; };
 		E7CF36621E61995100267E18 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36611E61995100267E18 /* TextFieldCell.swift */; };
 		E7CF36641E61995E00267E18 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CF36631E61995E00267E18 /* TextFieldCell.xib */; };
 		E7CF36661E61A02C00267E18 /* MatterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36651E61A02C00267E18 /* MatterPickerViewController.swift */; };
@@ -199,6 +200,7 @@
 		E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorkerImplementation.swift; sourceTree = "<group>"; };
 		E7C9D4631E3934F90025823C /* WorkerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerFactory.swift; sourceTree = "<group>"; };
 		E7C9D4661E3936100025823C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E7CF365D1E61955B00267E18 /* AlertCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCreationViewController.swift; sourceTree = "<group>"; };
 		E7CF36611E61995100267E18 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
 		E7CF36631E61995E00267E18 /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
 		E7CF36651E61A02C00267E18 /* MatterPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterPickerViewController.swift; sourceTree = "<group>"; };
@@ -546,6 +548,7 @@
 				E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */,
 				E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */,
 				E7786BD41E5865E700D4D78E /* FormPickerViewController.swift */,
+				E7CF365D1E61955B00267E18 /* AlertCreationViewController.swift */,
 				E7CF36651E61A02C00267E18 /* MatterPickerViewController.swift */,
 			);
 			name = Controller;
@@ -830,6 +833,7 @@
 				E7F1F9001E3E052400713759 /* UIView + Constraints.swift in Sources */,
 				E7C7DC541E4607AA00B7F170 /* AlertFeedbackView.swift in Sources */,
 				E7C7DC4C1E42673900B7F170 /* MutableAlert.swift in Sources */,
+				E7CF365E1E61955B00267E18 /* AlertCreationViewController.swift in Sources */,
 				E7F754D51E509CE200FF8D14 /* Error.swift in Sources */,
 				E7E451521E36930000417A95 /* CacheRepositoryImplementation.swift in Sources */,
 				E7E00C481E54E80D00446609 /* MutableSnapshot + Firebase.swift in Sources */,
