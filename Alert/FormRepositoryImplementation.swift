@@ -25,8 +25,7 @@ class FormRepositoryImplementation {
 extension FormRepositoryImplementation: FormRepository {
     func fetchForms(completionBlock block: @escaping ([Form]) -> Void) {
         formReference.observeSingleEvent(of: .value, with: { snapshot in
-            let children = snapshot.children.flatMap { $0 as? FIRDataSnapshot }
-            let forms = children.flatMap { self.formMapper.form(from: $0) }
+            let forms = snapshot.childSnapshots.flatMap { self.formMapper.form(from: $0) }
             block(forms)
         })
     }
