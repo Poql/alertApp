@@ -73,6 +73,8 @@
 		E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */; };
 		E7C9D4641E3934F90025823C /* WorkerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4631E3934F90025823C /* WorkerFactory.swift */; };
 		E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4661E3936100025823C /* BaseViewController.swift */; };
+		E7CF36621E61995100267E18 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36611E61995100267E18 /* TextFieldCell.swift */; };
+		E7CF36641E61995E00267E18 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CF36631E61995E00267E18 /* TextFieldCell.xib */; };
 		E7CF36681E61A0EF00267E18 /* Matter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36671E61A0EF00267E18 /* Matter.swift */; };
 		E7CF366A1E61A11600267E18 /* MutableMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36691E61A11600267E18 /* MutableMatter.swift */; };
 		E7CF366C1E61A15000267E18 /* MatterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF366B1E61A15000267E18 /* MatterViewModel.swift */; };
@@ -194,6 +196,8 @@
 		E7C9D4611E39325F0025823C /* AlertWorkerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWorkerImplementation.swift; sourceTree = "<group>"; };
 		E7C9D4631E3934F90025823C /* WorkerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerFactory.swift; sourceTree = "<group>"; };
 		E7C9D4661E3936100025823C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E7CF36611E61995100267E18 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		E7CF36631E61995E00267E18 /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
 		E7CF36671E61A0EF00267E18 /* Matter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matter.swift; sourceTree = "<group>"; };
 		E7CF36691E61A11600267E18 /* MutableMatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableMatter.swift; sourceTree = "<group>"; };
 		E7CF366B1E61A15000267E18 /* MatterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModel.swift; sourceTree = "<group>"; };
@@ -415,6 +419,14 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		E7CF365F1E61986200267E18 /* Alert Creation */ = {
+			isa = PBXGroup;
+			children = (
+				E7CF36611E61995100267E18 /* TextFieldCell.swift */,
+			);
+			name = "Alert Creation";
+			sourceTree = "<group>";
+		};
 		E7CF36601E61986F00267E18 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,6 +566,7 @@
 				E7CF36A71E6B01C500267E18 /* CircularView.swift */,
 				E7FDBF021E6B309B000D706F /* BigButton.swift */,
 				E7CF36601E61986F00267E18 /* Alert */,
+				E7CF365F1E61986200267E18 /* Alert Creation */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -575,6 +588,7 @@
 			children = (
 				E7CF36A51E6B010600267E18 /* BasicTableViewCell.xib */,
 				E7F1F8F91E3E012700713759 /* AlertFaceView.xib */,
+				E7CF36631E61995E00267E18 /* TextFieldCell.xib */,
 				E7F5DA671E3521110058943E /* LaunchScreen.storyboard */,
 				E7F5DA621E3521110058943E /* Main.storyboard */,
 				E7F5DA651E3521110058943E /* Assets.xcassets */,
@@ -704,6 +718,7 @@
 				E7323A241E4F71B400805421 /* Rubik-Medium.ttf in Resources */,
 				E7323A251E4F71B400805421 /* Rubik-MediumItalic.ttf in Resources */,
 				E7323A261E4F71B400805421 /* Rubik-Regular.ttf in Resources */,
+				E7CF36641E61995E00267E18 /* TextFieldCell.xib in Resources */,
 				E7323A271E4F71B400805421 /* SFMono-Bold.otf in Resources */,
 				E7323A281E4F71B400805421 /* SFMono-BoldItalic.otf in Resources */,
 				E7323A291E4F71B400805421 /* SFMono-Heavy.otf in Resources */,
@@ -846,6 +861,7 @@
 				E7A654C51E37CD1C00E0AB4A /* DataEventType.swift in Sources */,
 				E7F754D71E509CEC00FF8D14 /* Result.swift in Sources */,
 				E7064BE21E3DF72500B6276F /* UIView + loading.swift in Sources */,
+				E7CF36621E61995100267E18 /* TextFieldCell.swift in Sources */,
 				E7CF36981E61D3D900267E18 /* MatterWorkerImplementation.swift in Sources */,
 				E7064BDE1E3DF1B800B6276F /* AlertViewModelMapper.swift in Sources */,
 				E7F5DA7B1E3528450058943E /* Model.xcdatamodeld in Sources */,
