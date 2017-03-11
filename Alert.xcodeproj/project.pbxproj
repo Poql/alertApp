@@ -75,6 +75,7 @@
 		E7C9D4671E3936100025823C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C9D4661E3936100025823C /* BaseViewController.swift */; };
 		E7CF36621E61995100267E18 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36611E61995100267E18 /* TextFieldCell.swift */; };
 		E7CF36641E61995E00267E18 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CF36631E61995E00267E18 /* TextFieldCell.xib */; };
+		E7CF36661E61A02C00267E18 /* MatterPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36651E61A02C00267E18 /* MatterPickerViewController.swift */; };
 		E7CF36681E61A0EF00267E18 /* Matter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36671E61A0EF00267E18 /* Matter.swift */; };
 		E7CF366A1E61A11600267E18 /* MutableMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF36691E61A11600267E18 /* MutableMatter.swift */; };
 		E7CF366C1E61A15000267E18 /* MatterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF366B1E61A15000267E18 /* MatterViewModel.swift */; };
@@ -200,6 +201,7 @@
 		E7C9D4661E3936100025823C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E7CF36611E61995100267E18 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
 		E7CF36631E61995E00267E18 /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		E7CF36651E61A02C00267E18 /* MatterPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterPickerViewController.swift; sourceTree = "<group>"; };
 		E7CF36671E61A0EF00267E18 /* Matter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matter.swift; sourceTree = "<group>"; };
 		E7CF36691E61A11600267E18 /* MutableMatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableMatter.swift; sourceTree = "<group>"; };
 		E7CF366B1E61A15000267E18 /* MatterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatterViewModel.swift; sourceTree = "<group>"; };
@@ -544,6 +546,7 @@
 				E7F5DA7C1E352C8B0058943E /* AlertListViewController.swift */,
 				E772E51D1E50B8BD00E866FC /* AuthenticationViewController.swift */,
 				E7786BD41E5865E700D4D78E /* FormPickerViewController.swift */,
+				E7CF36651E61A02C00267E18 /* MatterPickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -855,6 +858,7 @@
 				E7CF369A1E64AA7200267E18 /* IdentifiableEntity.swift in Sources */,
 				E7CF36A41E6AFCE100267E18 /* BasicTableViewCell.swift in Sources */,
 				E7C9D4621E39325F0025823C /* AlertWorkerImplementation.swift in Sources */,
+				E7CF36661E61A02C00267E18 /* MatterPickerViewController.swift in Sources */,
 				E7CF366A1E61A11600267E18 /* MutableMatter.swift in Sources */,
 				E70399761E3CB4310089AF2C /* NSPredicate.swift in Sources */,
 				E7323A061E4F6E7000805421 /* UIFont.swift in Sources */,
